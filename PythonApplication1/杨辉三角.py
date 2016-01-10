@@ -16,7 +16,7 @@ def triangles2(l=1):
         if len(b) >= l:
             return(0)
 
-num=10
+num=0
 num=int(input('input Number:'))
 a=[x for x in triangles(num)]
 print(a)

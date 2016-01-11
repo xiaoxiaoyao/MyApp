@@ -1,4 +1,6 @@
-﻿#杨辉三角
+﻿# -*- coding: utf-8 -*-
+
+#杨辉三角
 def triangles(l=1):
     Ltriangles=[1]
     while len(Ltriangles) <= l:

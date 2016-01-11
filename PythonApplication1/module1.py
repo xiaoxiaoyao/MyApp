@@ -1,15 +1,11 @@
 ﻿# -*- coding: utf-8 -*-
 
-L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]
-
-def by_name(L):
-    return L[0]
-
-def by_score(L):
-    return L[1]
-
-L2 = sorted(L,key=by_name)
-print(L2)
-
-L2 = sorted(L,key=by_score,reverse=True)
-print(L2)
+def count():
+    def f(j):
+        def g():
+            return j*j
+        return g
+    fs = []
+    for i in range(1, 4):
+        fs.append(f(i)) # f(i)立刻被执行，因此i的当前值被传入f()
+    return fs

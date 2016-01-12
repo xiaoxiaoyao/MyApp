@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>自己的小练习\my_first_web_python.py</StartupFile>
+    <StartupFile>my_first_web_app\my_first_web_python.py</StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -23,8 +23,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="my_first_web_app\my_first_web_python.py" />
     <Compile Include="自己的小练习\class1.py" />
     <Compile Include="自己的小练习\if语句.py" />
+    <Compile Include="自己的小练习\decorator.py" />
     <Compile Include="自己的小练习\my_first_web_python.py" />
     <Compile Include="自己的小练习\module1.py" />
     <Compile Include="自己的小练习\杨辉三角.py" />
@@ -34,9 +36,14 @@
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="my_first_web_app\templates\home.html" />
+    <Content Include="my_first_web_app\templates\form.html" />
+    <Content Include="my_first_web_app\templates\signin-ok.html" />
     <Content Include="自己的小练习\README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="my_first_web_app\" />
+    <Folder Include="my_first_web_app\templates\" />
     <Folder Include="自己的小练习\" />
   </ItemGroup>
   <PropertyGroup>

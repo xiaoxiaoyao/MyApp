@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 class Person(object):
     def __init__(self,name):
-        self.__name = name # Ë«ÏÂ»®Ïß£¬±íÊ¾private£¬»úÖÆÉÏ×èÖ¹·ÃÎÊ£¬µ÷ÓÃp.__name´íÎó
+        self.__name = name # åŒä¸‹åˆ’çº¿ï¼Œè¡¨ç¤ºprivateï¼Œæœºåˆ¶ä¸Šé˜»æ­¢è®¿é—®ï¼Œè°ƒç”¨p.__nameé”™è¯¯
     @property
     def age(self):
-        return self._age  # µ¥ÏÂ»®Ïß£¬±íÊ¾protected£¬Ô­ÔòÉÏ²»ÔÊĞí·ÃÎÊ£¬µ«µ÷ÓÃp._name¿ÉÒÔ·ÃÎÊµ½
+        return self._age  # å•ä¸‹åˆ’çº¿ï¼Œè¡¨ç¤ºprotectedï¼ŒåŸåˆ™ä¸Šä¸å…è®¸è®¿é—®ï¼Œä½†è°ƒç”¨p._nameå¯ä»¥è®¿é—®åˆ°
     @age.setter
     def age(self,value):
         if type(value) != int:
@@ -13,23 +13,23 @@ class Person(object):
         if not (0< value <150):
             raise ValueError('need a reasonable number')
         self._age = value
-         # ÒÔÉÏĞ´³Éself.age = value»á±¨´í£¬ÒòÎªµ±ÉèÖÃÁËgetter/setterºó£¬
-         # ¶ÔÊôĞÔµÄÖ±½Ó·ÃÎÊ»áµ÷ÓÃ¸ÃÊôĞÔ¶ÔÓ¦µÄgetter/setter
-         # ÕâÀïĞ´³Éself.ageÏàµ±ÓÚÓÖµ÷ÓÃÁËÒ»´ÎageµÄgetter·½·¨£¬×îÖÕ»áµ¼ÖÂµİ¹éµ÷ÓÃÕ»Òç³ö
+         # ä»¥ä¸Šå†™æˆself.age = valueä¼šæŠ¥é”™ï¼Œå› ä¸ºå½“è®¾ç½®äº†getter/setteråï¼Œ
+         # å¯¹å±æ€§çš„ç›´æ¥è®¿é—®ä¼šè°ƒç”¨è¯¥å±æ€§å¯¹åº”çš„getter/setter
+         # è¿™é‡Œå†™æˆself.ageç›¸å½“äºåˆè°ƒç”¨äº†ä¸€æ¬¡ageçš„getteræ–¹æ³•ï¼Œæœ€ç»ˆä¼šå¯¼è‡´é€’å½’è°ƒç”¨æ ˆæº¢å‡º
 
 p = Person('xx')
-p.age = 10 ; # µ±ÉèÖÃÁËgetter/setterºó£¬¶ÔÊôĞÔµÄÖ±½Ó·ÃÎÊ»áµ÷ÓÃ¸ÃÊôĞÔ¶ÔÓ¦µÄgetter/setter
+p.age = 10 ; # å½“è®¾ç½®äº†getter/setteråï¼Œå¯¹å±æ€§çš„ç›´æ¥è®¿é—®ä¼šè°ƒç”¨è¯¥å±æ€§å¯¹åº”çš„getter/setter
 print(hasattr(p,'age'))
 print(hasattr(p,'_age')) # true
 print(hasattr(p,'__name')) # false
 
-# python¶ÔÏóÈ¨ÏŞ»úÖÆ²¢²»×èÖ¹·ÃÎÊ,Ò»ÇĞ½Ô¿¿×Ô¾õ
+# pythonå¯¹è±¡æƒé™æœºåˆ¶å¹¶ä¸é˜»æ­¢è®¿é—®,ä¸€åˆ‡çš†é è‡ªè§‰
 try:
-    print(p.__name) # error Ã»ÓĞ¸ÃÊôĞÔ
-    print(p.name) #error Ã»ÓĞ¸ÃÊôĞÔ
+    print(p.__name) # error æ²¡æœ‰è¯¥å±æ€§
+    print(p.name) #error æ²¡æœ‰è¯¥å±æ€§
 except ValueError as e:
     print(e)
 finally:    
-    print(p._Person__name) # Ç¿ĞĞ·ÃÎÊË½ÓĞ±äÁ¿
-    print(p._age)  # ÊÜ±£»¤ÊôĞÔ£¬²»½¨ÒéÖ±½Ó·ÃÎÊ£¬Ó¦¸ÃÊ¹ÓÃgetter£¬setter·ÃÎÊ
+    print(p._Person__name) # å¼ºè¡Œè®¿é—®ç§æœ‰å˜é‡
+    print(p._age)  # å—ä¿æŠ¤å±æ€§ï¼Œä¸å»ºè®®ç›´æ¥è®¿é—®ï¼Œåº”è¯¥ä½¿ç”¨getterï¼Œsetterè®¿é—®
     print(p.age) #ok

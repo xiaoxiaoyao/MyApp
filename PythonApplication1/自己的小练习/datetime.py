@@ -1,0 +1,11 @@
+﻿import datetime
+now = datetime.datetime.now()
+print(now)
+print(now)
+print(now)
+print(datetime.datetime.now())
+now = datetime.datetime.now()
+print(now)
+print(now)
+print(now)
+print(datetime.datetime.now())

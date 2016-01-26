@@ -5,7 +5,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>自己的小练习\抓取.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -25,14 +26,15 @@
   <ItemGroup>
     <Compile Include="my_first_web_app\my_first_web_python.py" />
     <Compile Include="自己的小练习\class1.py" />
+    <Compile Include="自己的小练习\datetime.py" />
     <Compile Include="自己的小练习\if语句.py" />
     <Compile Include="自己的小练习\decorator.py" />
     <Compile Include="自己的小练习\抓取.py" />
-    <Compile Include="自己的小练习\module2.py">
+    <Compile Include="自己的小练习\访问规则.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="自己的小练习\my_first_web_python.py" />
-    <Compile Include="自己的小练习\module1.py" />
+    <Compile Include="自己的小练习\return.py" />
     <Compile Include="自己的小练习\杨辉三角.py" />
     <Compile Include="自己的小练习\汉诺塔.py" />
   </ItemGroup>
@@ -48,6 +50,7 @@
   <ItemGroup>
     <Folder Include="my_first_web_app\" />
     <Folder Include="my_first_web_app\templates\" />
+    <Folder Include="workspace\" />
     <Folder Include="自己的小练习\" />
   </ItemGroup>
   <PropertyGroup>

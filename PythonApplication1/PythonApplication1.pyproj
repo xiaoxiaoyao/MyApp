@@ -42,14 +42,20 @@
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="my_first_web_app\templates\home.html" />
-    <Content Include="my_first_web_app\templates\form.html" />
-    <Content Include="my_first_web_app\templates\signin-ok.html" />
+    <Content Include="my_first_web_app\www\templates\home.html" />
+    <Content Include="my_first_web_app\www\templates\form.html" />
+    <Content Include="my_first_web_app\www\templates\signin-ok.html" />
     <Content Include="自己的小练习\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="my_first_web_app\" />
-    <Folder Include="my_first_web_app\templates\" />
+    <Folder Include="my_first_web_app\backup\" />
+    <Folder Include="my_first_web_app\conf\" />
+    <Folder Include="my_first_web_app\dist\" />
+    <Folder Include="my_first_web_app\ios\" />
+    <Folder Include="my_first_web_app\www\" />
+    <Folder Include="my_first_web_app\www\static\" />
+    <Folder Include="my_first_web_app\www\templates\" />
     <Folder Include="workspace\" />
     <Folder Include="自己的小练习\" />
   </ItemGroup>

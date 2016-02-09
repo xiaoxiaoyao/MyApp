@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>my_first_web_app\index.py</StartupFile>
+    <StartupFile>自己的小练习\hello_world.py</StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -29,6 +29,9 @@
     <Compile Include="自己的小练习\datetime.py" />
     <Compile Include="自己的小练习\if语句.py" />
     <Compile Include="自己的小练习\decorator.py" />
+    <Compile Include="自己的小练习\hello_world.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="自己的小练习\抓取.py" />
     <Compile Include="自己的小练习\访问规则.py">
       <SubType>Code</SubType>

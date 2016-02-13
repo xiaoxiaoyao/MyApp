@@ -45,8 +45,8 @@
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="my_first_web_app\www\templates\home.html" />
     <Content Include="my_first_web_app\www\templates\form.html" />
+    <Content Include="my_first_web_app\www\templates\home.html" />
     <Content Include="my_first_web_app\www\templates\signin-ok.html" />
     <Content Include="自己的小练习\README.md" />
   </ItemGroup>
@@ -60,7 +60,7 @@
     <Folder Include="my_first_web_app\www\php\" />
     <Folder Include="my_first_web_app\www\static\" />
     <Folder Include="my_first_web_app\www\templates\" />
-    <Folder Include="workspace\" />
+    <Folder Include="爬虫练习\" />
     <Folder Include="自己的小练习\" />
   </ItemGroup>
   <PropertyGroup>

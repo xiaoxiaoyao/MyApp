@@ -57,6 +57,7 @@
     <Folder Include="my_first_web_app\dist\" />
     <Folder Include="my_first_web_app\ios\" />
     <Folder Include="my_first_web_app\www\" />
+    <Folder Include="my_first_web_app\www\php\" />
     <Folder Include="my_first_web_app\www\static\" />
     <Folder Include="my_first_web_app\www\templates\" />
     <Folder Include="workspace\" />

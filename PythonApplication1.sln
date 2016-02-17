@@ -9,7 +9,7 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-		Description = PYTHON尊好玩
+		Description = PYTHON尊好玩，用GitHub，记录自己学习Python的每一步。 
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BA719DEB-5196-434A-88FA-F1CB6CEC2C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

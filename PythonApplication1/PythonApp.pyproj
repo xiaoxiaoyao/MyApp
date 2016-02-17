@@ -4,12 +4,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>my_first_web_app\index.py</StartupFile>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>my_first_web_app\ORM.py</StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>PythonApplication1</Name>
+    <Name>PythonApp</Name>
     <RootNamespace>PythonApplication1</RootNamespace>
     <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
@@ -24,7 +25,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="my_first_web_app\index.py" />
+    <Compile Include="my_first_web_app\ORM.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="my_first_web_app\my_first_web_python.py" />
+    <Compile Include="爬虫练习\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="自己的小练习\class1.py" />
     <Compile Include="自己的小练习\asynciotest.py" />
     <Compile Include="自己的小练习\if语句.py" />
@@ -45,9 +52,12 @@
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="my_first_web_app\README.md" />
     <Content Include="my_first_web_app\www\templates\form.html" />
     <Content Include="my_first_web_app\www\templates\home.html" />
     <Content Include="my_first_web_app\www\templates\signin-ok.html" />
+    <Content Include="README.md" />
+    <Content Include="爬虫练习\README.md" />
     <Content Include="自己的小练习\README.md" />
   </ItemGroup>
   <ItemGroup>

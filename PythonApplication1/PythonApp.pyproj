@@ -49,6 +49,7 @@
     <Compile Include="自己的小练习\汉诺塔.py" />
   </ItemGroup>
   <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +67,8 @@
     <Folder Include="my_first_web_app\conf\" />
     <Folder Include="my_first_web_app\dist\" />
     <Folder Include="my_first_web_app\ios\" />
+    <Folder Include="my_first_web_app\logs\" />
+    <Folder Include="my_first_web_app\temp\" />
     <Folder Include="my_first_web_app\www\" />
     <Folder Include="my_first_web_app\www\php\" />
     <Folder Include="my_first_web_app\www\static\" />

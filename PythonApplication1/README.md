@@ -1,3 +1,4 @@
+#练习计划
 <br>我自己的python练习册，python尊好玩o(^▽^)o
 <br>用GitHub，记录自己学习Python的每一步。
 <br>练习计划：

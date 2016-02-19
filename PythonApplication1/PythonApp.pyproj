@@ -6,7 +6,7 @@
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>my_first_web_app\ORM.py</StartupFile>
+    <StartupFile>自己的小练习\filtered_words_list.py</StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -37,6 +37,9 @@
     <Compile Include="自己的小练习\if语句.py" />
     <Compile Include="自己的小练习\decorator.py" />
     <Compile Include="自己的小练习\hello_world.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="自己的小练习\filtered_words_list.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="自己的小练习\抓取.py" />

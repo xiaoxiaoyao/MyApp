@@ -8,7 +8,7 @@
 
 <br>目录结构：
 
-<code>
+
 
 my_first_web_app/        <-- root根目录
 |
@@ -30,4 +30,3 @@ my_first_web_app/        <-- root根目录
 |
 +- LICENSE               <-- 代码LICENSE
 
-</code>

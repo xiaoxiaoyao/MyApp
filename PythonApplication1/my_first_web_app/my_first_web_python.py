@@ -24,5 +24,8 @@ def signin():
         return '<h3>Hello, admin!</h3>'
     return '<h3>Bad username or password.</h3>'
 
+#其中 if __name__ == '__main__': 确保服务器只会在该脚本被 Python 解释器直接执行的时候才会运行，而不是作为模块导入的时候。
 if __name__ == '__main__':
     app.run()
+    #app.run(host='0.0.0.0')#即可全网使用
+    #app.run(debug=True)#即可调试模式，允许网页执行任意代码

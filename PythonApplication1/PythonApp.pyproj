@@ -6,7 +6,7 @@
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>自己的小练习\filtered_words_list.py</StartupFile>
+    <StartupFile>my_first_web_app\www\index.py</StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -25,10 +25,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="my_first_web_app\index.py" />
-    <Compile Include="my_first_web_app\ORM.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="my_first_web_app\my_first_web_python.py" />
+    <Compile Include="my_first_web_app\www\index.py" />
     <Compile Include="爬虫练习\module1.py">
       <SubType>Code</SubType>
     </Compile>
@@ -57,9 +55,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="my_first_web_app\README.md" />
-    <Content Include="my_first_web_app\www\templates\form.html" />
-    <Content Include="my_first_web_app\www\templates\home.html" />
-    <Content Include="my_first_web_app\www\templates\signin-ok.html" />
+    <Content Include="my_first_web_app\www\templates\form.html">
+      <Publish>True</Publish>
+    </Content>
+    <Content Include="my_first_web_app\www\templates\home.html">
+      <Publish>True</Publish>
+    </Content>
+    <Content Include="my_first_web_app\www\templates\signin-ok.html">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="README.md" />
     <Content Include="爬虫练习\README.md" />
     <Content Include="自己的小练习\README.md" />

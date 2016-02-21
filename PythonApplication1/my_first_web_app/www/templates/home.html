@@ -7,5 +7,10 @@
 </head>
 <body>
     <h1>hello</h1>
+    {% if name %}
+    <p>welcome {{name}}</p>
+    {% else %}
+    <p>welcome!</p>
+    {% endif %}
 </body>
 </html>

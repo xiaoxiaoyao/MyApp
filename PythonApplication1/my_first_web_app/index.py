@@ -1,4 +1,5 @@
 ﻿# -*- coding: utf-8 -*-
+#放弃异步吧，先从Flask开始，一步一步来----2016年2月21日
 import logging; logging.basicConfig(level=logging.DEBUG)
 import asyncio, os, json, time
 from datetime import datetime

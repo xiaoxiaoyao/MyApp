@@ -24,8 +24,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="my_first_web_app\index.py" />
-    <Compile Include="my_first_web_app\my_first_web_python.py" />
+    <Compile Include="my_first_web_app\conf\config.py" />
+    <Compile Include="my_first_web_app\conf\conn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="my_first_web_app\test\index.py" />
+    <Compile Include="my_first_web_app\test\my_first_web_python.py" />
     <Compile Include="my_first_web_app\www\index.py" />
     <Compile Include="爬虫练习\module1.py">
       <SubType>Code</SubType>
@@ -75,6 +79,7 @@
     <Folder Include="my_first_web_app\dist\" />
     <Folder Include="my_first_web_app\ios\" />
     <Folder Include="my_first_web_app\logs\" />
+    <Folder Include="my_first_web_app\test\" />
     <Folder Include="my_first_web_app\temp\" />
     <Folder Include="my_first_web_app\www\" />
     <Folder Include="my_first_web_app\www\php\" />

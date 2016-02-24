@@ -2,15 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     {% block head %}
-    <title>{% block title %}{% endblock %} - My Webpage</title>
-    {% endblock %}
+    <title>{% block title %}{% endblock title %} - My Webpage</title>
+    {% endblock head %}
 </head>
 <body>
-    <div id="content">{% block content %}基本模板：这个模板，我们会把它叫做base.html，定义了一个简单的HTML骨架文档，你可能使用一个简单的两栏页面。用内容填充空的块是子模板的工作:{% endblock %}</div>
+    <div id="content">{% block content %}基本模板：这个模板，我们会把它叫做base.html，定义了一个简单的HTML骨架文档，你可能使用一个简单的两栏页面。用内容填充空的块是子模板的工作:{% endblock content %}</div>
     <div id="footer">
         {% block footer %}
         &copy; Copyright 2008 by <a href="http://domain.invalid/">you</a>.
-        {% endblock %}
+        {% endblock footer %}
     </div>
 </body>
 </html>

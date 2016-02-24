@@ -6,7 +6,7 @@
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>my_first_web_app\www\index.py</StartupFile>
+    <StartupFile>my_first_web_app\www\conn.py</StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -24,13 +24,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="my_first_web_app\conf\config.py" />
-    <Compile Include="my_first_web_app\conf\conn.py">
+    <Compile Include="my_first_web_app\www\config.py" />
+    <Compile Include="my_first_web_app\www\conn.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="my_first_web_app\test\index.py" />
     <Compile Include="my_first_web_app\test\my_first_web_python.py" />
     <Compile Include="my_first_web_app\www\index.py" />
+    <Compile Include="my_first_web_app\www\main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="my_first_web_app\www\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="爬虫练习\module1.py">
       <SubType>Code</SubType>
     </Compile>
@@ -42,6 +48,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="自己的小练习\filtered_words_list.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="my_first_web_app\www\Log.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="自己的小练习\抓取.py" />
@@ -69,6 +78,7 @@
     <Content Include="my_first_web_app\www\templates\signin-ok.html">
       <Publish>True</Publish>
     </Content>
+    <Content Include="my_first_web_app\www\templates\SubTemplates.html" />
     <Content Include="README.md" />
     <Content Include="爬虫练习\README.md" />
     <Content Include="自己的小练习\README.md" />

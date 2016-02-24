@@ -4,6 +4,10 @@ from flask import Flask, render_template, g #, request, session, redirect, url_f
 app = Flask(__name__)
 app.config.from_pyfile('../conf/config.py')
 
+@app.route('/test')
+def test():
+    return render_template('SubTemplates.html')
+
 @app.route('/')
 @app.route('/<name>')
 def hello(name=None):

@@ -62,6 +62,7 @@
     <Content Include="my_first_web_app\www\templates\form.html">
       <Publish>True</Publish>
     </Content>
+    <Content Include="my_first_web_app\www\templates\base.html" />
     <Content Include="my_first_web_app\www\templates\home.html">
       <Publish>True</Publish>
     </Content>

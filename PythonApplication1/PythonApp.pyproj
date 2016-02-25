@@ -77,12 +77,15 @@
     <Content Include="my_first_web_app\www\templates\home.html">
       <Publish>True</Publish>
     </Content>
+    <Content Include="my_first_web_app\www\templates\language.html" />
     <Content Include="my_first_web_app\www\templates\signin-ok.html">
       <Publish>True</Publish>
     </Content>
     <Content Include="my_first_web_app\www\templates\welcome.html">
       <Publish>True</Publish>
     </Content>
+    <Content Include="my_first_web_app\www\__pycache__\config.cpython-35.pyc" />
+    <Content Include="my_first_web_app\www\__pycache__\conn.cpython-35.pyc" />
     <Content Include="README.md" />
     <Content Include="爬虫练习\README.md" />
     <Content Include="自己的小练习\README.md" />
@@ -100,6 +103,7 @@
     <Folder Include="my_first_web_app\www\php\" />
     <Folder Include="my_first_web_app\www\static\" />
     <Folder Include="my_first_web_app\www\templates\" />
+    <Folder Include="my_first_web_app\www\__pycache__\" />
     <Folder Include="爬虫练习\" />
     <Folder Include="自己的小练习\" />
   </ItemGroup>

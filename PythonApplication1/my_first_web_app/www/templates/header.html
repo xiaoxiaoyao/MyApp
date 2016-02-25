@@ -1,5 +1,4 @@
 ﻿
-<head>
     {% block head %}
     {% if info %}
     <title>{{info.Title }} - {{info.WebPage}} {{info.WebName}}</title>
@@ -9,4 +8,3 @@
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}" />
     <meta charset="utf-8" />
     {% endblock head %}
-</head>

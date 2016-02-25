@@ -6,7 +6,7 @@
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>my_first_web_app\www\conn.py</StartupFile>
+    <StartupFile>my_first_web_app\www\index.py</StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -68,17 +68,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="my_first_web_app\README.md" />
+    <Content Include="my_first_web_app\www\static\style.css" />
     <Content Include="my_first_web_app\www\templates\form.html">
       <Publish>True</Publish>
     </Content>
     <Content Include="my_first_web_app\www\templates\base.html" />
+    <Content Include="my_first_web_app\www\templates\header.html" />
     <Content Include="my_first_web_app\www\templates\home.html">
       <Publish>True</Publish>
     </Content>
     <Content Include="my_first_web_app\www\templates\signin-ok.html">
       <Publish>True</Publish>
     </Content>
-    <Content Include="my_first_web_app\www\templates\SubTemplates.html" />
+    <Content Include="my_first_web_app\www\templates\welcome.html">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="README.md" />
     <Content Include="爬虫练习\README.md" />
     <Content Include="自己的小练习\README.md" />

@@ -1,18 +1,8 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>hello</title>
-</head>
-<body>
-    <h1>hello</h1>
-    {% if name %}
-    <p>welcome {{name}}</p>
-    {% else %}
-    <p>welcome!</p>
-    {% endif %}
-</body>
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% include 'header.html' %}
+{% include 'welcome.html' %}
 </html>
 {# note: 
         ...

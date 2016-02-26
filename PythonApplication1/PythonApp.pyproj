@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="my_first_web_app\README.md" />
-    <Content Include="my_first_web_app\www\static\style.css" />
+    <Content Include="my_first_web_app\www\static\css\style.css" />
     <Content Include="my_first_web_app\www\templates\form.html">
       <Publish>True</Publish>
     </Content>
@@ -102,6 +102,7 @@
     <Folder Include="my_first_web_app\www\" />
     <Folder Include="my_first_web_app\www\php\" />
     <Folder Include="my_first_web_app\www\static\" />
+    <Folder Include="my_first_web_app\www\static\css\" />
     <Folder Include="my_first_web_app\www\templates\" />
     <Folder Include="my_first_web_app\www\__pycache__\" />
     <Folder Include="爬虫练习\" />

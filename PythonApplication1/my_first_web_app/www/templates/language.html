@@ -1,10 +1,12 @@
-﻿{% for item in language %}
+﻿{% if language %}
 <table>
-    <tbody>
+    <tbody>{% for item in language %}
         <tr><td>{{ item[0] }}</td>
             <td>{{ item[1] }}</td>
             <td>{{ item[2] }}</td>
-</tr>
+</tr>{% endfor %}
     </tbody>
 </table>
-{% endfor %}
+    {% else %}
+<p>welcome!ERROR: SQL ERROR. There is no item in 'conn.Select_language(appconn,'*')'</p>
+    {% endif %}

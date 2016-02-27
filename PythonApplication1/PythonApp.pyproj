@@ -78,6 +78,7 @@
       <Publish>True</Publish>
     </Content>
     <Content Include="my_first_web_app\www\templates\language.html" />
+    <Content Include="my_first_web_app\www\templates\loader.html" />
     <Content Include="my_first_web_app\www\templates\signin-ok.html">
       <Publish>True</Publish>
     </Content>

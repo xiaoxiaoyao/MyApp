@@ -4,10 +4,11 @@ import logging
 import config,conn
 global app
 app = Flask(__name__)
+appconn=conn.Conn(app)
 
 @app.route('/test')
 def Test():
-    language=conn.Select_language(app,'*')
+    language=conn.Select_language(appconn,'*')
     return render_template('base.html',info=config.info,language=language.fetchall())
 
 @app.route('/')
@@ -17,5 +18,5 @@ def Hello(name=None):
 
 if __name__ == '__main__':
     app.config.from_pyfile('config.py')
-    conn.TestConn(app)
+    #conn.TestConn(app)
     app.run()

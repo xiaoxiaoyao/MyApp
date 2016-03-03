@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="my_first_web_app\README.md" />
+    <Content Include="my_first_web_app\RP\产品需求文档%28PRD%29.html" />
     <Content Include="my_first_web_app\www\static\css\style.css" />
     <Content Include="my_first_web_app\www\templates\form.html">
       <Publish>True</Publish>
@@ -98,6 +99,7 @@
     <Folder Include="my_first_web_app\dist\" />
     <Folder Include="my_first_web_app\ios\" />
     <Folder Include="my_first_web_app\logs\" />
+    <Folder Include="my_first_web_app\RP\" />
     <Folder Include="my_first_web_app\test\" />
     <Folder Include="my_first_web_app\temp\" />
     <Folder Include="my_first_web_app\www\" />

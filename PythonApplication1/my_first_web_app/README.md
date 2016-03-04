@@ -1,38 +1,38 @@
 #webAPP
 
-<br>ÎÒ×Ô¼ºµÄpythonÁ·Ï°²á£¬python×ğºÃÍæo(^¨Œ^)o
+<br>æˆ‘è‡ªå·±çš„pythonç»ƒä¹ å†Œï¼Œpythonå°Šå¥½ç©o(^â–½^)o
 
-<br>2016Äê3ÔÂ1ÈÕ£¬¿¼ÍêË°ÎñÊ¦ÒÔºó£¬¿ªÊ¼Ñ§×ö¼òµ¥µÄwebAPP£¡
+<br>2016å¹´3æœˆ1æ—¥ï¼Œè€ƒå®Œç¨åŠ¡å¸ˆä»¥åï¼Œå¼€å§‹å­¦åšç®€å•çš„webAPPï¼
 
-##FlaskWeb¿ª·¢£º»ùÓÚPythonµÄWebÓ¦ÓÃ¿ª·¢ÊµÕ½.pdf
-<br>»¶Ó­½øÈëFlask´óĞÍ½Ì³ÌÏîÄ¿£¡ ¡ª flask mega-tutorial 1.0 documentation
-
-
-<br>Õâ¸öÄ¿Â¼ÓÃÀ´´æ·ÅpythonµÄwebAPP¹¤×÷Ä¿Â¼
-
-<br>Ä¿Â¼½á¹¹£º
+##FlaskWebå¼€å‘ï¼šåŸºäºPythonçš„Webåº”ç”¨å¼€å‘å®æˆ˜.pdf
+<br>æ¬¢è¿è¿›å…¥Flaskå¤§å‹æ•™ç¨‹é¡¹ç›®ï¼ â€” flask mega-tutorial 1.0 documentation
 
 
+<br>è¿™ä¸ªç›®å½•ç”¨æ¥å­˜æ”¾pythonçš„webAPPå·¥ä½œç›®å½•
 
-<br>my_first_web_app/        <-- root¸ùÄ¿Â¼
+<br>ç›®å½•ç»“æ„ï¼š
+
+
+
+<br>my_first_web_app/        <-- rootæ ¹ç›®å½•
 <br>|
-<br>+- backup/               <-- ±¸·İÄ¿Â¼
+<br>+- backup/               <-- å¤‡ä»½ç›®å½•
 <br>|
-<br>+- conf/                 <-- ÅäÖÃÎÄ¼ş
+<br>+- conf/                 <-- é…ç½®æ–‡ä»¶
 <br>|
-<br>+- dist/                 <-- ´ò°üÄ¿Â¼
+<br>+- dist/                 <-- æ‰“åŒ…ç›®å½•
 <br>|
-<br>+- test/                 <-- ÁãËé´úÂë¡¢²âÊÔÄ¿Â¼,¸÷ÖÖÔÓµÄ¶«Î÷
+<br>+- test/                 <-- é›¶ç¢ä»£ç ã€æµ‹è¯•ç›®å½•,å„ç§æ‚çš„ä¸œè¥¿
 <br>|
-<br>+- www/                  <-- WebÄ¿Â¼£¬´æ·Å.pyÎÄ¼ş£¬ÏîÄ¿Ãû³Æ£ºwww
+<br>+- www/                  <-- Webç›®å½•ï¼Œå­˜æ”¾.pyæ–‡ä»¶ï¼Œé¡¹ç›®åç§°ï¼šwww
 <br>|  |
-<br>|  +- static/            <-- ´æ·Å¾²Ì¬ÎÄ¼ş
+<br>|  +- static/            <-- å­˜æ”¾é™æ€æ–‡ä»¶
 <br>|  |
-<br>|  +- templates/         <-- ´æ·ÅÄ£°åÎÄ¼ş
+<br>|  +- templates/         <-- å­˜æ”¾æ¨¡æ¿æ–‡ä»¶
 <br>|  |
-<br>|  +- php/               <-- ´æ·Åphp³ÌĞòÎÄ¼ş
+<br>|  +- php/               <-- å­˜æ”¾phpç¨‹åºæ–‡ä»¶
 <br>|
-<br>+- ios/                  <-- ´æ·ÅiOS App¹¤³Ì
+<br>+- ios/                  <-- å­˜æ”¾iOS Appå·¥ç¨‹
 <br>|
-<br>+- LICENSE               <-- ´úÂëLICENSE
+<br>+- LICENSE               <-- ä»£ç LICENSE
 

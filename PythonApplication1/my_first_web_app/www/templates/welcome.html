@@ -14,20 +14,20 @@
 <div class="row">
     <div class="span12">
         <ul class="nav nav-tabs">
-            <li class="active">
+            <li {% if name %} class="active"{% endif %}>
                 <a href="/blog">我的博客</a>
             </li>
             <li>
                 <a href="/weibo">匿名微博</a>
             </li>
-            <li class="dropdown pull-left">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">示例数据库</a>
+            <li class="dropdown pull-left{% if data %} active{% endif %}">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/database/<database>">示例数据库{{database}}</a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a href="#">sakira</a>
+                        <a href="/database/sakira">sakira</a>
                     </li>
                     <li>
-                        <a href="#">northwind</a>
+                        <a href="/database/northwind">northwind</a>
                     </li>
                     <li>
                         <a href="#">更多设置</a>

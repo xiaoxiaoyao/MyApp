@@ -6,7 +6,9 @@
 </head><body>
     <div class="container">
         {% include 'welcome.html' %}
+        {% block loader %}
         {% include 'loader.html' %}
+        {% endblock loader %}
     </div>
 </body>
 </html>

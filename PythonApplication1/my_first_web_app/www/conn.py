@@ -16,6 +16,12 @@ def Conn(app):
     conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='sakila')
     return conn
 
+def Select_table(conn,name='*',table='actor'):
+    cur = conn.cursor()
+    sql="SELECT "+ name +" FROM " + table
+    cur.execute(sql)
+    return cur
+
 def Select_language(conn,name='*'):
     cur = conn.cursor()
     sql="SELECT * FROM language"

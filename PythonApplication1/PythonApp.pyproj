@@ -68,12 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="my_first_web_app\README.md" />
+    <Content Include="my_first_web_app\RP\templates.png" />
     <Content Include="my_first_web_app\RP\webpage匿名微博DEMO.html" />
     <Content Include="my_first_web_app\RP\webpage博客页DEMO.html" />
     <Content Include="my_first_web_app\RP\webpage示例数据库DEMO.html" />
     <Content Include="my_first_web_app\RP\webpage首页DEMO.html" />
     <Content Include="my_first_web_app\RP\产品需求文档%28PRD%29.html" />
     <Content Include="my_first_web_app\www\static\css\style.css" />
+    <Content Include="my_first_web_app\www\static\logo.jpg" />
     <Content Include="my_first_web_app\www\templates\form.html">
       <Publish>True</Publish>
     </Content>
@@ -87,6 +89,7 @@
     <Content Include="my_first_web_app\www\templates\signin-ok.html">
       <Publish>True</Publish>
     </Content>
+    <Content Include="my_first_web_app\www\templates\database.html" />
     <Content Include="my_first_web_app\www\templates\welcome.html">
       <Publish>True</Publish>
     </Content>

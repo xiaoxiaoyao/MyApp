@@ -1,10 +1,10 @@
 ﻿{% if language %}
 <table>
-    <tbody>{% for item in language %}
-        <tr><td>{{ item[0] }}</td>
-            <td>{{ item[1] }}</td>
-            <td>{{ item[2] }}</td>
-</tr>{% endfor %}
+    <tbody>{% for items in language %}
+        <tr>
+        {% for item in items %}<td>{{ item }}</td>{% endfor %}
+</tr>
+    {% endfor %}
     </tbody>
 </table>
     {% else %}

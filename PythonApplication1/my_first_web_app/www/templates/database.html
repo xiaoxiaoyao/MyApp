@@ -1,0 +1,61 @@
+﻿{% extends "home.html" %}
+{% block loader %}
+
+<div class="row">
+<div class="col-xs-6 span12">
+
+<div class="btn-group">
+<button data-toggle="dropdown" class="btn dropdown-toggle">Tables_in_sakila<span class="caret"></span></button>
+<ul class="dropdown-menu" contenteditable="true">
+<li><a href="./actor">actor</a></li>
+<li><a href="./actor_info">actor_info</a></li>
+<li><a href="./address">address</a></li>
+<li><a href="./category">category</a></li>
+<li><a href="./city">city</a></li>
+<li><a href="./country">country</a></li>
+<li><a href="./customer">customer</a></li>
+<li><a href="./customer_list">customer_list</a></li>
+<li><a href="./film">film</a></li>
+<li><a href="./film_actor">film_actor</a></li>
+<li><a href="./film_category">film_category</a></li>
+<li><a href="./film_list">film_list</a></li>
+<li><a href="./film_text">film_text</a></li>
+<li><a href="./inventory">inventory</a></li>
+<li><a href="./language">language</a></li>
+<li><a href="./nicer_but_slower_film_list">nicer_but_slower_film_list</a></li>
+<li><a href="./payment">payment</a></li>
+<li><a href="./rental">rental</a></li>
+<li><a href="./sales_by_film_category">sales_by_film_category</a></li>
+<li><a href="./sales_by_store">sales_by_store</a></li>
+<li><a href="./staff">staff</a></li>
+<li><a href="./staff_list">staff_list</a></li>
+<li><a href="./store">store</a></li>
+</ul>
+</div>
+
+<h3>Database:{{database}}</h3>
+<h4>Table:{{table}}</h4>
+<h5>Row:{{row}}</h5>
+{% if data.description %}
+<table class="table table-hover">
+<tbody>
+<thead>
+<tr>
+{% for items in data.description %}
+<th>{{ items[0] }}</th> {% endfor %}
+</tr>
+</thead>
+{% for items in data %}
+<tr>
+{% for item in items %}
+<td>{{ item }}</td>{% endfor %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% else %}
+<p>welcome!ERROR: SQL ERROR. There is no item in 'conn.Select_language(appconn,'*')'</p>
+{% endif %}
+</div>
+</div>
+{% endblock loader %}

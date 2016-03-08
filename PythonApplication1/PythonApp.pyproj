@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="my_first_web_app\README.md" />
+    <Content Include="my_first_web_app\RP\webpage匿名微博DEMO.html" />
+    <Content Include="my_first_web_app\RP\webpage博客页DEMO.html" />
+    <Content Include="my_first_web_app\RP\webpage示例数据库DEMO.html" />
     <Content Include="my_first_web_app\RP\webpage首页DEMO.html" />
     <Content Include="my_first_web_app\RP\产品需求文档%28PRD%29.html" />
     <Content Include="my_first_web_app\www\static\css\style.css" />

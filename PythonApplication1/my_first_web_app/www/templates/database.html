@@ -6,31 +6,10 @@
 
 <div class="btn-group">
 <button data-toggle="dropdown" class="btn dropdown-toggle">Tables_in_sakila<span class="caret"></span></button>
-<ul class="dropdown-menu" contenteditable="true">
-<li><a href="./actor">actor</a></li>
-<li><a href="./actor_info">actor_info</a></li>
-<li><a href="./address">address</a></li>
-<li><a href="./category">category</a></li>
-<li><a href="./city">city</a></li>
-<li><a href="./country">country</a></li>
-<li><a href="./customer">customer</a></li>
-<li><a href="./customer_list">customer_list</a></li>
-<li><a href="./film">film</a></li>
-<li><a href="./film_actor">film_actor</a></li>
-<li><a href="./film_category">film_category</a></li>
-<li><a href="./film_list">film_list</a></li>
-<li><a href="./film_text">film_text</a></li>
-<li><a href="./inventory">inventory</a></li>
-<li><a href="./language">language</a></li>
-<li><a href="./nicer_but_slower_film_list">nicer_but_slower_film_list</a></li>
-<li><a href="./payment">payment</a></li>
-<li><a href="./rental">rental</a></li>
-<li><a href="./sales_by_film_category">sales_by_film_category</a></li>
-<li><a href="./sales_by_store">sales_by_store</a></li>
-<li><a href="./staff">staff</a></li>
-<li><a href="./staff_list">staff_list</a></li>
-<li><a href="./store">store</a></li>
-</ul>
+    <ul class="dropdown-menu" contenteditable="true">
+        {% for item in tables %}
+        <li><a href="./{{ item[0] }}">{{ item[0] }}</a></li>{% endfor %}
+    </ul>
 </div>
 
 <h3>Database:{{database}}</h3>

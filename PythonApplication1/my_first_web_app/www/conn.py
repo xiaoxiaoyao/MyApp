@@ -12,7 +12,7 @@ def TestConn(app):
     return
 
 def Conn(app):
-    app.logger.info('create database connection pool...')
+    app.logger.info('create database connection pool...正在建立数据库连接......')
     conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='123456', db='sakila')
     return conn
 
@@ -22,9 +22,10 @@ def Select_table(conn,name='*',table='actor'):
     cur.execute(sql)
     return cur
 
-def Select_language(conn,name='*'):
+
+def Show_tables(conn):
     cur = conn.cursor()
-    sql="SELECT * FROM language"
+    sql="show tables"
     cur.execute(sql)
     return cur
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Flask development cfg
 # config.cfg
 
@@ -9,7 +10,7 @@ SECRET_KEY = 'development key'
 
 #Website
 info={
-'Title':'Default',
+'Title':'Yao',
 'WebPage':'Page',
 'WebName':'MyFirstWebPython'
 }

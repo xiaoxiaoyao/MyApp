@@ -1,7 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 import io
 from flask import Flask, render_template, g , request, url_for, session, redirect, abort
-import logging
 import config,conn
 global app
 ###初始化程序
@@ -25,13 +24,16 @@ def Index(name=None):
 @app.route('/database/<database>')
 def Databasegoto(database=None):
     return redirect(url_for('Database',database='sakila', table='actor'))
-@app.route('/database/<database>/<table>')
+@app.route('/database/<database>/<table>',methods=("GET", "POST"))
 def Database(table='actor',database='sakila'):
     row=request.args.get('row', '*')
     cur=conn.Select_table(appconn,row,table)
     tables=conn.Show_tables(appconn)
     pass
     return render_template('database.html',info=config.info, data=cur,database=database,table=table,tables=tables,row=row)
+#@app.route('/database/<database>/<table>',methods="POST")
+#def Data123123123(table='actor',database='sakila'):
+    #return ""
 
 ###博客功能
 @app.route('/blog/<id>')

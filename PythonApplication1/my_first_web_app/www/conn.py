@@ -1,4 +1,8 @@
 # MySql conn
+'''
+数据库链接，Conn(app)返回数据库连接conn，cur = conn.cursor()，SQL语句放在cur.execute(SQL语句)里面，cur.description是表头，cur.fetchall()是返回的所有内容。
+'''
+__author__ = 'lai yao (lake.lai)'
 import pymysql
 
 

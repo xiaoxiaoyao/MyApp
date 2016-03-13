@@ -20,20 +20,26 @@ def Test():
 def Index(name=None):
     return render_template('home.html',info=config.info, name=name)
 
-###数据库演示页和跳转页
+###数据库演示页跳转页
 @app.route('/database/<database>')
 def Databasegoto(database=None):
-    return redirect(url_for('Database',database='sakila', table='actor'))
-@app.route('/database/<database>/<table>',methods=("GET", "POST"))
-def Database(table='actor',database='sakila'):
+    return redirect(url_for('DataGet',database='sakila', table='actor'))
+
+###数据库展示页
+@app.route('/database/<database>/<table>',methods=("GET",))
+def DataGet(table='actor',database='sakila'):
     row=request.args.get('row', '*')
     cur=conn.Select_table(appconn,row,table)
     tables=conn.Show_tables(appconn)
     pass
     return render_template('database.html',info=config.info, data=cur,database=database,table=table,tables=tables,row=row)
-#@app.route('/database/<database>/<table>',methods="POST")
-#def Data123123123(table='actor',database='sakila'):
-    #return ""
+###数据库插入
+@app.route('/database/<database>/<table>',methods=("POST",))
+def DataPost(table='actor',database='sakila'):
+    assert request.method == 'POST'  
+    print(request.values)
+    pass
+    return ""
 
 ###博客功能
 @app.route('/blog/<id>')

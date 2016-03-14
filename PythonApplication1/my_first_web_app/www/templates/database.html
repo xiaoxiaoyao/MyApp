@@ -15,8 +15,8 @@
 <table class="table table-hover">
 <tbody>
 <thead><tr>{% for items in data.description %}<th>{{ items[0] }}</th> {% endfor %}</tr></thead>
-<form method="post">
-    <tr>{% for items in data.description %}<td><input type="text" name="{{ items[0] }}" /></td> {% endfor %}</tr></thead>
+<form method="post"><input type="hidden" name="Database" value="{{database}}" /><input type="hidden" name="Table" value="{{table}}" />
+    <tr>{% for items in data.description %}<td><input type="text" name="Row_{{ items[0] }}" /></td> {% endfor %}</tr></thead>
     <input type="submit" value="Submit" />
 </form>
 {% for items in data %}

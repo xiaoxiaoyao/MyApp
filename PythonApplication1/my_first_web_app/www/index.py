@@ -37,9 +37,9 @@ def DataGet(table='actor',database='sakila'):
 @app.route('/database/<database>/<table>',methods=("POST",))
 def DataPost(table='actor',database='sakila'):
     assert request.method == 'POST'  
-    print(request.values)
+    print(request.get_data())
     pass
-    return ""
+    return request.get_data()
 
 ###博客功能
 @app.route('/blog/<id>')

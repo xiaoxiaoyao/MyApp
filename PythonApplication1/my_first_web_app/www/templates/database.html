@@ -3,22 +3,25 @@
 
 <div class="row">
 <div class="col-xs-6 span12">
-
+<!--数据库列表以及按钮-->
 <div class="btn-group">
 <button data-toggle="dropdown" class="btn dropdown-toggle">Tables_in_sakila<span class="caret"></span></button>
-    <ul class="dropdown-menu" contenteditable="true">{% for item in tables %}<li><a href="./{{ item[0] }}">{{ item[0] }}</a></li>{% endfor %}
-    </ul>
+<ul class="dropdown-menu" contenteditable="true">{% for item in tables %}<li><a href="./{{ item[0] }}">{{ item[0] }}</a></li>{% endfor %}
+</ul>
 </div>
-
+<!--END 数据库列表以及按钮-->
 <h3>Database:{{database}}</h3><h4>Table:{{table}}</h4><h5>Row:{{row}}</h5>
-{% if data.description %}
+{% if data.description %}<form method="post">
 <table class="table table-hover">
 <tbody>
-<thead><tr>{% for items in data.description %}<th>{{ items[0] }}</th> {% endfor %}</tr></thead>
-<form method="post"><input type="hidden" name="Database" value="{{database}}" /><input type="hidden" name="Table" value="{{table}}" />
-    <tr>{% for items in data.description %}<td><input type="text" name="Row_{{ items[0] }}" /></td> {% endfor %}</tr></thead>
-    <input type="submit" value="Submit" />
-</form>
+<thead><tr>{% for items in data.description %}<th>{{ items[0] }}</th> {% endfor %}<th>操作</th></tr></thead>
+<tr>
+{% for items in data.description %}<td><input type="text" placeholder="Type {{ items[0] }}" name="Row_{{ items[0] }}" /></td> {% endfor %}
+<td>
+<input type="hidden" name="Database" value="{{database}}" />
+<input type="hidden" name="Table" value="{{table}}" />
+<input class="btn" contenteditable="true" type="submit" value="Submit" /></td>
+</tr>
 {% for items in data %}
 <tr>
 {% for item in items %}
@@ -27,6 +30,7 @@
 {% endfor %}
 </tbody>
 </table>
+</form>
 {% else %}
 <p>welcome!ERROR: SQL ERROR. There is no item in 'conn.Select_language(appconn,'*')'</p>
 {% endif %}

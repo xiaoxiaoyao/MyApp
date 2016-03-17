@@ -26,6 +26,11 @@ def Select_table(conn,name='*',table='actor'):
     cur.execute(sql)
     return cur
 
+def Insert(table,values):
+    pass
+
+def delect():
+    pass
 
 def Show_tables(conn):
     cur = conn.cursor()

@@ -15,13 +15,13 @@
 <table class="table table-hover">
 <tbody>
 <thead><tr>{% for items in data.description %}<th>{{ items[0] }}</th> {% endfor %}<th>操作</th></tr></thead>
-<tr>
+<fieldset><tr>
 {% for items in data.description %}<td><input type="text" placeholder="Type {{ items[0] }}" name="Row_{{ items[0] }}" /></td> {% endfor %}
 <td>
 <input type="hidden" name="Database" value="{{database}}" />
 <input type="hidden" name="Table" value="{{table}}" />
 <input class="btn" contenteditable="true" type="submit" value="Submit" /></td>
-</tr>
+</tr></fieldset>
 {% for items in data %}
 <tr>
 {% for item in items %}

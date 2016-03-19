@@ -26,10 +26,16 @@ def Select_table(conn,name='*',table='actor'):
     cur.execute(sql)
     return cur
 
-def Insert(table,values):
+def Insert(conn,table,values):
     pass
 
-def delect():
+def description(conn,table='actor'):
+    cur = conn.cursor()
+    sql="SELECT * FROM " + table + " WHERE FALSE"
+    cur.execute(sql)
+    return cur.description
+
+def delect(conn,table,values):
     pass
 
 def Show_tables(conn):

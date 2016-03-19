@@ -28,6 +28,7 @@ def Databasegoto(database=None):
 ###数据库展示页
 @app.route('/database/<database>/<table>',methods=("GET",))
 def DataGet(table='actor',database='sakila'):
+    assert request.method == 'GET'
     row=request.args.get('row', '*')
     cur=conn.Select_table(appconn,row,table)
     tables=conn.Show_tables(appconn)
@@ -36,10 +37,15 @@ def DataGet(table='actor',database='sakila'):
 ###数据库插入
 @app.route('/database/<database>/<table>',methods=("POST",))
 def DataPost(table='actor',database='sakila'):
-    assert request.method == 'POST'  
-    print(request.get_data())
+    assert request.method == 'POST' 
+    #print(request.get_data())
+    a=[]
+    a.append(request.get_data())
+    a.append(request.form.getlist('Table')[0])
+    description=conn.description(appconn,str(request.form.getlist('Table')[0]))
+    a.append(description)
     pass
-    return request.get_data()
+    return str(a)
 
 ###博客功能
 @app.route('/blog/<id>')

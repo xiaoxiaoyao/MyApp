@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
+'''
 # Flask development cfg
 # config.cfg
+'''
+
+__author__ = 'lai yao (lake.lai)'
 
 #Flask
 HOST = 'localhost'

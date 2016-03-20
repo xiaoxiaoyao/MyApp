@@ -53,6 +53,9 @@
     <Compile Include="my_first_web_app\www\Log.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="自己的小练习\re.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="自己的小练习\抓取.py" />
     <Compile Include="自己的小练习\访问规则.py">
       <SubType>Code</SubType>

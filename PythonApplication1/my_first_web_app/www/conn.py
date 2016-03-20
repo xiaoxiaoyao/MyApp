@@ -5,7 +5,6 @@
 __author__ = 'lai yao (lake.lai)'
 import pymysql
 
-
 def TestConn(app):
     conn = Conn(app)
     cur = conn.cursor()
@@ -50,5 +49,8 @@ def Close(conn):
     return
 
 if __name__ == '__main__':
+    from flask import Flask
+    app = Flask(__name__)
+    app.config.from_pyfile('config.py')
     TestConn(app)
 

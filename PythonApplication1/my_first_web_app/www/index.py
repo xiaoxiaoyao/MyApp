@@ -23,6 +23,7 @@ def Index(name=None):
 ###数据库演示页跳转页
 @app.route('/database/<database>')
 def Databasegoto(database=None):
+    app.logger.info("Go to DataGet(table='actor',database='sakila'):")
     return redirect(url_for('DataGet',database='sakila', table='actor'))
 
 ###数据库展示页
@@ -63,6 +64,11 @@ def Weibo(id=0):
 if __name__ == '__main__':
     app.config.from_pyfile('config.py')
     #conn.TestConn(app)
+    #据说很方便的调试工具，该扩展为 Flask 应用程序添加了一个包含有用的调试信息的工具栏。
+    from flask_debugtoolbar import DebugToolbarExtension
+    toolbar = DebugToolbarExtension(app)
     app.run()
+    #关闭连接
     conn.Close(appconn)
+    #结束程序
     print('Thank you')

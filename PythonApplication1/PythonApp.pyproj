@@ -40,6 +40,9 @@
     <Compile Include="爬虫练习\module1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="自己的小练习\chromedriver.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="自己的小练习\class1.py" />
     <Compile Include="自己的小练习\asynciotest.py" />
     <Compile Include="自己的小练习\if语句.py" />
@@ -51,6 +54,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="my_first_web_app\www\Log.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="自己的小练习\tryexcept.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="自己的小练习\re.py">

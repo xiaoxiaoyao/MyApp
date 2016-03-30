@@ -40,7 +40,7 @@
     <Compile Include="爬虫练习\module1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="自己的小练习\chromedriver.py">
+    <Compile Include="爬虫练习\chromedriver.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="自己的小练习\class1.py" />

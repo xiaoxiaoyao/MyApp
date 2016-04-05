@@ -25,16 +25,35 @@ def Select_table(conn,name='*',table='actor'):
     cur.execute(sql)
     return cur
 
-def Insert(conn,table,values):
-    pass
+def Insert(conn,table,values=[[],[]]):
+    cur = conn.cursor()
+    sql="INSERT INTO " + table + str(tuple(values[0])) + " VALUES "+ str(tuple(values[1]))
+    print(sql)
+    try:
+        cur.execute(sql)
+    except cur.connection.ProgrammingError as err:
+        print(err)
+        return []
+    finally:
+        print(cur.description)
+    return 
 
 def description(conn,table='actor'):
     cur = conn.cursor()
     sql="SELECT * FROM " + table + " WHERE FALSE"
-    cur.execute(sql)
-    return cur.description
+    try:
+        cur.execute(sql)
+    except cur.connection.ProgrammingError as err:
+        print(err)
+        return []
+    except:
+        print('error')
+        return []
+    finally:
+        return cur.description
 
 def delect(conn,table,values):
+    cur = conn.cursor()
     pass
 
 def Show_tables(conn):

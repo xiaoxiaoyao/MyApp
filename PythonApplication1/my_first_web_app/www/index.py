@@ -45,8 +45,22 @@ def DataPost(table='actor',database='sakila'):
     a.append(request.form.getlist('Table')[0])
     description=conn.description(appconn,str(request.form.getlist('Table')[0]))
     a.append(description)
-    pass
-    return str(a)
+    a.append(request.form)
+    values=[]
+    rows=[]
+    
+    try:
+        for row in description:
+            values.append(request.form['Row_'+str(row[0])])
+            rows.append(row[0])
+    except:
+        print('err')
+        return
+    else:
+        value=[rows,values]
+        print('value!!!',value)
+        conn.Insert(appconn,table,value)
+        return str(a)
 
 ###博客功能
 @app.route('/blog/<id>')

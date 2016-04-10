@@ -1,14 +1,18 @@
 # -*- coding: utf-8 -*-
 
-import os
+import os,time
 fileObj = open('C:\\Users\\yaopr\\AppData\\Local\\Temp\\adcon\\output.txt','w') 
-import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 def chrome(url):
     driver.get(url)
-    data=driver.find_element_by_class_name("col-md-9").text
+    data=driver.find_element_by_css_selector(".col-md-9").text
+    print(driver.window_handles)
+    #try:#open a new tab
+    driver.find_element_by_css_selector(".col-md-9").click()
+    #finally:
+        #driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + 'w')
     return data
 
 items=['HLJ', 'JL', 'LN', 'BJ', 'TJ', 'NMG', 'HB', 'SX', 'SAX', 'QH', 'GS', 'NX', 'XJ', 'SH', 'JS', 'ZJ', 'AH', 'FJ', 'JX', 'SD', 'GD', 'GX', 'HAIN', 'HEN', 'HUB', 'HUN', 'CQ', 'SC', 'GZ', 'YN', 'XZ']

@@ -8,9 +8,9 @@ from selenium.webdriver.common.keys import Keys
 def chrome(url):
     driver.get(url)
     data=driver.find_element_by_css_selector(".col-md-9").text
-    print(driver.window_handles)
+    print(driver.window_handles)#for debug
     #try:#open a new tab
-    driver.find_element_by_css_selector(".col-md-9").click()
+        #driver.find_element_by_css_selector(".col-md-9").click()
     #finally:
         #driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + 'w')
     return data
@@ -23,19 +23,23 @@ chromedriver ='C:\\Users\\yaopr\\AppData\\Local\\Google\\Chrome\\chromedriver.ex
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 driver.get('http://qichacha.com/user_login')
+print('here we go chrome')
 for i in range(20):
     print('time.sleep',20-i)
     time.sleep(1)
+
+import re
+print('url=',url)
 for item in items:
     for company in companies:
         for i in range(9):
-            output.append([item,company,url,chrome(url.format(company,item,i))])
+            output.append([item,company,i,re.findall('善林.*?存续|善林.*?在业',chrome(url.format(company,item,i)))])
             print(output[-1])
             time.sleep(2.98) 
 print(output)
 #elem = driver.find_element_by_link_text(nextpage)
 #elem.click()
-fileObj.write(output)
+fileObj.write(str(output))
 fileObj.close()
 driver.close()
 driver.quit()

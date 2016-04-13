@@ -45,6 +45,9 @@
     </Compile>
     <Compile Include="自己的小练习\class1.py" />
     <Compile Include="自己的小练习\asynciotest.py" />
+    <Compile Include="自己的小练习\for.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="自己的小练习\if语句.py" />
     <Compile Include="自己的小练习\decorator.py" />
     <Compile Include="自己的小练习\hello_world.py">

@@ -6,12 +6,11 @@
 '''
 __author__ = 'lai yao (lake.lai)'
 
-import os,time
+import os,asyncio
 fileObj = open('C:\\Users\\yaopr\\Source\\Repos\\PythonApplication1\\OUTPUT\\output.txt','w') 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-##import asyncio
 ##loop = asyncio.get_event_loop()
 
 def chrome(url):
@@ -59,8 +58,8 @@ print('here we go chrome')
 driver = webdriver.Chrome(chromedriver)
 driver.get('http://qichacha.com/user_login')
 for i in range(10):
-    print('time.sleep',10-i)
-    time.sleep(1)
+    print('asyncio.sleep',10-i)
+    asyncio.sleep(1)
 
 import re #(pre-treatment)
 print('url=',url)
@@ -70,7 +69,7 @@ for item in items:
         while True:
             print('\n\n\n\n\n\ntext=chrome(url.format(company,item,i))')
             text=chrome(url.format(company,item,i))
-            time.sleep(2.98)
+            asyncio.sleep(2.98)
             try:
                 re.search('善林',text).group(0)
             except AttributeError:
@@ -78,7 +77,7 @@ for item in items:
                 break
             else:
                 output.append(re.findall('善林.*? 存续|善林.*? 在业',text))
-                print(item,company,i,output[-1])
+                print(item,company,i,driver.current_url,output[-1])
             finally:
                 i=i+1
 print(output)

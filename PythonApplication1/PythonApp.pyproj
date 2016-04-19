@@ -6,7 +6,7 @@
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>my_first_web_app\www\index.py</StartupFile>
+    <StartupFile>爬虫练习\chromedriver.py</StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>

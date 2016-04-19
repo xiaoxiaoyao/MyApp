@@ -6,11 +6,13 @@
 '''
 __author__ = 'lai yao (lake.lai)'
 
-import os,asyncio
+import os,time
 fileObj = open('C:\\Users\\yaopr\\Source\\Repos\\PythonApplication1\\OUTPUT\\output.txt','w') 
+fileObj2 = open('C:\\Users\\yaopr\\Source\\Repos\\PythonApplication1\\OUTPUT\\test.txt','w') 
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+#from selenium.webdriver.common.keys import Keys
 
+##import asyncio
 ##loop = asyncio.get_event_loop()
 
 def chrome(url):
@@ -20,32 +22,38 @@ def chrome(url):
     i=1
     while True:
         try:
-            ##driver.switch_to_window(driver.window_handles[0])
+            driver.switch_to_window(driver.window_handles[0])
             data.append(driver.find_element_by_xpath(str('//*[@id="searchlist"]['+str(i)+']')).text)
-            ##loop.run_until_complete(qichacha_update(driver,i))
-            ##driver.switch_to_window(driver.window_handles[0])
+            fileObj2.write(data[-1])
+            driver.switch_to_window(driver.window_handles[0])
         except BaseException as err:
             print(i,err)
             return str(data)
             break
         else:
             print(i,'(found)',data[i-1])
+            ##qichacha_update(driver,i)#顺带更新一下数据
+            ##loop.run_until_complete(qichacha_update(driver,i))
             i=i+1
+        finally:
+            pass
 
-##async def qichacha_update(driver=None,i=1):
-##    print('def qichacha_update(driver=None,i=1):')
-##    print(driver.window_handles)#for debug
-##    await asyncio.sleep(1)
-##    #顺带更新一下数据
-##    driver.find_element_by_xpath(str('//*[@id="searchlist"]['+str(i)+']')).click()
-##    driver.switch_to_window(driver.window_handles[1])
-##    driver.find_element_by_xpath('//*[@id="company-top"]/div/div[2]/a[3]').click()
-##    driver.switch_to_window(driver.window_handles[0])
-##    await asyncio.sleep(1)
-##    driver.switch_to_window(driver.window_handles[1])
-##    driver.close()
-##    driver.switch_to_window(driver.window_handles[0])
-##    pass
+def qichacha_update(dri=None,i=1):
+    print('def qichacha_update(dri=',dri,',i=',i,'):')
+    print(dri.window_handles,'dri.switch_to_window(dri.window_handles[1])')#for debug
+    time.sleep(1)
+    #顺带更新一下数据
+    dri.find_element_by_xpath(str('//*[@id="searchlist"]['+str(i)+']')).click()
+    dri.switch_to_window(dri.window_handles[1])
+    dri.find_element_by_xpath('//*[@id="company-top"]/div/div[2]/a[3]').click()
+    dri.find_element_by_xpath('//*[@id="company-top"]/div/div[2]/a[3]/i').click()
+    dri.switch_to_window(dri.window_handles[0])
+    time.sleep(15)
+    dri.switch_to_window(dri.window_handles[1])
+    dri.close()
+    dri.switch_to_window(dri.window_handles[0])
+    print(dri.window_handles,'dri.switch_to_window(dri.window_handles[0])')#for debug
+    pass
 
 
 items=['HLJ', 'JL', 'LN', 'BJ', 'TJ', 'NMG', 'HB', 'SX', 'SAX', 'QH', 'GS', 'NX', 'XJ', 'SH', 'JS', 'ZJ', 'AH', 'FJ', 'JX', 'SD', 'GD', 'GX', 'HAIN', 'HEN', 'HUB', 'HUN', 'CQ', 'SC', 'GZ', 'YN', 'XZ']
@@ -58,8 +66,8 @@ print('here we go chrome')
 driver = webdriver.Chrome(chromedriver)
 driver.get('http://qichacha.com/user_login')
 for i in range(10):
-    print('asyncio.sleep',10-i)
-    asyncio.sleep(1)
+    print('time.sleep',10-i)
+    time.sleep(1)
 
 import re #(pre-treatment)
 print('url=',url)
@@ -69,7 +77,7 @@ for item in items:
         while True:
             print('\n\n\n\n\n\ntext=chrome(url.format(company,item,i))')
             text=chrome(url.format(company,item,i))
-            asyncio.sleep(2.98)
+            time.sleep(2.98)
             try:
                 re.search('善林',text).group(0)
             except AttributeError:
@@ -77,13 +85,15 @@ for item in items:
                 break
             else:
                 output.append(re.findall('善林.*? 存续|善林.*? 在业',text))
+                fileObj.write(str(output[-1]))
                 print(item,company,i,driver.current_url,output[-1])
             finally:
                 i=i+1
 print(output)
 #elem = driver.find_element_by_link_text(nextpage)
 #elem.click()
-fileObj.write(str(output))
+#fileObj.write(str(output))
 fileObj.close()
+fileObj2.close()
 driver.close()
 driver.quit()

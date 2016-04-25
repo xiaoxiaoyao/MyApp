@@ -10,6 +10,7 @@ import os,time
 fileObj = open('C:\\Users\\yaopr\\Source\\Repos\\PythonApplication1\\OUTPUT\\output.txt','w') 
 fileObj2 = open('C:\\Users\\yaopr\\Source\\Repos\\PythonApplication1\\OUTPUT\\test.txt','w') 
 from selenium import webdriver
+
 #from selenium.webdriver.common.keys import Keys
 
 ##import asyncio
@@ -32,7 +33,7 @@ def chrome(url):
             break
         else:
             print(i,'(found)',data[i-1])
-            ##qichacha_update(driver,i)#顺带更新一下数据
+            qichacha_update(driver,i)#顺带更新一下数据
             ##loop.run_until_complete(qichacha_update(driver,i))
             i=i+1
         finally:
@@ -40,16 +41,21 @@ def chrome(url):
 
 def qichacha_update(dri=None,i=1):
     print('def qichacha_update(dri=',dri,',i=',i,'):')
-    print(dri.window_handles,'dri.switch_to_window(dri.window_handles[1])')#for debug
+    print(dri.window_handles,'dri.switch_to_window(dri.window_handles[',len(dri.window_handles)-1,'])')#for debug
     time.sleep(1)
     #顺带更新一下数据
     dri.find_element_by_xpath(str('//*[@id="searchlist"]['+str(i)+']')).click()
-    dri.switch_to_window(dri.window_handles[1])
+    time.sleep(1)
+    if len(dri.window_handles)<=1:
+        return  #页面开了没？
+    dri.switch_to_window(dri.window_handles[len(dri.window_handles)-1])
+    time.sleep(3)
     dri.find_element_by_xpath('//*[@id="company-top"]/div/div[2]/a[3]').click()
+    time.sleep(1)
     dri.find_element_by_xpath('//*[@id="company-top"]/div/div[2]/a[3]/i').click()
     dri.switch_to_window(dri.window_handles[0])
-    time.sleep(15)
-    dri.switch_to_window(dri.window_handles[1])
+    time.sleep(7)
+    dri.switch_to_window(dri.window_handles[len(dri.window_handles)-1])#切换到最后一个标签页
     dri.close()
     dri.switch_to_window(dri.window_handles[0])
     print(dri.window_handles,'dri.switch_to_window(dri.window_handles[0])')#for debug
@@ -62,8 +68,15 @@ url='http://qichacha.com/search?key={0}&province={1}&p={2}&index='
 output=[]
 chromedriver ='C:\\Users\\yaopr\\AppData\\Local\\Google\\Chrome\\chromedriver.exe'
 os.environ["webdriver.chrome.driver"] = chromedriver
+option = webdriver.ChromeOptions()#自定义设置
+option.add_argument('--user-data-dir=C:\\Users\\yaopr\\AppData\\Local\\Google\\Chrome\\User Data') #设置成用户自己的数据目录##注意退出当前的chrome
+option.add_argument('--user-agent=iphone') #修改浏览器的User-Agent来伪装你的浏览器访问手机m站
+option.add_argument('--process-per-site') #每个站点使用单独进程
+option.add_argument('--lang=zh-CN') #设置语言为简体中文
 print('here we go chrome')
-driver = webdriver.Chrome(chromedriver)
+driver = webdriver.Chrome(chromedriver,chrome_options=option)
+driver.get('about:version')
+time.sleep(1)
 driver.get('http://qichacha.com/user_login')
 for i in range(10):
     print('time.sleep',10-i)

@@ -19,7 +19,6 @@ StatsModels：用于探索数据、估计统计模型、统计检验；
 scikit-learn：提供经典的机器学习算法用于数据挖掘和数据分析；
 matplotlib： 2D绘图库，可绘制高质量的图片。
 
-pip install re --upgrade
 pip install six --upgrade
 pip install python_dateutil --upgrade
 pip install pytz --upgrade

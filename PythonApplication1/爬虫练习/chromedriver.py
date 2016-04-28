@@ -15,6 +15,14 @@ import selenium
 
 ##import asyncio
 ##loop = asyncio.get_event_loop()
+def quit():
+    fileObj.close()
+    fileObj2.close()
+    driver.close()
+    driver.quit()
+    i=-1#for quit
+    logging.info(['QUIT success'])
+    return
 
 def closelastpage(dri,i=1):
     if len(dri.window_handles)<=1:
@@ -132,20 +140,18 @@ for item in items:
             break
         except KeyboardInterrupt:
             logging.info(['KeyboardInterrupt',KeyboardInterrupt])
-            fileObj.close()
-            fileObj2.close()
-            driver.close()
-            driver.quit()
-            i=-1#for quit
-            logging.info(['QUIT success',KeyboardInterrupt])
+            quit()
             break
         except ConnectionResetError as err:
             logging.info(['e,页面被关了，退出吧',err])
-            driver.quit()
+            quit()
             #driver.get('about:version')#要不重新开？
             pass
+            break
         except BaseException as err:
             logging.info(['except BaseException as err:',err,'/nBaseException??? in for item in items: while i != -1:'])
+            quit()
+            break
         else:
             output.append(re.findall('善林.*? 存续|善林.*? 在业',text))
             fileObj.write(str(output[-1]))

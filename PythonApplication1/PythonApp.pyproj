@@ -109,6 +109,7 @@
     <Content Include="my_first_web_app\www\__pycache__\config.cpython-35.pyc" />
     <Content Include="my_first_web_app\www\__pycache__\conn.cpython-35.pyc" />
     <Content Include="README.md" />
+    <Content Include="爬虫练习\chromedriver.exe" />
     <Content Include="爬虫练习\README.md" />
     <Content Include="自己的小练习\README.md" />
   </ItemGroup>

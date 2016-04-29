@@ -6,7 +6,7 @@
 '''
 __author__ = 'lai yao (lake.lai)'
 
-import os,time
+import os,sys,time
 fileObj = open('C:\\Users\\yaopr\\Source\\Repos\\PythonApplication1\\OUTPUT\\output.txt','w') 
 fileObj2 = open('C:\\Users\\yaopr\\Source\\Repos\\PythonApplication1\\OUTPUT\\test.txt','w') 
 from selenium import webdriver
@@ -18,7 +18,6 @@ import selenium
 def quit():
     fileObj.close()
     fileObj2.close()
-    driver.close()
     driver.quit()
     i=-1#for quit
     logging.info(['QUIT success'])
@@ -106,10 +105,12 @@ items=['SX', 'NMG', 'HB', 'SAX', 'HLJ', 'JL', 'LN', 'BJ', 'TJ', 'QH', 'GS', 'NX'
 companies=['%E5%96%84%E6%9E%97 %E4%B8%8A%E6%B5%B7'] #'%E5%96%84%E6%9E%97%EF%BC%88%E4%B8%8A%E6%B5%B7','
 url='http://qichacha.com/search?key={0}&province={1}&p={2}&index='
 output=[]
-chromedriver ='C:\\Users\\yaopr\\AppData\\Local\\Google\\Chrome\\chromedriver.exe'
+path = os.path.abspath(os.path.dirname(sys.argv[0]))
+chromedriver =path + '\\chromedriver.exe'
+logging.info([chromedriver])
 os.environ["webdriver.chrome.driver"] = chromedriver
 option = webdriver.ChromeOptions()#自定义设置
-option.add_argument('--user-data-dir=C:\\Users\\yaopr\\AppData\\Local\\Google\\Chrome\\User Data') #设置成用户自己的数据目录##注意退出当前的chrome
+option.add_argument('--user-data-dir=' + os.getenv('APPDATA') + '\\..\\Local\\Google\\Chrome\\User Data') #设置成用户自己的数据目录##注意退出当前的chrome
 option.add_argument('--user-agent=Mozilla/5.0 (Linux; U; Android 2.2.1; zh-cn; HTC_Wildfire_A3333 Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1') #修改浏览器的User-Agent来伪装你的浏览器
 option.add_argument('--process-per-site') #每个站点使用单独进程
 option.add_argument('--lang=zh-CN') #设置语言为简体中文

@@ -6,6 +6,9 @@
 
 <br>这个目录用来存放python的爬虫练习
 
+##chromedriver.py
+这是一个用来查自己公司有多少个分公司的爬虫
+
 <br>需要安装的包：爬虫框架Scrapy（依赖关系的lxml死活装不上求解），抓取网页urllib2
 
 补充：

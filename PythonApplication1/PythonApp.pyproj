@@ -43,6 +43,9 @@
     <Compile Include="爬虫练习\chromedriver.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="爬虫练习\update_shanlin.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="自己的小练习\class1.py" />
     <Compile Include="自己的小练习\asynciotest.py" />
     <Compile Include="自己的小练习\for.py">

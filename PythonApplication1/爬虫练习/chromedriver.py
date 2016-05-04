@@ -72,7 +72,7 @@ def qichacha_update(dri=None,i=1):
     try:
         dri.find_element_by_xpath('//*[@id="company-top"]/div/div[2]/a[3]').click()
         time.sleep(1)
-        #dri.find_element_by_xpath('//*[@id="company-top"]/div/div[2]/a[3]/i').click()
+        dri.find_element_by_xpath('//*[@id="company-top"]/div/div[2]/a[1]').click()
         dri.switch_to_window(window_handles0)
     except selenium.common.exceptions.NoSuchElementException as err:
         logging.info([i,err])
@@ -83,7 +83,7 @@ def qichacha_update(dri=None,i=1):
         logging.info(['BaseException??? in def qichacha_update(dri=None,i=1):'])
         return
     else:
-        time.sleep(7)
+        time.sleep(1)
         dri.switch_to_window(dri.window_handles[len(dri.window_handles)-1])#切换到最后一个标签页
         dri.close()
     finally:
@@ -98,8 +98,8 @@ logging.basicConfig(
     level=logging.INFO, #日志级别，默认为logging.WARNING,日志级别的关系为：CRITICAL》ERROR》WARNING》INFO》DEBUG》NOTEST
     #format='%(asctime)s %(filename)s [line:%(lineno)d] %(levelname)s %(message)s',
     #datefmt='%a, %d %b %Y %H:%M:%S', #指定时间格式
-    #filename='chromedriver.log', #日志文件名，没有会自动生成
-    #filemode='w'  #覆盖之前log
+    filename='chromedriver.log', #日志文件名，没有会自动生成
+    filemode='w'  #覆盖之前log
 )
 items=['SX', 'NMG', 'HB', 'SAX', 'HLJ', 'JL', 'LN', 'BJ', 'TJ', 'QH', 'GS', 'NX', 'XJ', 'SH', 'JS', 'ZJ', 'AH', 'FJ', 'JX', 'SD', 'GD', 'GX', 'HAIN', 'HEN', 'HUB', 'HUN', 'CQ', 'SC', 'GZ', 'YN', 'XZ']
 companies=['%E5%96%84%E6%9E%97 %E4%B8%8A%E6%B5%B7'] #'%E5%96%84%E6%9E%97%EF%BC%88%E4%B8%8A%E6%B5%B7','
@@ -133,7 +133,7 @@ for item in items:
             window_handles0=driver.window_handles[0]
             logging.info(window_handles0)
             text=chrome(url.format(company,item,i))
-            time.sleep(2.9)
+            time.sleep(1)
             re.search('善林',text).group(0)
         except AttributeError:
             logging.info(['Page=',i,'\nitem=',item,'\ncompany=',company,'\ntext=',text,'\n',AttributeError,'#for break'])

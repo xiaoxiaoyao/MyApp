@@ -1,0 +1,246 @@
+@charset "utf-8";
+/*---------- xu_layer plug style ----------*/
+* {
+	margin:0;
+	padding:0;
+}
+*html {
+	background-image:url(about:blank);
+	background-attachment:fixed;
+}
+/*--- common ---*/
+#xubox_shade {
+	position:fixed;
+	_position:absolute;
+	z-index:19000000;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.xubox_layer {
+	position:fixed;
+	_position:absolute;
+	z-index:19000001;
+	left:50%;
+}
+.xubox_title {
+	position:absolute;
+}
+.xubox_title i {
+	position:absolute;
+}
+.xubox_page {
+	position:absolute;
+}
+.xubox_main {
+	height:100%;
+}
+.xubox_iframe {
+	position:absolute;
+}
+.xubox_loading {
+	position:absolute;
+}
+.xubox_title em {
+	position:absolute;
+}
+.xubox_close {
+	position:absolute;
+}
+.xubox_msg {
+	position:absolute;
+	width:30px;
+	height:30px;
+	top:62px;
+	left:25px;
+}
+.xubox_msgtype0 {
+	background:url(default/xubox_ico0.png) -91px -38px no-repeat;
+}
+.xubox_msgtype1 {
+	background:url(default/xubox_ico0.png) -128px -38px no-repeat;
+}
+.xubox_msgtype2 {
+	background:url(default/xubox_ico0.png) -163px -38px no-repeat;
+}
+.xubox_msgtype3 {
+	background:url(default/xubox_ico0.png) -91px -75px no-repeat;
+}
+.xubox_msgtype4 {
+	background:url(default/xubox_ico0.png) -163px -75px no-repeat;
+}
+.xubox_msgtype5 {
+	background:url(default/xubox_ico0.png) -163px -112px no-repeat;
+}
+.xubox_msgtype6 {
+	background:url(default/xubox_ico0.png) -163px -148px no-repeat;
+}
+.xubox_msgtype7 {
+	background:url(default/xubox_ico0.png) -128px -75px no-repeat;
+}
+.xubox_msgtype8 {
+	background:url(default/xubox_ico0.png) -91px -6px no-repeat;
+}
+.xubox_msgtype9 {
+	background:url(default/xubox_ico0.png) -129px -6px no-repeat;
+}
+.xubox_msgtype10 {
+	background:url(default/xubox_ico0.png) -163px -6px no-repeat;
+}
+.xubox_text {
+	position:absolute;
+	word-break:break-all;
+	height:auto;
+	padding-right:20px;
+	overflow:hidden;
+	font-size:14px;
+	top:65px;
+	left:65px;
+	line-height:25px;
+}
+/*--- skin0 ---*/
+.xubox_shade_0 {
+	background:url(default/xubox_shade0.png) scroll repeat;
+}
+.xubox_layer_0 {
+	width:310px;
+	height:200px;
+	margin-left:-155px;
+	padding:7px 0;
+}
+.xubox_main_0 {
+	background:#FFF;
+	margin:0 7px;
+}
+.xubox_page_0 {
+	left:15px;
+}
+.xubox_title_0 {
+	width:100%;
+	top:7px;
+	left:7px;
+	height:35px;
+	line-height:35px;
+	background:url(default/xubox_title0.png) #EBEBEB repeat-x;
+	border-bottom:1px solid #D5D5D5;
+	cursor:move;
+	font-size:14px;
+	color:#333;
+}
+.xubox_title_0 i {
+	width:18px;
+	height:18px;
+	left:8px;
+	top:8px;
+	background:url(default/xubox_ico0.png) -5px -5px no-repeat;
+}
+.xubox_title_0 em {
+	height:20px;
+	line-height:20px;
+	width:240px;
+	display:block;
+	top:9px;
+	left:32px;
+	overflow:hidden;
+	font-style:normal;
+}
+.xubox_close0_0 {
+	right:15px;
+	top:16px;
+	width:15px;
+	height:15px;
+	background:url(default/xubox_ico0.png) -30px -6px no-repeat;
+	cursor:pointer;
+	overflow:hidden;
+}
+.xubox_close0_0:hover {
+	background:url(default/xubox_ico0.png) -50px -6px no-repeat;
+}
+.xubox_close1_0 {
+	right:-15px;
+	top:-7px;
+	width:33px;
+	height:31px;
+	background:url(default/btn_03.png) 0px 0px no-repeat;
+	cursor:pointer;
+	overflow:hidden;
+}
+.xubox_close1_0:hover {
+/*background:url(default/xubox_ico0.png) -46px -182px no-repeat;*/
+}
+.xubox_botton1_0 {
+	position:absolute;
+	bottom:20px;
+	left:50%;
+	margin-left:-39px;
+	width:79px;
+	height:32px;
+	background:url(default/xubox_ico0.png) -6px -34px no-repeat;
+	text-decoration:none;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:34px;
+	overflow:hidden;
+}
+.xubox_botton1_0:hover {
+	/*background:url(default/xubox_ico0.png) -6px -72px no-repeat;*/
+	text-decoration:none;
+	color:#FFF;
+}
+.xubox_botton2_0 {
+	position:absolute;
+	bottom:20px;
+	left:50%;
+	margin-left:-76px;
+	width:71px;
+	height:29px;
+	background:url(default/xubox_ico0.png) -5px -114px no-repeat;
+	text-decoration:none;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:31px;
+	overflow:hidden;
+}
+.xubox_botton2_0:hover {
+	background:url(default/xubox_ico0.png) -5px -146px no-repeat;
+	text-decoration:none;
+	color:#FFF;
+}
+.xubox_botton3_0 {
+	position:absolute;
+	bottom:20px;
+	left:50%;
+	margin-left:10px;
+	width:71px;
+	height:29px;
+	background:url(default/xubox_ico0.png) -81px -114px no-repeat;
+	text-decoration:none;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:31px;
+	overflow:hidden;
+}
+.xubox_botton3_0:hover {
+	background:url(default/xubox_ico0.png) -81px -146px no-repeat;
+	text-decoration:none;
+	color:#FFF;
+}
+.xubox_loading_0 {
+	margin:5px;
+	float:left;
+	_float:none;
+	width:262px;
+	height:28px;
+	background:url(default/xubox_loading.gif) no-repeat;
+	display:block;
+	text-decoration:none;
+	color:#FFF;
+}

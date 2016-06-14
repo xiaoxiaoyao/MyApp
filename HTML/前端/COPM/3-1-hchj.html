@@ -19,7 +19,7 @@
 
 <script> 
 $(function(){
-    $('.add-icon').hover(function(){$(this).addClass('add-over')},function(){$(this).removeClass('add-over')});
+$('.add-icon').hover(function(){$(this).addClass('add-over')},function(){$(this).removeClass('add-over')});
 });
 </script>
 
@@ -30,17 +30,17 @@ $(function(){
   <div id="header">
   <div class="top">
   <div class="logo-search clearfix">
-  <div class="logo clearfix"><a href="#index.html#" ><img src="./templates/temp/images/logo.png"></a></div>
-    <div class="grid">
-    <div class="ind-search">
-        <form action="/Search.aspx" method="post">
-		        <input type="text" name="keyword" class="search-text"  value=""    onblur="if(this.value==''){this.value='请输入关键词';this.style.color = '#c0c0c0';}" onfocus="if(this.value == '请输入关键词'){this.value = '';this.style.color = '#666666';}" />
-		        <button type="submit" class="search_btn"></button>
-		</form>
-    </div>
-    </div>
-    </div>
-        <div class="ind-menu clearfix">
+  <div class="logo clearfix"><a href="index.html#" ><img src="./templates/temp/images/logo.png"></a></div>
+<div class="grid">
+<div class="ind-search">
+<form action="/Search.php?search=" method="post">
+<input type="text" name="keyword" class="search-text"  value=""onblur="if(this.value==''){this.value='请输入关键词';this.style.color = '#c0c0c0';}" onfocus="if(this.value == '请输入关键词'){this.value = '';this.style.color = '#666666';}" />
+<button type="submit" class="search_btn"></button>
+</form>
+</div>
+</div>
+</div>
+<div class="ind-menu clearfix">
 <ul>
  <li><a href="1-gszx.html#">公司资讯</a>  
 <div class="box" style="left:-3px;">
@@ -54,7 +54,7 @@ $(function(){
  
  
  <div class="box_rights">
-<a class="rights_a1"><img src="/UploadFiles/2012/12/W2115482793A4DF64.jpg" width="240" height="95"/></a>
+<a class="rights_a1"><img src="./UploadFiles/2012/12/W2115482793A4DF64.jpg" width="240" height="95"/></a>
  
  
  <p>福建龙祥居物业管理有限公司成立于2003年7月，是经福建省住建厅批准成立从事物业管理服务的二级资质物业服务企业，省、市两级物业管理协会会员单位，县综治协会常务理事单位。</p>
@@ -75,7 +75,7 @@ $(function(){
  
  
  <div class="box_rights">
-<a class="rights_a1"><img src="/UploadFiles/2012/12/W2509323658D57231.jpg" width="240" height="95"/></a>
+<a class="rights_a1"><img src="./UploadFiles/2012/12/W2509323658D57231.jpg" width="240" height="95"/></a>
  
  
  <p>不断强化内部管理，建立完善的综合管理体系，以优质的服务和高度的责任感赢得了广大业主和社会各界的一致好评。</p>
@@ -100,7 +100,7 @@ $(function(){
  
  
  <div class="box_rights">
-<a class="rights_a1"><img src="/UploadFiles/2012/12/W2509323658D57231.jpg" width="240" height="95"/></a>
+<a class="rights_a1"><img src="./UploadFiles/2012/12/W2509323658D57231.jpg" width="240" height="95"/></a>
  
  
  <p>2012年上半年在管项目长溪蓝庭获宁德市物业管理《示范小区》称号，12月份又获福建省物业管理《示范小区》称号。</p>
@@ -122,7 +122,7 @@ $(function(){
  
  
  <div class="box_rights">
-<a class="rights_a1"><img src="/UploadFiles/2012/12/W2509323658D57231.jpg" width="240" height="95"/></a>
+<a class="rights_a1"><img src="./UploadFiles/2012/12/W2509323658D57231.jpg" width="240" height="95"/></a>
  
  
  <p>现有员工100多人，其中有专业技术职称人员38人，所有在岗员工都由经行业培训和积累了丰富经验的管理人员组成。</p>
@@ -143,7 +143,7 @@ $(function(){
  
  
  <div class="box_rights">
-<a class="rights_a1"><img src="/UploadFiles/2012/12/W19185938CFBF8D84.jpg" width="240" height="95"/></a>
+<a class="rights_a1"><img src="./UploadFiles/2012/12/W19185938CFBF8D84.jpg" width="240" height="95"/></a>
  
  
  <p>公司全体员工在为广大业主提供优质、真诚服务的同时，更注意与广大业主密切配合，齐心协力共同营造一个安全、文明、舒适、整洁、温馨的生活和工作环境。</p>
@@ -164,11 +164,11 @@ $(function(){
  
  
  <div class="box_rights">
-<a class="rights_a1"><img src="/UploadFiles/2012/12/W2010224145B4B6A4.jpg" width="240" height="95"/></a>
+<a class="rights_a1"><img src="./UploadFiles/2012/12/W2010224145B4B6A4.jpg" width="240" height="95"/></a>
  
  
  <p>服务热线
- <a href="#/detail.php?cid=8849" class="rights_a2">详细</a></p>
+ <a href="6-yzfw.html#" class="rights_a2">详细</a></p>
 </div>
  </div>
  </div>
@@ -189,7 +189,7 @@ $(function(){
  
  
  <div class="box_rights">
-<a class="rights_a1"><img src="/UploadFiles/2012/12/W191859575D7D08D8.jpg" width="240" height="95"/></a>
+<a class="rights_a1"><img src="./UploadFiles/2012/12/W191859575D7D08D8.jpg" width="240" height="95"/></a>
  
  
  <p>员工是企业最大的财富，是实现可持续发展的最关键因素，员工的质素与专业水平直接决定了企业的高度。</p>
@@ -200,59 +200,13 @@ $(function(){
  </ul>
  
 </div>
-
- 
-
-
-
-   <!-- <div class="weibo"><strong>关注我们</strong><a href="#http://www.flickr.com/photos/zhwy" target="_blank" class="link-tk" title="图库"></a>
-      <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"><a class="bds_qzone"></a> <a class="bds_tsina"></a> <a class="bds_tqq"></a> <a class="bds_renren"></a> <span class="bds_more"></span><a class="shareCount"></a> </div>
-      <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
-      <script type="text/javascript" id="bdshell_js"></script>
-      <script type="text/javascript">
-	document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
-</script>
-    </div>-->
   </div>
 </div>
-<script>
-$(".aclose").click(function (){$(".add_box").hide();});
-//添加收藏
-    function AddFavorite(obj) {
-        var title = document.title;
-        var url = window.location.href;
-        var e = window.event || arguments.callee.caller.arguments[0];
-        var B = {
-            IE : /MSIE/.test(window.navigator.userAgent) && !window.opera
-            , FF : /Firefox/.test(window.navigator.userAgent)
-            , OP : !!window.opera        
-};
-        obj.onmousedown = null;
-        if (B.IE) {
-            obj.attachEvent("onmouseup", function () {
-                try {
-                    window.external.AddFavorite(url, title);
-                    window.event.returnValue = false;
-                } catch (exp) {
-                    alert("加入收藏失败，请使用Ctrl+D进行添加");
-                }
-            });
-        } else {
-            if (B.FF || obj.nodeName.toLowerCase() == "a") {
-                obj.setAttribute("rel", "sidebar"), obj.title = title, obj.href = url;
-            } else if (B.OP) {
-                var a = document.createElement("a");
-                a.rel = "sidebar", a.title = title, a.href = url;
-                obj.parentNode.insertBefore(a, obj);
-                a.appendChild(obj);
-                a = null;
-            }
-        }};
-</script>
+
   <div id="content" class="clearfix">
-    <div style="height: 100%;" id="sidebar">
-       <h3>项目展示</h3>
-    <ul id="menu" class="menu">
+<div style="height: 100%;" id="sidebar">
+   <h3>项目展示</h3>
+<ul id="menu" class="menu">
 <li><a href="3-1-hchj.html#">宏城豪景</a></li>
 <li><a href="3-1-hchj.html#">长溪蓝庭</a></li>
 <li><a href="3-1-hchj.html#">长溪豪庭</a></li>
@@ -261,39 +215,39 @@ $(".aclose").click(function (){$(".add_box").hide();});
 <li><a href="3-1-hchj.html#">世纪锦园</a></li>
 </ul>
 </div>
-    <div id="main">
-      <div class="loaction">
-        <h3>项目展示</h3>
-        <span>您现在的位置：<a href="/index.aspx">首页</a> &gt; <a href="#?NodeID=313">项目展示</a> &gt; 宏城豪景</span>
+<div id="main">
+  <div class="loaction">
+<h3>项目展示</h3>
+<span>您现在的位置：<a href="index.html">首页</a> &gt; <a href="3-xmzs.html#">项目展示</a> &gt; 宏城豪景</span>
 </div>
-      <div class="newscont_page">（此处应当放上宏城豪景的图片和介绍文字，目前暂时没有，以下内容仅为举例说明）
+  <div class="newscont_page">（此处应当放上宏城豪景的图片和介绍文字，目前暂时没有，以下内容仅为举例说明）
 <!-- 详细内容 -->
-        <h1 class="red">深圳-中海华庭</h1>
-        <div class="info_phone">服务电话：----</div>
-        <div class="news_main">
-            <p style="text-align:center"><img src="/UploadFiles/2016/04/W281449271BD92D7B.jpg" height="321" width="651"></p>
+<h1 class="red">深圳-中海华庭</h1>
+<div class="info_phone">服务电话：----</div>
+<div class="news_main">
+<p style="text-align:center"><img src="./UploadFiles/2016/04/W281449271BD92D7B.jpg" height="321" width="651"></p>
 
-          <div class="introduction">
-            <ul>
-                <li class="cur">项目介绍</li>
+  <div class="introduction">
+<ul>
+<li class="cur">项目介绍</li>
 <!--
-                <li>商业配套</li>
-                <li>产品定位</li>
-                <li>交通图</li>
+<li>商业配套</li>
+<li>产品定位</li>
+<li>交通图</li>
 -->
-              </ul>
-            <div class="introd_cont clearfix" style="display:block"> <img src="/UploadFiles/2016/04/W2516062196FFE34A.jpg" height="121" width="162">
-                <p><span style="font-size: x-small">&nbsp;&nbsp;&nbsp; </span><span style="color: #000000"><span style="font-size: small">中海华庭是一个集住宅及商业办公配套于一体的多功能小区，地处深圳市中心区地段，地理位置优越，交通便利，外观造型端庄华丽、典雅壮观，小区内小桥流水、亭廊雕塑，丽水成天的风景给予了回归家庭、回归私域的生活体验，优雅、宁静的空间品质和典雅、庄重的建筑形式，是深圳市九十年代旗舰物业之一。小区占地面积32568平方米，总建筑面积115835平方米。首层全部架空设计，扩大绿化空间近30000平方米，首创室外观光扶手电梯及小高层观景电梯，实用率高达87%，全面体现“以人为本”的设计理念。<br>
+  </ul>
+<div class="introd_cont clearfix" style="display:block"> <img src="./UploadFiles/2016/04/W2516062196FFE34A.jpg" height="121" width="162">
+<p><span style="font-size: x-small">&nbsp;&nbsp;&nbsp; </span><span style="color: #000000"><span style="font-size: small">中海华庭是一个集住宅及商业办公配套于一体的多功能小区，地处深圳市中心区地段，地理位置优越，交通便利，外观造型端庄华丽、典雅壮观，小区内小桥流水、亭廊雕塑，丽水成天的风景给予了回归家庭、回归私域的生活体验，优雅、宁静的空间品质和典雅、庄重的建筑形式，是深圳市九十年代旗舰物业之一。小区占地面积32568平方米，总建筑面积115835平方米。首层全部架空设计，扩大绿化空间近30000平方米，首创室外观光扶手电梯及小高层观景电梯，实用率高达87%，全面体现“以人为本”的设计理念。<br>
 &nbsp;&nbsp;&nbsp; 中海华庭先后获得深圳市“优秀住宅示范”小区、深圳市“园林式、花园式”小区、深圳市福田区“优秀住宅示范”小区、深圳市“安全文明标兵”小区、广东省“优秀住宅示范”小区、全国“优秀住宅示范”小区、“全国满意住宅小区”、治安防范“先进单位”等荣誉称号。<br>
 </span></span></p>
-              </div>
-          </div>
-          </div>
-        
-        <!-- 详细内容 END --> 
-        
-      </div>
-    </div>
+  </div>
+  </div>
+  </div>
+
+<!-- 详细内容 END --> 
+
+  </div>
+</div>
   </div>
   <div id="footer">
 <div class="link">
@@ -351,7 +305,7 @@ $(".aclose").click(function (){$(".add_box").hide();});
  </div></div>
 <script type="text/javascript">
 $(function(){
-	 setHeight('#sidebar','#main');
+ setHeight('#sidebar','#main');
 });
 </script>
 </body>

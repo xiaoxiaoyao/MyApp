@@ -59,7 +59,7 @@ function AddFavorite(sURL, sTitle)
 function SetHome(obj){
 	try{
 		obj.style.behavior='url(#default#homepage)';
-		obj.setHomePage('http://demo.chinasky.net:805/index.aspx');
+		obj.setHomePage('http://#setHomePage');
 	}catch(e){
 		if(window.netscape){
 			try{
@@ -68,7 +68,7 @@ function SetHome(obj){
 				alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
 			};
 		}else{
-		alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将'http://demo.chinasky.net:805/index.aspx'设置为首页。");
+		alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将'http://#setHomePage'设置为首页。");
 		};
 	};
 };
@@ -77,7 +77,7 @@ function SetHome(obj){
 //设为首页和加入收藏
 $(function(){
 	$(".grid a.sc").click(function(){
-		AddFavorite('http://demo.chinasky.net:805/index.aspx', '中海物业首页');
+		AddFavorite('http://#setHomePage', '福建龙祥居物业管理有限公司首页');
 	});
 	$(".nav ul.wrp_ul li").hover(function(){
 		$(this).find("ul").show();

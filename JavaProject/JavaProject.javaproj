@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Tvl.Java.1.2.0\build\Tvl.Java.props" Condition="Exists('..\packages\Tvl.Java.1.2.0\build\Tvl.Java.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>92bf5230-251e-4d0b-8e1c-e81401486445</ProjectGuid>
+    <OutputType>jar</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JavaProject</RootNamespace>
+    <AssemblyName>JavaProject</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Name>JavaProject</Name>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <SourceRelease>Default</SourceRelease>
+    <TargetRelease>Default</TargetRelease>
+    <TargetVM>Hotspot</TargetVM>
+    <SourceEncoding />
+    <DebugSymbols>All</DebugSymbols>
+    <SpecificDebugSymbols />
+    <ShowWarnings>True</ShowWarnings>
+    <ShowAllWarnings>True</ShowAllWarnings>
+    <TreatWarningsAsErrors>None</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildArgs />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <SourceRelease>Default</SourceRelease>
+    <TargetRelease>Default</TargetRelease>
+    <TargetVM>Hotspot</TargetVM>
+    <SourceEncoding />
+    <DebugSymbols>Default</DebugSymbols>
+    <SpecificDebugSymbols />
+    <ShowWarnings>True</ShowWarnings>
+    <ShowAllWarnings>True</ShowAllWarnings>
+    <TreatWarningsAsErrors>None</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildArgs />
+  </PropertyGroup>
+  <ItemGroup>
+    <SourceFolder Include="src\main\java\" />
+    <None Include="**\*.*" Exclude="bin\**\*.*;obj\**\*.*;out\**\*.*;*.user;*.javaproj;*.vspscc;*.vsscc;*.vssscc" />
+  </ItemGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Tvl.Java.1.2.0\build\Tvl.Java.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Tvl.Java.1.2.0\build\Tvl.Java.props'))" />
+    <Error Condition="!Exists('..\packages\Tvl.Java.1.2.0\build\Tvl.Java.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Tvl.Java.1.2.0\build\Tvl.Java.targets'))" />
+  </Target>
+  <Import Project="..\packages\Tvl.Java.1.2.0\build\Tvl.Java.targets" Condition="Exists('..\packages\Tvl.Java.1.2.0\build\Tvl.Java.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

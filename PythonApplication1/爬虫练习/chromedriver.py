@@ -7,8 +7,9 @@
 __author__ = 'lai yao (lake.lai)'
 
 import os,sys,time
-fileObj = open('C:\\Users\\yaopr\\Source\\Repos\\PythonApplication1\\OUTPUT\\output.txt','w') 
-fileObj2 = open('C:\\Users\\yaopr\\Source\\Repos\\PythonApplication1\\OUTPUT\\test.txt','w') 
+path = os.path.abspath(os.path.dirname(sys.argv[0]))
+fileObj = open(path + '\\output.txt','w') 
+fileObj2 = open(path + '\\test.txt','w') 
 from selenium import webdriver
 import selenium
 #from selenium.webdriver.common.keys import Keys
@@ -105,7 +106,6 @@ items=['SX', 'NMG', 'HB', 'SAX', 'HLJ', 'JL', 'LN', 'BJ', 'TJ', 'QH', 'GS', 'NX'
 companies=['%E5%96%84%E6%9E%97 %E4%B8%8A%E6%B5%B7'] #'%E5%96%84%E6%9E%97%EF%BC%88%E4%B8%8A%E6%B5%B7','
 url='http://qichacha.com/search?key={0}&province={1}&p={2}&index='
 output=[]
-path = os.path.abspath(os.path.dirname(sys.argv[0]))
 chromedriver =path + '\\chromedriver.exe'
 logging.info([chromedriver])
 os.environ["webdriver.chrome.driver"] = chromedriver

@@ -5,6 +5,29 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApp", "PythonApplication1\PythonApp.pyproj", "{BA719DEB-5196-434A-88FA-F1CB6CEC2C0D}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "COPM", "HTML\前端\COPM\", "{2C66BDBB-D124-4391-9E67-72A4ADD6C7D6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_65513"
+		Debug.AspNetCompiler.PhysicalPath = "HTML\前端\COPM\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65513\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_65513"
+		Release.AspNetCompiler.PhysicalPath = "HTML\前端\COPM\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65513\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "65513"
+		SlnRelativePath = "HTML\前端\COPM\"
+	EndProjectSection
+EndProject
+Project("{BE0A4C86-FC82-4F70-8ED6-D24C8B13E7BF}") = "JavaProject", "JavaProject\JavaProject.javaproj", "{92BF5230-251E-4D0B-8E1C-E81401486445}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +39,14 @@ Global
 		{BA719DEB-5196-434A-88FA-F1CB6CEC2C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA719DEB-5196-434A-88FA-F1CB6CEC2C0D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{BA719DEB-5196-434A-88FA-F1CB6CEC2C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C66BDBB-D124-4391-9E67-72A4ADD6C7D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C66BDBB-D124-4391-9E67-72A4ADD6C7D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C66BDBB-D124-4391-9E67-72A4ADD6C7D6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C66BDBB-D124-4391-9E67-72A4ADD6C7D6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{92BF5230-251E-4D0B-8E1C-E81401486445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92BF5230-251E-4D0B-8E1C-E81401486445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92BF5230-251E-4D0B-8E1C-E81401486445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92BF5230-251E-4D0B-8E1C-E81401486445}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

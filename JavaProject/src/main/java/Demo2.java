@@ -1,7 +1,7 @@
 package main.java;
 
 public class Demo2 {
-
+//输出九九乘法表，经典FOR循环
 	public static void main(String[] args) {
 		int i,j;
 		for(i=1;i<=9;i++){

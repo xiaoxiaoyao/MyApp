@@ -59,7 +59,7 @@ def DataPost(table='actor',database='sakila'):
     else:
         value=[rows,values]
         print('value!!!',value)
-        conn.Insert(appconn,table,value)
+        conn.Insert(appconn,database,table,value)
         return str(a)
 
 ###博客功能

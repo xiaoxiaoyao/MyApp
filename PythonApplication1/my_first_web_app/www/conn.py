@@ -25,17 +25,27 @@ def Select_table(conn,name='*',table='actor'):
     cur.execute(sql)
     return cur
 
-def Insert(conn,table,values=[[],[]]):
+def Insert(conn,database,table,values=[[],[]]):
     cur = conn.cursor()
-    sql="INSERT INTO " + table + str(tuple(values[0])) + " VALUES "+ str(tuple(values[1]))
-    print(sql)
+    values1_table_name=[]
+    values2_VALUES=[]
+    i=0
+    for item in values[1]:
+        if(item != ''):
+            values1_table_name.append(values[0][i])
+            values2_VALUES.append(values[1][i])
+        i=i+1
+    a=","
+    values1_table_name=a.join(values1_table_name)
+    sql="INSERT INTO " + database+"."+table +" (" + str(values1_table_name) + ") VALUES "+ str(tuple(values2_VALUES)) +";"
+    print("SQL:",sql)
     try:
         cur.execute(sql)
     except cur.connection.ProgrammingError as err:
         print(err)
         return []
     finally:
-        print(cur.description)
+        print("finally",cur.description)
     return 
 
 def description(conn,table='actor'):

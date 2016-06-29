@@ -31,7 +31,7 @@ def Insert(conn,database,table,values=[[],[]]):
     values2_VALUES=[]
     i=0
     for item in values[1]:
-        if(item != ''):
+        if(item != ''):#去掉空内容
             values1_table_name.append(values[0][i])
             values2_VALUES.append(values[1][i])
         i=i+1

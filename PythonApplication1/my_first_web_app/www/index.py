@@ -1,16 +1,22 @@
 ﻿# -*- coding: utf-8 -*-
 import io
-from flask import Flask, render_template, g , request, url_for, session, redirect, abort
+from flask import Flask, render_template, g , request, url_for, session, redirect, abort, logging
 import config,conn
-global app
 ###初始化程序
+global app
 app = Flask(__name__)
+
 ###初始化数据链接
+global appconn
 appconn=conn.Conn(app)
+
 
 ###测试模块
 @app.route('/test', methods=("GET", "POST"))
 def Test():
+    app.logger.info("next is app and appconn")
+    app.logger.info(app)
+    app.logger.info(appconn)
     cur=conn.Select_table(appconn,'*')
     return render_template('base.html',info=config.info,language=cur.fetchall())
 

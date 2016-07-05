@@ -217,17 +217,60 @@ top: 0px" id="news" scrollamount="1" scrolldelay="10" behavior="loop" direction=
  </div>
 <div class="dt_nbox clearfix">
 <span class="dt_nbl"></span><span class="dt_nbr"></span>
-<div class="dt_nflash"><img src="./UploadFiles/default/201206040350360936.JPG" width="230" height="300" alt=""/></div>
+<div class="picbutton"><a href="javascript:;" class="currentbu">1</a><a href="javascript:;">2</a><a href="javascript:;">3</a><a href="javascript:;">4</a><a href="javascript:;">5</a></div>
+<div class="dt_nflash">
+<!--头图轮播，请把所有需要轮播的图放在这里-->
+	<img class="dt_nflash" src="UploadFiles/default/0.JPG" alt="" style="display:inline"/>
+    <img class="dt_nflash" src="UploadFiles/default/1.JPG" alt=""/>
+    <img class="dt_nflash" src="UploadFiles/default/demo.JPG" alt=""/>
+    <img class="dt_nflash" src="UploadFiles/default/erlunzhipingyihui_2.JPG" alt=""/>
+    <img class="dt_nflash" src="UploadFiles/default/dajing_4.JPG" alt=""/>
+
+
+<script type="text/javascript">
+// JavaScript Document
+$(function (){
+    //<!--头图轮播jQ-->
+    var len=$("img.dt_nflash").length;
+    var index=0;
+    function showbanner(num){
+        var obj=$("img.dt_nflash");
+        obj.eq(num).show()
+        obj.fadeOut(300);
+        obj.eq(num).hide()
+        obj.eq(num).fadeIn(300);
+        $(".picbutton a").removeClass("currentbu");
+        $(".picbutton a").eq(num).addClass("currentbu");
+    };
+    function switchauto(){
+        if(index==len-1){index=0;}else{index+=1;}
+        showbanner(index);
+    }
+    if(len>0){
+        var st=setInterval(switchauto,5000);
+    }
+    $(".picbutton a").hover(function(){
+        clearInterval(st);
+        showbanner($(this).index());
+    },function(){
+        index=$(this).index();
+        st=setInterval(switchauto,5000);    
+    });    
+});
+</script>
+</div>
+
 <div class="dt_nlist" id="news_con">
 <h3>
+
 <!--公示公告头条新闻-->
- <a href="./li/pgs_demo_001.html?pgs#?zhijianjianxun-1351.aspx" title="半月里村的故事：畲族传统婚礼" target="_blank">半月里村的故事：畲族传统婚礼</a>
+ <a href="./li/pgs_demo_001.html?pgs#?zhijianjianxun-1351.aspx" onMouseMove="show(1)" title="半月里村的故事：畲族传统婚礼" target="_blank">半月里村的故事：畲族传统婚礼</a>
  </h3>
 <ul style="display: block;">
 <!--公示公告-->
-<li><span>[2016/6/12]</span><a href="./li/pgs_demo_001.html?pgs#?lishiguji-1465.aspx" title="虎镇塔与中秋吃柚子的的来历" target="_blank">虎镇塔与中秋吃柚子的的来历</a></li>
-<li><span>[2016/6/8]</span><a href="./li/pgs_demo_002.html?pgs#?fudingxinwen-1463.aspx" title="考古学家、书法家游寿" target="_blank">考古学家、书法家游寿</a></li>
-<li><span>[2016/6/7]</span><a href="./li/pgs_demo_003.html?pgs#?fudingxinwen-1462.aspx" title="滨海名胜——松山" target="_blank">滨海名胜——松山</a></li>
+<li><span>[2016/6/12]</span><a href="./li/pgs_demo_001.html?pgs#?lishiguji-1465.aspx" onMouseMove="show(2)" title="虎镇塔与中秋吃柚子的的来历" target="_blank">虎镇塔与中秋吃柚子的的来历</a></li>
+<li><span>[2016/6/8]</span><a href="./li/pgs_demo_002.html?pgs#?fudingxinwen-1463.aspx" onMouseMove="show(3)" title="考古学家、书法家游寿" target="_blank">考古学家、书法家游寿</a></li>
+<li><span>[2016/6/7]</span><a href="./li/pgs_demo_003.html?pgs#?fudingxinwen-1462.aspx" onMouseMove="show(4)" title="滨海名胜——松山" target="_blank">滨海名胜——松山</a></li>
 <li><span>[2016/6/6]</span><a href="./li/pgs_demo_004.html?pgs#?fudingxinwen-1459.aspx" title="牙城方言拾趣" target="_blank">牙城方言拾趣</a></li>
 <li><span>[2016/6/2]</span><a href="./li/pgs_demo_.html?pgs#?renwushulin-1461.aspx" title="城隍文化在霞浦" target="_blank">城隍文化在霞浦</a></li>
 <li><span>[2016/6/1]</span><a href="./li/pgs_demo_.html?pgs#?fudingxinwen-1460.aspx" title="戚继光抗倭形成的霞浦相关民俗" target="_blank">戚继光抗倭形成的霞浦相关民俗</a></li>

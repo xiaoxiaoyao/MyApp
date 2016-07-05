@@ -1,5 +1,7 @@
 package main.java;
-
+/**
+ * static方法是一个静态方法，在内存中的位置是在静态存储区。它可以用通过类名直接访问。而且不管声明了多少个类static方法只有一个，也就是说所有实例共用一个方法，而且static方法只能调用static方法。
+ */
 public class Test {
 	public static int i=1;
 	//parent  

@@ -1,6 +1,8 @@
 package main.java;
 import java.util.*;
-
+/**
+ * 循环基础知识
+ */
 public class Demo2 {
 	private static Scanner sc;
 	//输出九九乘法表，经典FOR循环

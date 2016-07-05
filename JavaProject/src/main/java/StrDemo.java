@@ -18,8 +18,11 @@ public class StrDemo {
 		main.java.StrDemo.stringVsStringBuffer(s, sb1);		
 		System.out.println("//注意StringBuffer被修改后可以返回 StringBuffer: " + sb1.toString());
 	}
+	/**
+	 * 为什么用append插入呢？因为效率高啊。以下用String和StringBuffer分别拼装SQL语句1000次
+	 * @param s,sb1
+	 */
 	public static void stringVsStringBuffer(String s,StringBuffer sb1){
-		//为什么用append插入呢？因为效率高啊。以下用String和StringBuffer分别拼装SQL语句1000次
 		final int times = 100000;
         // 通过String对象
         long timeStart1 = System.currentTimeMillis();

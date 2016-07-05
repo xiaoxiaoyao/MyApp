@@ -1,5 +1,7 @@
 package main.java;
-
+/**
+ * 数据类型基础知识
+ */
 public class Demo1 {
 
     public static void main(String[] args){

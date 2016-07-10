@@ -1,17 +1,9 @@
 $(function(){
-
-
 $(".ind-menu>ul>li").hover(function() {
-
     $(this).addClass("cur").find("div").show();
-
 }, function() {
     $(this).removeClass("cur").find("div").hide();
 });
-
-
-
-
     $(".grid .site-a").click(function() {
 	$(".grid .add_box").show();
 });
@@ -25,15 +17,12 @@ $(".grid .add_box p a").each(function(i) {
 	$(".add_list ul").eq(i).show();
 	});
 });;
-
-
  $(".grid span").hover(function(){
 	$(this).find("ol").show("slow");
  },function(){
 	$(this).find("ol").hide();
  });
 })
-
 //加入收藏
 function AddFavorite(sURL, sTitle)
 {
@@ -53,8 +42,6 @@ function AddFavorite(sURL, sTitle)
      }
  }
 }
-
-
 //设为首页
 function SetHome(obj){
 	try{
@@ -72,8 +59,6 @@ function SetHome(obj){
 		};
 	};
 };
-
-
 //设为首页和加入收藏
 $(function(){
 	$(".grid a.sc").click(function(){
@@ -85,28 +70,19 @@ $(function(){
 		$(this).find("ul").hide();
 	})
 })
-
-
-
 $(function(){
 $(".top>ul>li").hover(function(){
-
 	$(this).addClass("cur").find("div").slideDown();
-
 	},function(){
 		$(this).removeClass("cur").find("div").hide();
 	});
 })
 $(function(){
 $("#sidebar .menu>li>a").click(function() {
-
 			$(this).next().toggle();
 			  $(this).parent("li").siblings("li").find("ul").hide();
 			});
 		   })
-
-
-
 $(function(){
 		   $(".text").focus(function(){
 										var txt_value=$(this).val();
@@ -155,7 +131,6 @@ function FN_select3(){
 		});
 	})
 }
-
 $(function(){
 	$("#s_nav li:has(ul)").hover(function(){
 		$(this).addClass('current').children('a').addClass('current').end().children('ul').stop(true,true).slideDown(100);
@@ -164,7 +139,6 @@ $(function(){
 			$(this).removeClass('current').children('a').removeClass('current').end().children('ul').stop(true,true).slideUp(100);
 			});
 	});
-
 var ImgLibE=function(btnA,btnB,targetImgs,targetTI,step,speed,isHorV){
 	this.btnA=btnA;
 	this.btnB=btnB;
@@ -176,7 +150,6 @@ var ImgLibE=function(btnA,btnB,targetImgs,targetTI,step,speed,isHorV){
 	this.initialization();
 	this.attachEvent();
 }
-
 ImgLibE.prototype={
 	attachIndex:function(target){
 		$(target).find("li").each(function(kis){
@@ -203,7 +176,6 @@ ImgLibE.prototype={
 		_t.elementsClick();
 	},
 	autoPlay:function(direction){
-
 	},
 	scrollLeft:function(){
 		var _t=this;
@@ -231,7 +203,6 @@ ImgLibE.prototype={
 	},
 	btnAEvent:function(){
 		var _t=this;
-
 		$(_t.btnA).click(function(){
 			if(_t.MAXVALUE<=0)
 				return;
@@ -244,7 +215,6 @@ ImgLibE.prototype={
 	},
 	btnBEvent:function(){
 		var _t=this;
-
 		$(_t.btnB).click(function(){
 			if(_t.isHorV){
 				_t.scrollRight();

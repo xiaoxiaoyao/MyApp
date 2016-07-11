@@ -235,3 +235,13 @@ ImgLibE.prototype={
 		});
 	}
 };
+//Javascript实现图片的预加载的完整实现laiyao
+function preloadimages(arr){
+    var newimages=[]
+    var arr=(typeof arr!="object")? [arr] : arr  //确保参数总是数组
+    for (var i=0; i<arr.length; i++){
+        newimages[i]=new Image()
+        newimages[i].src=arr[i]
+    }
+}
+preloadimages(["./templates/temp/style/img/box_mid.png","./templates/temp/style/img/box_mid8.png","./templates/temp/style/img/box_mid2.png","./templates/temp/style/img/box_l_one.png","./templates/temp/style/img/box_r.png","./templates/temp/style/img/box_l.png","./templates/temp/style/img/head_li.jpg"]);

@@ -1,5 +1,7 @@
 package main.java;
-
+/**
+ * StringBuffer¶ÔÏó
+ */
 public class StrDemo {
 
 	public static void main(String[] args) {

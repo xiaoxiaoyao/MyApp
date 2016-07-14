@@ -28,9 +28,12 @@ public class CurrentThreadDemo {
  * 下面的例子是创建一个新的线程并启动它运行：
  * // Create a second thread.
  */
-	class ThreadDemo {
-	    public void main(String args[]) {
-	        new NewThread(); // create a new thread
+class ThreadDemo {
+	    private NewThread thread;
+
+		public void main(String args[]) {
+	        thread = new NewThread();
+	        thread.t.setPriority(Thread.MIN_PRIORITY);//设置优先级
 	        try {
 	            for(int i = 5; i > 0; i--) {
 	                System.out.println("Main Thread: " + i);
@@ -41,7 +44,7 @@ public class CurrentThreadDemo {
 	        }
 	        System.out.println("Main thread exiting.");
 	    }
-	}
+}
 
 class NewThread implements Runnable {
     Thread t;

@@ -6,7 +6,7 @@
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>my_first_web_app\www\index.py</StartupFile>
+    <StartupFile>爬虫练习\bugbank.py</StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -36,6 +36,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="my_first_web_app\www\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="爬虫练习\bugbank.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="爬虫练习\module1.py">

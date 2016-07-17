@@ -19,19 +19,29 @@ def post(code):
 	data={'name':'xiaoxiaoyao','email':'yao.power@qq.com','password':code + code,'code':code}
 	res1 = requests.post(url, data=data, headers=headers)
 	return res1
-if __name__ == '__main__':
+def loop():
+        code='%016d' % random.randint(0,10000000000000000)
+        j=post(code)
+        i=j.status_code
+        print(time.asctime() ,i)
+        time.sleep(10)
+        if (i == 406) or (i == 409) or (i == 429) or (i == 504):
+                print('post(code) == 406失效邀请码/409/429/504',code)
+                return 0
+        else:
+                print(time.asctime() , 'NOT post(code) == 406/409/429 AND code=',j.content,code)
+                return 1
+
+def run():
         while True:
-                code='%016d' % random.randint(0,10000000000000000)
-                j=post(code)
-                i=j.status_code
-                print(i)
-                time.sleep(10)
-                if (i == 406) or (i == 409) or (i == 429) or (i == 504):
-                        print('post(code) == 406失效邀请码/409/429/504',code)
-                        pass
-                else:
-                        print('NOT post(code) == 406/409/429 AND code=',j.content,code)
-                        break
-                print('\n')
+                try:
+                        i=loop()
+                        print('\n')
+                finally:
+                        if i==1:
+                                break
+
+if __name__ == '__main__':
+        run()
                 
 	

@@ -41,6 +41,9 @@
     <Compile Include="爬虫练习\bugbank.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="爬虫练习\douban.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="爬虫练习\module1.py">
       <SubType>Code</SubType>
     </Compile>

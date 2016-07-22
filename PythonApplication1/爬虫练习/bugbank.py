@@ -1,7 +1,8 @@
 import requests,random,time
 import leancloud
-appid=input("https://console.qcloud.com/tab:{{appid}}")
-appkey=input("{{appkey}}")
+appid="cUU6wIhChQVnpXDizDcU5QP6-9Nh9j0Va"
+appkey="1EPMbPARtaHFPvvcQTWyBP2G"#//AppKey 是客户端中使用的 Key，理论上客户端中所有请求都不应被信任，默认应认为 AppKey 是泄露的
+#//防御恶意请求，不应通过加密 App Key，而应通过设置 ACL（访问权限控制列表）来实现，详细请参考 「数据与安全文档」
 leancloud.init(appid,appkey)
 
 from leancloud import Object,LeanCloudError,Query
@@ -39,8 +40,8 @@ def loop():
         time.sleep(10)
         try:
             test_object.save()
-        except LeanCloudError:
-            print(LeanCloudError)
+        except LeanCloudError as err:
+            print(err)
         if (i == 406) or (i == 409) or (i == 429) or (i == 504):
                 output='post(code) == 406失效邀请码/409/429/504'+code
                 print(output)

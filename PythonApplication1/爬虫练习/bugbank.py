@@ -25,6 +25,8 @@ data={'name':'xiaoxiaoyao','email':'yao.power@qq.com','password':code,'code':cod
 #//使用云存储你们说吼不吼啊
 TestObject= Object.extend('TestObject')
 test_object = TestObject()
+test_object.destroy()
+test_object.save()
 test_object.set('headers', headers)
 test_object.set('url', url)
 
@@ -39,9 +41,9 @@ def loop():
         print(time.asctime() ,i)
         time.sleep(10)
         try:
-            test_object.save()
+                test_object.save()
         except LeanCloudError as err:
-            print(err)
+                print(err)
         if (i == 406) or (i == 409) or (i == 429) or (i == 504):
                 output='post(code) == 406失效邀请码/409/429/504'+code
                 print(output)
@@ -58,11 +60,16 @@ def run():
                 try:
                         i=loop()
                         print('\n')
+                except KeyboardInterrupt as err:
+                        print(err)
+                        break
                 finally:
                         if i==1:
                                 break
-
+                print(test_object.fetch())
 if __name__ == '__main__':
         run()
+        test_object.destroy()
+        test_object.save()
                 
 	

@@ -50,9 +50,13 @@
     <Compile Include="爬虫练习\chromedriver.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="爬虫练习\OpenChrome.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="爬虫练习\update_shanlin.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="自己的小练习\All_In_One.BIN" />
     <Compile Include="自己的小练习\class1.py" />
     <Compile Include="自己的小练习\asynciotest.py" />
     <Compile Include="自己的小练习\for.py">
@@ -89,6 +93,8 @@
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chromedriver.log" />
+    <Content Include="debug.log" />
     <Content Include="my_first_web_app\README.md" />
     <Content Include="my_first_web_app\RP\README.md" />
     <Content Include="my_first_web_app\RP\templates.png" />
@@ -121,7 +127,9 @@
     <Content Include="README.md" />
     <Content Include="爬虫练习\chromedriver.exe" />
     <Content Include="爬虫练习\chromedriver.log" />
+    <Content Include="爬虫练习\output.txt" />
     <Content Include="爬虫练习\README.md" />
+    <Content Include="爬虫练习\test.txt" />
     <Content Include="自己的小练习\README.md" />
   </ItemGroup>
   <ItemGroup>

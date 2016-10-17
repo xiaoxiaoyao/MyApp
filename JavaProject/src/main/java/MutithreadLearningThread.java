@@ -5,7 +5,7 @@ package main.java;
  *@author 小尧
  *@time 2016-10-17
  */
-public class MutithreadLearning1 extends Thread{
+public class MutithreadLearningThread{
 	public static void main(String args[]){
 		MutiThreadsClass Thread1 = new MutiThreadsClass(),Thread2 = new MutiThreadsClass(),Thread3 = new MutiThreadsClass();
 		Thread1.MutiThreads('a');
@@ -28,7 +28,7 @@ class MutiThreadsClass extends Thread{
 			return 0;
 		}
 		public void run(){
-			System.out.println(name + "运行  :  " + n);
+			System.out.println(name + "(Thread)运行  :  " + n);
 			n++;
 			System.out.println(name + "运行  :  " + n);
 			return;

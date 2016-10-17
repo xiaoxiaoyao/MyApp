@@ -13,8 +13,6 @@ for item in counter:
         item=counter[8]
     print(item)
 
-#修改循环对象的值是C的思维方式，最好不要用在写python代码上。
-#应当使用while
 
 print('''
 you should use while

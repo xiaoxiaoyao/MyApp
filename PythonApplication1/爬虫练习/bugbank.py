@@ -71,5 +71,3 @@ if __name__ == '__main__':
         run()
         test_object.destroy()
         test_object.save()
-                
-	

@@ -31,4 +31,5 @@ def start():
 	driver = webdriver.Chrome(chromedriver,chrome_options=option)
 	driver.get('about:version')
 
-start()
+if __name__  ==  '__main__' :
+	start()

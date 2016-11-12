@@ -31,8 +31,8 @@ class MutiThreadsClassA implements Runnable{
 			try {
 				Thread.sleep((int) Math.random() * 1000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
+				break;
 			} 
 			n++;
 		}while(n<10);

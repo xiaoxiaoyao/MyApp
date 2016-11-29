@@ -5,17 +5,30 @@
 开启Chrome时直接复制粘贴这段代码即可
 '''
 __author__ = 'lai yao (lake.lai)'
+URL='https://chromedriver.storage.googleapis.com/index.html?'
 
 def start():
-	__author__ = 'lai yao (lake.lai)'
-
 	##/初始化路径
 	import os,sys,time
-	path = os.path.abspath(os.path.dirname(sys.argv[0]))
-	#path = 'F:\\Documents\\Visual Studio 2015\\Projects\\PythonApplication1\\PythonApplication1\\爬虫练习'
-	fileObj = open(path + '\\output.txt','w')
-	fileObj2 = open(path + '\\test.txt','w')
-	chromedriver =path + '\\chromedriver.exe'
+	try:
+		path = os.path.abspath(os.path.dirname(sys.argv[0]))
+		fileObj = open(path + '\\output.txt','w') 
+		fileObj2 = open(path + '\\test.txt','w') 
+	except FileNotFoundError as err:
+		path = 'F:\\Documents\\Visual Studio 2015\\Projects\\PythonApplication1\\PythonApplication1\\爬虫练习'
+		fileObj=[]
+		fileObj2=[]
+		pass
+	except BaseException as err:
+		path = 'F:\\Documents\\Visual Studio 2015\\Projects\\PythonApplication1\\PythonApplication1\\爬虫练习'
+		fileObj=[]
+		fileObj2=[]
+		pass
+	finally:
+		fileObj = open(path + '\\output.txt','w') 
+		fileObj2 = open(path + '\\test.txt','w') 
+		print(path)
+		chromedriver =path + '\\chromedriver.exe'
 	
 	##引入selenium，设置Chrome
 	from selenium import webdriver
@@ -30,6 +43,7 @@ def start():
 	##启动浏览器
 	driver = webdriver.Chrome(chromedriver,chrome_options=option)
 	driver.get('about:version')
+	return driver
 
 if __name__  ==  '__main__' :
-	start()
+	Driver=start()

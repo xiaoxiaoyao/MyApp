@@ -35,39 +35,39 @@ def post(code):
 	res1 = requests.post(url, data=data, headers=headers)
 	return res1
 def loop():
-        code='%016d' % random.randint(0,10000000000000000)
-        j=post(code)
-        i=j.status_code
-        print(time.asctime() ,i)
-        time.sleep(10)
-        try:
-                test_object.save()
-        except LeanCloudError as err:
-                print(err)
-        if (i == 406) or (i == 409) or (i == 429) or (i == 504):
-                output='post(code) == 406失效邀请码/409/429/504'+code
-                print(output)
-                test_object.set(code, output)
-                return 0
-        else:
-                output=time.asctime() + 'NOT post(code) == 406/409/429 AND code='+j.content,code
-                print(output)
-                test_object.set(code, output)
-                return 1
+		code='%016d' % random.randint(0,10000000000000000)
+		j=post(code)
+		i=j.status_code
+		print(time.asctime() ,i)
+		time.sleep(10)
+		try:
+				test_object.save()
+		except LeanCloudError as err:
+				print(err)
+		if (i == 406) or (i == 409) or (i == 429) or (i == 504):
+				output='post(code) == 406失效邀请码/409/429/504'+code
+				print(output)
+				test_object.set(code, output)
+				return 0
+		else:
+				output=time.asctime() + 'NOT post(code) == 406/409/429 AND code='+j.content,code
+				print(output)
+				test_object.set(code, output)
+				return 1
 
 def run():
-        while True:
-                try:
-                        i=loop()
-                        print('\n')
-                except KeyboardInterrupt as err:
-                        print(err)
-                        break
-                finally:
-                        if i==1:
-                                break
-                print(test_object.fetch())
+		while True:
+				try:
+						i=loop()
+						print('\n')
+				except KeyboardInterrupt as err:
+						print(err)
+						break
+				finally:
+						if i==1:
+								break
+				print(test_object.fetch())
 if __name__ == '__main__':
-        run()
-        test_object.destroy()
-        test_object.save()
+		run()
+		test_object.destroy()
+		test_object.save()

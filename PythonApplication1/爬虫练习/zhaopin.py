@@ -10,25 +10,8 @@ if __name__=='__main__':
 	#KeyWordUrl='http://sou.zhaopin.com/jobs/searchresult.ashx?kw=%E7%A8%8E&sm=0&bj=2060000&isfilter=1&p=1&sf=8001&st=10000'
 	##/初始化路径
 	import os,sys,time
-	try:
-		path = os.path.abspath(os.path.dirname(sys.argv[0]))
-		fileObj = open(path + '\\output.txt','w') 
-		fileObj2 = open(path + '\\test.txt','w') 
-	except FileNotFoundError as err:
-		path = 'F:\\Documents\\Visual Studio 2015\\Projects\\PythonApplication1\\PythonApplication1\\爬虫练习'
-		fileObj=[]
-		fileObj2=[]
-		pass
-	except BaseException as err:
-		path = 'F:\\Documents\\Visual Studio 2015\\Projects\\PythonApplication1\\PythonApplication1\\爬虫练习'
-		fileObj=[]
-		fileObj2=[]
-		pass
-	finally:
-		fileObj = open(path + '\\output.txt','w') 
-		fileObj2 = open(path + '\\test.txt','w') 
-		print(path)
-		chromedriver =path + '\\chromedriver.exe'
+	chromedriver = 'F:\\Documents\\Visual Studio 2015\\Projects\\PythonApplication1\\PythonApplication1\\爬虫练习\\chromedriver.exe'
+	print(chromedriver)
 	
 	##引入selenium，设置Chrome
 	from selenium import webdriver
@@ -44,10 +27,9 @@ if __name__=='__main__':
 	##启动浏览器
 	#driver = webdriver.Chrome(chromedriver,chrome_options=option)
 	driver = webdriver.Chrome(chromedriver)
-	driver.get('http://www.zhaopin.com/?about:version')
+	driver.get('http://www.zhaopin.com/?about:version')#URL=https://passport.zhaopin.com/account/login
 	time.sleep(1)
-	n=driver.find_element_by_xpath('//*[@id="loginname"]')
-	n.send_keys("13681776437")
+	driver.find_element_by_xpath('//*[@id="loginname"]').send_keys("13681776437")
 	print('#给你60秒输入用户名密码你懂得')#给你输入用户名密码你懂得
 	for n in range(60):
 		time.sleep(1)
@@ -55,16 +37,18 @@ if __name__=='__main__':
 	driver.get(KeyWordUrl)#搜索职位关键词
 	driver.switch_to_window(driver.window_handles[len(driver.window_handles)-1])#切换到最后一个标签页
 	for n in range(25):
-		print(n,'for n in range(25):')
+		print(n,'for n in range(25):点击第',n,'项岗位')
 		time.sleep(timeout)
 		try:
 			driver.find_element_by_xpath('//*[@id="newlist_list_content_table"]/table['+ str(n+2) + ']/tbody/tr[1]/td[1]/div/a').click()
 			time.sleep(timeout)
+			print('已投递',driver.find_element_by_xpath('//*[@id="newlist_list_content_table"]/table['+ str(n+2) + ']/tbody/tr[1]').text)
 			driver.switch_to_window(driver.window_handles[len(driver.window_handles)-1])#切换到最后一个标签页
 			driver.find_element_by_xpath('//*[@id="applyVacButton1"]').click()
 			time.sleep(timeout)
 			driver.switch_to_window(driver.window_handles[len(driver.window_handles)-1])#切换到最后一个标签页
 			driver.find_element_by_xpath('//*[@id="list_d"]/div[1]/div[1]/button[1]').click()
+			print('相关岗位自动全部一键投递')
 			time.sleep(timeout)
 		except BaseException as err:
 			print(err)

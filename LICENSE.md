@@ -21,17 +21,4 @@ OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-For more information, please refer to <http://unlicense.org/>
-
-
-{
-  "message": "If you would like to help us test the Licenses API during its preview period, you must specify a custom media type in the 'Accept' header. Please see the docs for full details.",
-  "documentation_url": "https://developer.github.com/v3/licenses"
-}
-
-
-  {
-    "key": "unlicense",
-    "name": "Public Domain (Unlicense)",
-    "url": "https://api.github.com/licenses/unlicense"
-  }
+For more information, please refer to <http://unlicense.org>

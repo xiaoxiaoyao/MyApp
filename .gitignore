@@ -214,4 +214,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-PythonApplication1/deeplearning/JDdata/data/*
+PythonApplication1/deeplearning/JDdata/data/*.csv

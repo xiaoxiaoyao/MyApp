@@ -1,0 +1,9 @@
+{
+    "JData_Product": "JData_Product.JSON",
+    "sku_id": "商品编号",
+    "attr1": "属性1, 枚举，-1表示未知",
+    "attr2":"属性2, 枚举，-1表示未知",
+    "attr3":"属性3, 枚举，-1表示未知",
+    "cate":"品类ID",
+    "brand":"品牌ID"
+}

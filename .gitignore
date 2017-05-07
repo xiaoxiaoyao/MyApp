@@ -215,3 +215,4 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 PythonApplication1/deeplearning/JDdata/data/*.csv
+#PythonApplication1/deeplearning/JDdata/data/*.accdb

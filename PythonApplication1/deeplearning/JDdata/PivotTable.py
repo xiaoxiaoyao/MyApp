@@ -4,17 +4,23 @@
 
 # 初始化
 for i in [1]:
-    #导入数据分析包，绘图包
+    # 导入数据分析包，绘图包
     import numpy, numpy.lib.recfunctions, pandas, matplotlib.pyplot
     # 初始化随机数函数deterministic (just a good practice)
     numpy.random.seed(1)  
-    #初始化logging
+    # 初始化logging
     import logging
     logging.basicConfig(level=logging.NOTSET)
+    # 初始化时间日期格式
+    import datetime
+    from datetime import datetime
+    def parse_dates(x):
+        return numpy.datetime64(x)
     # 全局变量data_name表示你正在使用的是哪一个JData_Action文件，非常重要，不要随便改！(请在底下修改)
     data_name = 'JData_Action_0301_0315_FILE'
     # Jdata用来存放各种中间数据，这是一个字典，数据全在里面
     Jdata = {
+        'dtype_info':{'JData_Action_0301_0315_FILE':{'user_id':numpy.int64,'sku_id':numpy.int64,'time':numpy.object,'model_id':numpy.float64,'type':numpy.int64,'cate':numpy.int64,'brand':numpy.int64,},'JData_Comment_line_by_day_FILE':{'sku_id':numpy.object,'comment_num':numpy.int64,'has_bad_comment':numpy.int64,'bad_comment_rate':numpy.float64,'comment_num.1':numpy.int64,'has_bad_comment.1':numpy.int64,'bad_comment_rate.1':numpy.float64,'comment_num.2':numpy.int64,'has_bad_comment.2':numpy.int64,'bad_comment_rate.2':numpy.float64,'comment_num.3':numpy.int64,'has_bad_comment.3':numpy.int64,'bad_comment_rate.3':numpy.float64,'comment_num.4':numpy.int64,'has_bad_comment.4':numpy.int64,'bad_comment_rate.4':numpy.float64,'comment_num.5':numpy.int64,'has_bad_comment.5':numpy.int64,'bad_comment_rate.5':numpy.float64,'comment_num.6':numpy.int64,'has_bad_comment.6':numpy.int64,'bad_comment_rate.6':numpy.float64,'comment_num.7':numpy.int64,'has_bad_comment.7':numpy.int64,'bad_comment_rate.7':numpy.float64,'comment_num.8':numpy.int64,'has_bad_comment.8':numpy.int64,'bad_comment_rate.8':numpy.float64,'comment_num.9':numpy.int64,'has_bad_comment.9':numpy.int64,'bad_comment_rate.9':numpy.float64,'comment_num.10':numpy.int64,'has_bad_comment.10':numpy.int64,'bad_comment_rate.10':numpy.float64,'comment_num.11':numpy.int64,'has_bad_comment.11':numpy.int64,'bad_comment_rate.11':numpy.float64,'comment_num.12':numpy.int64,'has_bad_comment.12':numpy.int64,'bad_comment_rate.12':numpy.float64,},'JData_Comment_FILE':{'dt':numpy.object,'sku_id':numpy.int64,'comment_num':numpy.int64,'has_bad_comment':numpy.int64,'bad_comment_rate':numpy.float64,},'JData_Product_FILE':{'sku_id':numpy.int64,'attr1':numpy.int64,'attr2':numpy.int64,'attr3':numpy.int64,'cate':numpy.int64,'brand':numpy.int64,},'JData_User_DONE_FILE':{'user_id':numpy.int64,'age':numpy.int64,'sex':numpy.int64,'user_lv_cd':numpy.int64,'user_reg_dt':numpy.int64,},'JData_Action_0301_0315_FILE_buy_user':{'user_id':numpy.int64,'sku_id':numpy.int64,},'JData_Action_0301_0315_FILE_ALL':{'user_id':numpy.int64,'sku_id':numpy.int64,'time':numpy.object,'model_id':numpy.float64,'type':numpy.int64,'cate_x':numpy.int64,'brand_x':numpy.int64,'comment_num':numpy.float64,'has_bad_comment':numpy.float64,'bad_comment_rate':numpy.float64,'comment_num.1':numpy.float64,'has_bad_comment.1':numpy.float64,'bad_comment_rate.1':numpy.float64,'comment_num.2':numpy.float64,'has_bad_comment.2':numpy.float64,'bad_comment_rate.2':numpy.float64,'comment_num.3':numpy.float64,'has_bad_comment.3':numpy.float64,'bad_comment_rate.3':numpy.float64,'comment_num.4':numpy.float64,'has_bad_comment.4':numpy.float64,'bad_comment_rate.4':numpy.float64,'comment_num.5':numpy.float64,'has_bad_comment.5':numpy.float64,'bad_comment_rate.5':numpy.float64,'comment_num.6':numpy.float64,'has_bad_comment.6':numpy.float64,'bad_comment_rate.6':numpy.float64,'comment_num.7':numpy.float64,'has_bad_comment.7':numpy.float64,'bad_comment_rate.7':numpy.float64,'comment_num.8':numpy.float64,'has_bad_comment.8':numpy.float64,'bad_comment_rate.8':numpy.float64,'comment_num.9':numpy.float64,'has_bad_comment.9':numpy.float64,'bad_comment_rate.9':numpy.float64,'comment_num.10':numpy.float64,'has_bad_comment.10':numpy.float64,'bad_comment_rate.10':numpy.float64,'comment_num.11':numpy.float64,'has_bad_comment.11':numpy.float64,'bad_comment_rate.11':numpy.float64,'comment_num.12':numpy.float64,'has_bad_comment.12':numpy.float64,'bad_comment_rate.12':numpy.float64,'attr1':numpy.int64,'attr2':numpy.int64,'attr3':numpy.int64,'cate_y':numpy.int64,'brand_y':numpy.int64,'age':numpy.int64,'sex':numpy.int64,'user_lv_cd':numpy.int64,'user_reg_dt':numpy.int64,},'JData_Action_0301_0315_FILE_ALL_buy_user':{'user_id':numpy.int64,'sku_id':numpy.int64,}},
         'info': {
             'JData_Action_0301_0315_FILE':
             ['user_id', 'sku_id', 'time', 'model_id', 'type', 'cate', 'brand'],
@@ -105,16 +111,16 @@ for i in [1]:
 
 
 #读取csv文件
-def get_data(fname, chunk_size=100001):
+def get_data(fname, chunk_size=100001):#,i=None):
     # 为什么读入数据的时候不直接df = pandas.read_csv(fname, header=0, usecols=["sku_id", "type"])
     # 因为文件太大了
     reader = pandas.read_csv(
-        fname, header=0, iterator=True, infer_datetime_format=True)
+        fname, header=0, iterator=True, infer_datetime_format=True)#,dtype=Jdata['dtype_info'][i],date_parser=parse_dates) # 这里的i是前面循环的FILE，就是Jdata的名字
     chunks = []
     loop = True
     i = 0
     while loop:
-        if i==10:loop = False
+        if i==1:loop = False # 电脑内存小跑得慢，实战注释掉。
         try:
             i = i + 1
             logging.warning('loop:' + str(i))
@@ -132,6 +138,15 @@ def get_data(fname, chunk_size=100001):
                 "（读取手动中断）Iteration is stopped，中断读取，开始下一步" + 'loop:' + str(
                     i))
     df_ac = pandas.concat(chunks, ignore_index=True)
+    # 转时间日期格式
+    try:
+        df_ac['time']=pandas.to_datetime(df_ac['time'])
+    except KeyError:
+        print()
+    try:
+        df_ac['dt']=pandas.to_datetime(df_ac['dt'])
+    except KeyError:
+        print()
     return df_ac
 
 
@@ -218,13 +233,13 @@ def paint_user_action(user_id=144121, show=False):
 # 读取数据
 for i in FILE:
     logging.warning(i)
-    Jdata[i] = get_data(FILE[i])
+    Jdata[i] = get_data(FILE[i])#,i=i)
 
 # for data_name in FILE_ACTION:
 # 预处理Action数据：
 run(data_name)
 
-#合并A,C,P,U（基于A），制作行为+评论+商品+用户宽表
+# 合并A,C,P,U（基于A），制作行为+评论+商品+用户宽表
 for i in [1]:
     print('合并数据，慢')
     try:
@@ -247,7 +262,7 @@ for i in [1]:
         data_name =data_name+'_ALL'
 
 
-# 调试时间使用
+# 按每个用户分表
 Jdata[data_name + '_user_action_data'] = {}
 for user_id in Jdata[data_name + '_buy_user']['user_id']:
     Jdata[data_name + '_user_action_data'][user_id] = user_action(
@@ -256,6 +271,7 @@ for user_id in Jdata[data_name + '_buy_user']['user_id']:
 # 我就是不告诉神经网络最后5天用户干嘛了
 def deleted_last_5_days_data(user_id,data_name=data_name):
     data=[]
+    last_time=Jdata[data_name + '_user_action_data'][user_id].tail(1)['time']
     return data
     pass
 

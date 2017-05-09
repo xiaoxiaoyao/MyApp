@@ -120,7 +120,7 @@ def get_data(fname, chunk_size=100001):#,i=None):
     loop = True
     i = 0
     while loop:
-        if i==1:loop = False # 电脑内存小跑得慢，实战注释掉。
+        if i==10:loop = False # 电脑内存小跑得慢，实战注释掉。
         try:
             i = i + 1
             logging.warning('loop:' + str(i))
@@ -267,18 +267,33 @@ Jdata[data_name + '_user_action_data'] = {}
 for user_id in Jdata[data_name + '_buy_user']['user_id']:
     Jdata[data_name + '_user_action_data'][user_id] = user_action(
         Jdata_name=data_name, user_id=user_id)
-
-# 我就是不告诉神经网络最后5天用户干嘛了
-def deleted_last_5_days_data(user_id,data_name=data_name):
-    data=[]
-    last_time=Jdata[data_name + '_user_action_data'][user_id].tail(1)['time']
-    return data
-    pass
+# 拿最后5天记录
+def get_last_5_days(user_id,data_name=data_name,last_day=numpy.datetime64('2016-04-01 00:00:00'),last_5_day=last_day-numpy.timedelta64(1,'D')):
+    a=[]
+    a=Jdata[data_name + '_user_action_data'][user_id]
+    last_day=numpy.datetime64(a['time'].max())    
+    last_5_day=last_day-numpy.timedelta64(1,'D')
+    a=a[(a.time>last_5_day)]
+    return a
 
 # 最后5天买东西了吗？
-def is_buy_last_5_days(user_id,data_name=data_name):
-    pass
-    
+def is_buy_last_5_days(a): # 先调用get_last_5_days，再调用这个
+    return not a[(a.type == 4)].empty # 最后5天是否有购买记录？
+
+# 最后5天买啥了？
+def buy_what_in_last_5_days(a): # 先调用get_last_5_days，再调用这个
+    return a[(a.type == 4)].sku_id.max() # 最后5天是否有购买记录？
+
+# 我就是不告诉神经网络最后5天用户干嘛了
+def deleted_last_5_days_data(user_id,data_name=data_name,last_5_day=numpy.datetime64('2016-04-01 00:00:00')):
+    a=[]
+    a=Jdata[data_name + '_user_action_data'][user_id]
+    return a[(a.time<last_5_day)]
+
+
+# df.iterrows()，对DataFrame的每一行进行迭代，返回一个Tuple (index, Series)
+# df.itertuples()，也是一行一行地迭代，返回的是一个namedtuple，通常比iterrow快，因为不需要做转换
+
 # 神经网络的食物：Jdata[data_name + '_user_action_data'][user_id]，每一个有购买记录的人，都是食物。
 def train(X,Y):
     pass

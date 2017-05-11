@@ -111,7 +111,7 @@ for i in [1]:
 
 
 #读取csv文件
-def get_data(fname, chunk_size=100001):#,i=None):
+def get_data(fname, chunk_size=102401):#,i=None):
     # 为什么读入数据的时候不直接df = pandas.read_csv(fname, header=0, usecols=["sku_id", "type"])
     # 因为文件太大了
     reader = pandas.read_csv(
@@ -120,7 +120,7 @@ def get_data(fname, chunk_size=100001):#,i=None):
     loop = True
     i = 0
     while loop:
-        if i==10:loop = False # 电脑内存小跑得慢，实战注释掉。
+        if i==300:loop = False # 电脑内存小跑得慢，实战注释掉。
         try:
             i = i + 1
             logging.warning('loop:' + str(i))
@@ -238,7 +238,7 @@ for i in FILE:
 # for data_name in FILE_ACTION:
 # 预处理Action数据：
 run(data_name)
-
+'''
 # 合并A,C,P,U（基于A），制作行为+评论+商品+用户宽表
 for i in [1]:
     print('合并数据，慢')
@@ -260,7 +260,7 @@ for i in [1]:
                 data_name))
     finally:
         data_name =data_name+'_ALL'
-
+'''
 
 # 按每个用户分表
 Jdata[data_name + '_user_action_data'] = {}
@@ -268,7 +268,8 @@ for user_id in Jdata[data_name + '_buy_user']['user_id']:
     Jdata[data_name + '_user_action_data'][user_id] = user_action(
         Jdata_name=data_name, user_id=user_id)
 # 拿最后5天记录
-def get_last_5_days(user_id,data_name=data_name,last_day=numpy.datetime64('2016-04-01 00:00:00'),last_5_day=last_day-numpy.timedelta64(1,'D')):
+def get_last_5_days(user_id,data_name=data_name,last_day=numpy.datetime64('2016-04-01 00:00:00')):
+    last_5_day=last_day-numpy.timedelta64(1,'D')
     a=[]
     a=Jdata[data_name + '_user_action_data'][user_id]
     last_day=numpy.datetime64(a['time'].max())    
@@ -298,5 +299,5 @@ def deleted_last_5_days_data(user_id,data_name=data_name,last_5_day=numpy.dateti
 def train(X,Y):
     pass
 
-run(data_name)
+#run(data_name)
 print('the end')

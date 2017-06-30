@@ -1,4 +1,9 @@
 #!/usr/bin/bash
+echo 马上安装常见的python包（一大堆）
+
+echo 推荐的几个Python科学计算环境推荐
+pip3 install -U anaconda ; echo Anaconda是一个和Canopy类似的科学计算环境
+pip3 install -U Canopy ; echo Anaconda是一个和Canopy类似的科学计算环境
 
 echo Python实现算法和设计模式
 

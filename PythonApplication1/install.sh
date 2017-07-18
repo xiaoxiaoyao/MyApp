@@ -63,7 +63,7 @@ pip3 install -U mycli ; echo 具有自动完成和语法突出显示的MySQL的�
 pip3 install -U PathPicker ; echo 从bash输出选择文件.
 pip3 install -U percol ; echo percol在UNIX上为传统的管道概念增添了交互式选择的风格.
 pip3 install -U pgcli ; echo 具有自动完成和语法高亮的Postgres CLI.
-pip3 install -U SAWS ; echo 增加的AWS命令行界面（CLI）.
+#pip3 install -U SAWS ; echo 增加的AWS命令行界面（CLI）.
 pip3 install -U thefuck ; echo 更正你之前的控制台命令.
 pip3 install -U try ; echo 令人敬畏的cli工具.
  echo 兼容性

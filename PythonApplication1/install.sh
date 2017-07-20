@@ -495,3 +495,47 @@ pip3 install -U Codacy ; echo 自动代码审查，以更快的速度运送更�
 pip3 install -U Codecov ; echo 代码覆盖仪表板.
 pip3 install -U Landscape ; echo 托管连续的Python代码指标.
 pip3 install -U QuantifiedCode ; echo 数据驱动、自动化、连续的代码审查工具.
+
+ echo 以前的一些东西
+pip3 install mechanize --upgrade
+pip3 install djangorestframework --upgrade
+pip3 install docopt --upgrade
+pip3 install gnureadline --upgrade
+pip3 install ipython --upgrade
+pip3 install pip3 --upgrade
+pip3 install pip3reqs --upgrade
+pip3 install Pygments --upgrade
+pip3 install requests --upgrade
+pip3 install setuptools --upgrade
+pip3 install wheel --upgrade
+pip3 install yarg --upgrade
+pip3 install ActiveGrid --upgrade
+pip3 install bottle --upgrade
+pip3 install bootstrap --upgrade
+pip3 install Flask --upgrade
+pip3 install webpy --upgrade
+pip3 install CherryPy --upgrade
+pip3 install Pylons --upgrade
+pip3 install Zope --upgrade
+pip3 install TurboGears --upgrade
+pip3 install Twisted --upgrade
+pip3 install Quixote --upgrade
+pip3 install SciPy --upgrade
+pip3 install NumPy --upgrade
+pip3 install PyGtk --upgrade
+pip3 install PyQt --upgrade
+pip3 install WxPython --upgrade
+pip3 install Tkinter --upgrade
+pip3 install BeautifulSoup --upgrade
+pip3 install PIL --upgrade
+pip3 install MySQLdb --upgrade
+pip3 install cElementTree --upgrade
+pip3 install PyGame --upgrade
+pip3 install Py2exe --upgrade
+pip3 install pefile --upgrade
+pip3 install MySQL-python --upgrade
+pip3 install Django --upgrade
+pip3 install Matplotlib --upgrade
+pip3 install web-walker --upgrade
+pip3 install scrapy --upgrade
+pip3 install redis --upgrade

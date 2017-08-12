@@ -1,0 +1,3 @@
+系统忘记加路径了，启动前先运行
+export PATH=/home/yao/anaconda3/bin:$PATH
+jupyter notebook

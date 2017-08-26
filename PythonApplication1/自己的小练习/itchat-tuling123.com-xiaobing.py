@@ -35,5 +35,5 @@ def xiaobing(msg):
 KEY = '75137612d89c42f0b9d7a3f5133ec656' #这个key可以直接拿来用，随便用，无所谓，放心公开
 
 if __name__ == '__main__':
-	itchat.auto_login()
+	itchat.auto_login(enableCmdQR=2)
 	itchat.run()

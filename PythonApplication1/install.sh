@@ -1,5 +1,8 @@
 #!/usr/bin/bash
+
 echo 马上安装常见的python包（一大堆）
+
+pip install -r requirements.txt --upgrade
 
 echo 推荐的几个Python科学计算环境推荐
 pip3 install -U anaconda ; echo Anaconda是一个和Canopy类似的科学计算环境
@@ -496,7 +499,7 @@ pip3 install -U Codecov ; echo 代码覆盖仪表板.
 pip3 install -U Landscape ; echo 托管连续的Python代码指标.
 pip3 install -U QuantifiedCode ; echo 数据驱动、自动化、连续的代码审查工具.
 
- echo 以前的一些东西
+echo 以前的一些东西
 pip3 install mechanize --upgrade
 pip3 install djangorestframework --upgrade
 pip3 install docopt --upgrade

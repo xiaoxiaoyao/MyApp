@@ -32,7 +32,6 @@ service-identity>=16.0.0
 six>=1.10.0
 w3lib>=1.17.0
 zope.interface>=4.3.3
-mechanize
 djangorestframework
 docopt
 gnureadline
@@ -45,13 +44,10 @@ bottle
 Flask
 CherryPy
 Pylons
-TurboGears
 Twisted
-Quixote
 SciPy
 NumPy
 WxPython
-Tkinter
 BeautifulSoup
 PIL
 MySQLdb

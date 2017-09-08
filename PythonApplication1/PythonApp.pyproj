@@ -6,14 +6,14 @@
     <ProjectGuid>ba719deb-5196-434a-88fa-f1cb6cec2c0d</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>爬虫练习\bugbank.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>..\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PythonApp</Name>
     <RootNamespace>PythonApplication1</RootNamespace>
-    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
-    <InterpreterVersion>3.5</InterpreterVersion>
+    <InterpreterId>Global|PythonCore|3.5</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -25,6 +25,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="deeplearning\examples\mnist.py" />
+    <Compile Include="deeplearning\examples\recurrent.py" />
+    <Compile Include="deeplearning\JDdata\class1.py" />
+    <Compile Include="deeplearning\JDdata\net1.py" />
+    <Compile Include="deeplearning\JDdata\net3.py" />
+    <Compile Include="deeplearning\JDdata\PivotTable.py" />
+    <Compile Include="deeplearning\JDdata\temp.py" />
     <Compile Include="my_first_web_app\www\config.py" />
     <Compile Include="my_first_web_app\www\conn.py">
       <SubType>Code</SubType>
@@ -38,26 +45,15 @@
     <Compile Include="my_first_web_app\www\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="爬虫练习\bugbank.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="爬虫练习\douban.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="爬虫练习\module1.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="爬虫练习\chromedriver.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="爬虫练习\OpenChrome.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="爬虫练习\update_shanlin.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="爬虫练习\zhaopin.py" />
-    <Compile Include="爬虫练习\__init__.py" />
+    <Compile Include="爬虫练习\chromedriver\bugbank.py" />
+    <Compile Include="爬虫练习\chromedriver\chromedriver.py" />
+    <Compile Include="爬虫练习\chromedriver\douban.py" />
+    <Compile Include="爬虫练习\chromedriver\module1.py" />
+    <Compile Include="爬虫练习\chromedriver\OpenChrome.py" />
+    <Compile Include="爬虫练习\chromedriver\update_shanlin.py" />
+    <Compile Include="爬虫练习\chromedriver\zhaopin.py" />
+    <Compile Include="爬虫练习\chromedriver\__init__.py" />
+    <Compile Include="爬虫练习\FIREFOX\StartFirefox.py" />
     <Compile Include="自己的小练习\All_In_One.BIN" />
     <Compile Include="自己的小练习\class1.py" />
     <Compile Include="自己的小练习\asynciotest.py" />
@@ -75,6 +71,7 @@
     <Compile Include="my_first_web_app\www\Log.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="自己的小练习\itchat-tuling123.com-xiaobing.py" />
     <Compile Include="自己的小练习\tryexcept.py">
       <SubType>Code</SubType>
     </Compile>
@@ -91,12 +88,23 @@
     <Compile Include="自己的小练习\汉诺塔.py" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
-    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="chromedriver.log" />
     <Content Include="debug.log" />
+    <Content Include="deeplearning\examples\t10k-images-idx3-ubyte.gz" />
+    <Content Include="deeplearning\examples\t10k-labels-idx1-ubyte.gz" />
+    <Content Include="deeplearning\examples\train-images-idx3-ubyte.gz" />
+    <Content Include="deeplearning\examples\train-labels-idx1-ubyte.gz" />
+    <Content Include="deeplearning\JDdata\data\BUY_USER_LIST_JData_Action_0301_0315_FILE.CSV" />
+    <Content Include="deeplearning\JDdata\data\BUY_USER_LIST_JData_Action_0301_0315_FILE_ALL.CSV" />
+    <Content Include="deeplearning\JDdata\data\JData_Action_.accdb" />
+    <Content Include="deeplearning\JDdata\data\JData_Action_.JSON" />
+    <Content Include="deeplearning\JDdata\data\JData_Comment_line_by_day.JSON" />
+    <Content Include="deeplearning\JDdata\data\JData_Product.JSON" />
+    <Content Include="deeplearning\JDdata\data\JData_User_DONE.JSON" />
+    <Content Include="deeplearning\JDdata\demo.csv" />
+    <Content Include="deeplearning\tools\readMNIST.m" />
+    <Content Include="deeplearning\tools\requirement.txt" />
+    <Content Include="deeplearning\tools\t10k-images.idx3-ubyte" />
+    <Content Include="install.sh" />
     <Content Include="my_first_web_app\README.md" />
     <Content Include="my_first_web_app\RP\README.md" />
     <Content Include="my_first_web_app\RP\templates.png" />
@@ -127,14 +135,21 @@
     <Content Include="my_first_web_app\www\__pycache__\config.cpython-35.pyc" />
     <Content Include="my_first_web_app\www\__pycache__\conn.cpython-35.pyc" />
     <Content Include="README.md" />
-    <Content Include="爬虫练习\chromedriver.exe" />
-    <Content Include="爬虫练习\chromedriver.log" />
+    <Content Include="requirements.txt" />
+    <Content Include="爬虫练习\chromedriver\chromedriver.exe" />
+    <Content Include="爬虫练习\chromedriver\output.txt" />
+    <Content Include="爬虫练习\chromedriver\README.md" />
+    <Content Include="爬虫练习\chromedriver\test.txt" />
     <Content Include="爬虫练习\output.txt" />
-    <Content Include="爬虫练习\README.md" />
     <Content Include="爬虫练习\test.txt" />
     <Content Include="自己的小练习\README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="deeplearning\" />
+    <Folder Include="deeplearning\examples\" />
+    <Folder Include="deeplearning\JDdata\" />
+    <Folder Include="deeplearning\JDdata\data\" />
+    <Folder Include="deeplearning\tools\" />
     <Folder Include="my_first_web_app\" />
     <Folder Include="my_first_web_app\backup\" />
     <Folder Include="my_first_web_app\conf\" />
@@ -151,14 +166,13 @@
     <Folder Include="my_first_web_app\www\templates\" />
     <Folder Include="my_first_web_app\www\__pycache__\" />
     <Folder Include="爬虫练习\" />
+    <Folder Include="爬虫练习\chromedriver\" />
+    <Folder Include="爬虫练习\FIREFOX\" />
     <Folder Include="自己的小练习\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
-  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
-  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in
        the BeforeBuild and AfterBuild targets below. -->
@@ -167,4 +181,5 @@
   </Target>
   <Target Name="AfterBuild">
   </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

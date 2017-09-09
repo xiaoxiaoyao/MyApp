@@ -1,3 +1,8 @@
+[我的知乎，欢迎围观，快点赞](https://www.zhihu.com/question/59524525/answer/213532626)
+
+# 对了，我是个财务
+输入一次 git status 如果看见文件都变绿了 ，那么就代表 它们已经准备好了被提交（git commit）。
+
 # start
 我自己的python练习册，python尊好玩o(^▽^)o
 

@@ -1,5 +1,5 @@
+encoding: UTF-8
 theme: jekyll-theme-cayman
 deploy:
   type: git
-  repo: git@github.com:xiaoxiaoyao/PythonApplication1.git
   branch: master

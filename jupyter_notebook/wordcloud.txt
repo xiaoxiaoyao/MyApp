@@ -1,3 +1,46 @@
-Machine learning is the science of getting computers to act without being explicitly programmed. In the past decade, machine learning has given us self-driving cars, practical speech recognition, effective web search, and a vastly improved understanding of the human genome. Machine learning is so pervasive today that you probably use it dozens of times a day without knowing it. Many researchers also think it is the best way to make progress towards human-level AI. In this class, you will learn about the most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself. More importantly, you'll learn about not only the theoretical underpinnings of learning, but also gain the practical know-how needed to quickly and powerfully apply these techniques to new problems. Finally, you'll learn about some of Silicon Valley's best practices in innovation as it pertains to machine learning and AI.
+Could North Korean, US threats of destruction cause an accidental war?
 
-This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Topics include: (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks). (ii) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning). (iii) Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI). The course will also draw from numerous case studies and applications, so that you'll also learn how to apply learning algorithms to building smart robots (perception, control), text understanding (web search, anti-spam), computer vision, medical informatics, audio, database mining, and other areas.
+(CNN)The war of words between North Korea and the United States could be pushing the region closer to the brink of an accidental conflict.
+
+While neither country is outwardly moving towards an actual war footing, military displays of power, mixed with threats and counter threats may result in an ugly outcome, Stratfor Vice President of Strategic Analysis Rodger Baker told CNN.
+"The North Koreans assume that the threats will be enough to restrain US action but the US might be thinking the same thing, so you end up in a situation where a provocation from one side is seen by the other as an actual move towards war," he said.
+North Korea's Foreign Minister Ri Yong Ho announced on Monday that US President Donald Trump had "declared a war" on his country by tweeting that North Korea "won't be around much longer." Ri's interpretation of Trump's tweet was roundly dismissed by the White House later that day.
+The South Korean government has been desperately calling for calm on both sides, as the country's citizens would be among the first to suffer in any war.
+Speaking in Washington on Monday, South Korea's Foreign Minister Kang Kyung-wha said the United States has to help to reduce tensions on the peninsula.
+"It is very likely that North Korea will conduct further provocations," she said. "It is imperative that we, Korea and the US together, manage the situation ... in order to prevent further escalation of tensions or any kind of accidental military clashes which can quickly go out of control."
+
+North Korea at U.N.: Attack on US 'inevitable' 00:50
+US: Reports of war are 'absurd'
+Foreign Minister Ri told reporters Monday North Korea would shoot down any US bombers which flew near the Korean Peninsula, even if they didn't enter North Korea's airspace.
+"In light of the declaration of war by Trump, all options will be on the operating table of the Supreme leadership of DPRK," Ri said, according to his official English translator.
+ Follow
+Donald J. Trump ✔@realDonaldTrump
+Just heard Foreign Minister of North Korea speak at U.N. If he echoes thoughts of Little Rocket Man, they won't be around much longer!
+11:08 AM - Sep 24, 2017
+ 50,138 50,138 Replies   37,036 37,036 Retweets   132,813 132,813 likes
+Twitter Ads info and privacy
+White House Press Secretary Sarah Sanders was quick to respond, saying Monday the US had not declared war and any suggestion along those lines was "absurd."
+Euan Graham, director of the International Security Program at Sydney's Lowy Institute, said while the physical threat of war had not increased, every unfulfilled threat from the US did damage to its international position.
+"When threats are made and not followed through US credibility suffers both in the eyes of North Korea and its allies," Graham said.
+"The US is very unlikely to engage in a preventative war against North Korea, so it's more the risk of stumbling into this because the North Koreans decide they have to escalate or they believe something US is doing is a preventative strike or a decapitation attack (against the leadership)."
+Pyongyang moves planes, boosts defenses
+Over the weekend, North Korea moved airplanes and boosted defenses on its east coast, an aide to South Korean parliamentary member Lee Cheol-woo told CNN on Tuesday.
+South Korea's National Intelligence Service (NIS) shared the information in a briefing to the National Assembly's intelligence committee. Lee is the chairman of the committee and was at the briefing, according to the aide.
+North Korea moved to secure its defense following a flyover by US bombers on Saturday.
+US B-1B bombers from Guam flew in international airspace over waters east of North Korea, according to the Pentagon, a move they said underscored the seriousness of Pyongyang's "reckless behavior."
+It was the furthest north of the Demilitarized Zone (DMZ), the area of land between North and South Korea, which US fighters or bombers had flown in the 21st Century, the Pentagon said.
+Stratfor's Baker said he was concerned any moves by North Korea to shadow US planes or to engage in displays of military might could lead to accidental conflict.
+Why it could take months for the US to get ready for war with North Korea
+Why it could take months for the US to get ready for war with North Korea
+"There haven't been many incidents where they've engaged in this sort of behavior so they don't know how to deal with each other in this situation, they don't know how to read the way that each side is acting, so you can get accidents and the North Koreans, again, they may overestimate their hand," he said.
+But Baker added it was important to note that neither side had engaged in the large movement of troops or evacuation of civilians which would precipitate a full blown war.
+"We don't see the US taking action to rapidly reduce the number of civilians and non military personnel in South Korea ... at the same time, rhetoric is working to increase the potential of an accident."
+North Korean envoy heads to Russia
+The latest standoff between Washington and Pyongyang came as a North Korean Foreign Ministry official flew to Moscow to meet with a representative of the Russian government.
+Trump turns to sanctions, diplomacy on North Korea after threatening destruction
+Trump turns to sanctions, diplomacy on North Korea after threatening destruction
+According to state media KCNA, director general at the Foreign Ministry's North American Department Choe Son Hui left for Moscow on Monday. She'll meet with Oleg Burmistrov, a "roving ambassador" with Russia's Foreign Ministry.
+The meeting comes amid cooling relations between Pyongyang and Beijing, with China's Ministry of Commerce announcing on Saturday it would immediately restrict petroleum exports to North Korea in line with UN sanctions.
+"Russia has been a supplier of petroleum products either directly or not paying attention to what it's own countries are doing in regard to North Korea," Baker said.
+The latest round of sanctions, agreed to on September 11, were reportedly amended by the US after it became clear Russia and China wouldn't allow stronger restrictions.
+"Russia is a potential helpful card for the North Koreans to use particularly if they're worried that China is going to get more hostile and especially as secondary sanctions (from the US) come into play," Graham said.

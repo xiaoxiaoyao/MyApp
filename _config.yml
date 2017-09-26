@@ -1,1 +1,5 @@
+encoding: UTF-8
 theme: jekyll-theme-cayman
+deploy:
+  type: git
+  branch: master

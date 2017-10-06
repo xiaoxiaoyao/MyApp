@@ -4,7 +4,7 @@ edge [fontname=helvetica] ;
 0 [label="sub_grade <= 7.5\ngini = 0.5\nsamples = 34881\nvalue = [17348, 17533]\nclass = safe", fillcolor="#399de503"] ;
 1 [label="total_rec_late_fee <= 9.0\ngini = 0.436\nsamples = 10295\nvalue = [3303, 6992]\nclass = safe", fillcolor="#399de587"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="grade <= 0.5\ngini = 0.425\nsamples = 9949\nvalue = [3042, 6907]\nclass = safe", fillcolor="#399de58f"] ;
+2 [label="sub_grade <= 4.5\ngini = 0.425\nsamples = 9949\nvalue = [3042, 6907]\nclass = safe", fillcolor="#399de58f"] ;
 1 -> 2 ;
 3 [label="dti <= 1701.5\ngini = 0.352\nsamples = 4621\nvalue = [1055, 3566]\nclass = safe", fillcolor="#399de5b4"] ;
 2 -> 3 ;

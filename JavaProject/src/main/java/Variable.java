@@ -1,6 +1,7 @@
 package main.java;
 
 public class Variable {
+	@SuppressWarnings("unused")
 	public static final void main(String[] arguments) {
 		Boolean gameOver = false;
 		byte escapeKey = 20;

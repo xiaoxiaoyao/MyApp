@@ -1,11 +1,15 @@
 package main.java;
 
-public final class NewRoot {
+public class NewRoot {
 	static int num;
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) throws java.lang.IllegalArgumentException,java.lang.ArithmeticException{
 		if (args.length > 0) {
-			num = Integer.parseInt(args[0]);
+			try {
+				num = Integer.parseInt(args[0]);
+			}catch (NumberFormatException e){
+				System.err.println("非数据类型不能转换。"); 
+				throw new NumberFormatException("非数据类型不能转换。");
+			}
 		}else {
 			System.out.println("Please import a number");
 			throw new java.lang.IllegalArgumentException("请输入一个数字");

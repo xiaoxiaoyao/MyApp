@@ -3,7 +3,6 @@ package main.java;
  * StringBuffer对象
  */
 public class StrDemo {
-
 	public static void main(String[] args) {
 		String s = "abc";
 		StringBuffer sb1 = new StringBuffer();  // 这样初始化出的StringBuffer对象是一个空的对象,16个字节长度的缓冲区

@@ -7,7 +7,7 @@ package main.java;
  * @author yao
  */
 public class Demo3 {
-    public static String name = "yao";  // 类级变量
+    public static String name = "yao";  // 类级变量（关键字static）
     public int i=1; // 对象实例级变量
     // 属性块，在类初始化属性时候运行
     {

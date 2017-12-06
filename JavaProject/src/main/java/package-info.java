@@ -2,6 +2,7 @@
 * This is an example of 
 * Java doc 
 * 个人JAVA学习、练习用
+* 这个包里的java程序大多只能通过Console输出
 * @author yao
 * @version 0.1, 2016-07-04
 */

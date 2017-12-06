@@ -19,7 +19,7 @@ public class Demo1 {
     	}
     	class Demo2{//Java数据类型以及变量的定义
             // 字符型
-            char webName1 = '赖';
+            char webName1 = '赖';//单引号表示字符型
             char webName2 = '尧';
             void name(){
             	System.out.println("作者的名字是：" + webName1 + webName2 );

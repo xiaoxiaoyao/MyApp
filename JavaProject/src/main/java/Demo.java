@@ -10,8 +10,11 @@ package main.java;
  */
 public class Demo{
     public static void main(String[] args) {
+    	//标记为static的方法不必new也可使用
+    	Dog.alive();
+    	//正常情况下需要new一个对象出来
         Dog obj = new Dog();
-        obj.move();
+        obj.move();        
     }
 }
 class Animal{
@@ -22,12 +25,18 @@ class Animal{
     public void move(){
         System.out.println("Animals can move");
     }
+    //标记为final的方法不可被覆盖
+    public static final void alive() {
+    	System.out.println("Animals alive");
+    }
 }
 class Dog extends Animal{
-    public void move(){
+	//标记为final的方法不可被覆盖
+    public final void move(){
         super.move();  // 调用父类的方法
         System.out.println("Dogs can walk and run");
         // 通过 getter 方法调用父类隐藏变量
         System.out.println("Please remember: " + super.getDesc());
     }
+    
 }

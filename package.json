@@ -1,0 +1,25 @@
+{
+  "name": "myapp",
+  "version": "0.0.1",
+  "description": "我随便写的各种代码，平时学编程的时候随便写写的",
+  "main": "README.md",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified. homepage: http://xiaoxiaoyao.github.io/MyApp/#readme\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoxiaoyao/MyApp.git"
+  },
+  "keywords": [
+    "studying"
+  ],
+  "author": "yao",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/xiaoxiaoyao/MyApp/issues"
+  },
+  "homepage": "http://xiaoxiaoyao.github.io/MyApp/#readme"
+}

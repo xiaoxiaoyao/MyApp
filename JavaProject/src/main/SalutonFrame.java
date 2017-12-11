@@ -61,6 +61,15 @@ public class SalutonFrame extends JFrame {
 		frame.add(spaceLanel.space);
 		frame.setVisible(true);//显示窗体
 	}
+	public static final String lookAndFeel = "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel";
+	public static void setLookAndFeel() {
+		  try {
+			  UIManager.setLookAndFeel(lookAndFeel);
+			  System.out.println(lookAndFeel);
+		  }catch(Exception exc) {
+			  System.out.println(exc);//输出错误，继续运行程序
+		  }
+	}
 
 }
   

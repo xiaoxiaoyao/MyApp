@@ -2,6 +2,26 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "启动node",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/js/app.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
             "name": "Python",
             "type": "python",
             "request": "launch",
@@ -38,131 +58,32 @@
             ]
         },
         {
-            "name": "Python Module",
-            "type": "python",
+            "name": "谷歌浏览器", //运行html文件，用谷歌浏览器打开
+            "type": "chrome",
             "request": "launch",
-            "stopOnEntry": true,
-            "pythonPath": "${config.python.pythonPath}",
-            "module": "module.name",
-            "cwd": "${workspaceRoot}",
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit",
-                "RedirectOutput"
-            ]
+            "url": "${file}",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
         },
         {
-            "name": "Integrated Terminal/Console",
-            "type": "python",
+            "name": "nodeLauch", //单独调试js，即可以直接运行js
+            "type": "node",
             "request": "launch",
-            "stopOnEntry": true,
-            "pythonPath": "${config.python.pythonPath}",
-            "program": "${file}",
-            "cwd": "null",
-            "console": "integratedTerminal",
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit"
-            ]
-        },
-        {
-            "name": "External Terminal/Console",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": true,
-            "pythonPath": "${config.python.pythonPath}",
-            "program": "${file}",
-            "cwd": "null",
-            "console": "externalTerminal",
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit"
-            ]
-        },
-        {
-            "name": "Django",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": true,
-            "pythonPath": "${config.python.pythonPath}",
-            "program": "${workspaceRoot}/manage.py",
-            "cwd": "${workspaceRoot}",
-            "args": [
-                "runserver",
-                "--noreload"
-            ],
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit",
-                "RedirectOutput",
-                "DjangoDebugging"
-            ]
-        },
-        {
-            "name": "Flask",
-            "type": "python",
-            "request": "launch",
+            "program": "${file}", //这个配置成你要调试的文件、${file}当前打开的文件
             "stopOnEntry": false,
-            "pythonPath": "${config.python.pythonPath}",
-            "program": "fully qualified path fo 'flask' executable. Generally located along with python interpreter",
-            "cwd": "${workspaceRoot}",
-            "env": {
-                "FLASK_APP": "${workspaceRoot}/quickstart/app.py"
-            },
-            "args": [
-                "run",
-                "--no-debugger",
-                "--no-reload"
-            ],
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit",
-                "RedirectOutput"
-            ]
-        },
-        {
-            "name": "Flask (old)",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": false,
-            "pythonPath": "${config.python.pythonPath}",
-            "program": "${workspaceRoot}/run.py",
-            "cwd": "${workspaceRoot}",
             "args": [],
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit",
-                "RedirectOutput"
-            ]
-        },
-        {
-            "name": "Watson",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": true,
-            "pythonPath": "${config.python.pythonPath}",
-            "program": "${workspaceRoot}/console.py",
             "cwd": "${workspaceRoot}",
-            "args": [
-                "dev",
-                "runserver",
-                "--noreload=True"
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
             ],
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit",
-                "RedirectOutput"
-            ]
-        },
-        {
-            "name": "Attach (Remote Debug)",
-            "type": "python",
-            "request": "attach",
-            "localRoot": "${workspaceRoot}",
-            "remoteRoot": "${workspaceRoot}",
-            "port": 3000,
-            "secret": "my_secret",
-            "host": "localhost"
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "preLaunchTask": "",
+            "sourceMaps": false,
+            "outDir": null
         }
     ]
 }

@@ -1,7 +1,10 @@
-[我的知乎，欢迎围观，快点赞](https://www.zhihu.com/question/59524525/answer/213532626)
-
 # 对了，我是个财务
+
 输入一次 git status 如果看见文件都变绿了 ，那么就代表 它们已经准备好了被提交（git commit）。
+
+[我的知乎，欢迎围观，快点赞](https://www.zhihu.com/question/59524525/answer/213532626)
+[![Travis CI项目页面](https://www.travis-ci.org/xiaoxiaoyao/MyApp.svg?branch=master)](https://www.travis-ci.org/xiaoxiaoyao/MyApp)
+
 
 # start
 我自己的python练习册，python尊好玩o(^▽^)o
@@ -42,6 +45,8 @@
 是因为我感受到了就业危机啊！！一天到晚喊企业转型，转到哪去啊也没个准头，从上到下喊的越来越欢把我吓着了。怎么办，总要会点一技之长吧，公司引导往哪方面就去哪咯。没事，趁机会活络下脑细胞，不然我也担心好久不用锈了，结果妥妥的。自学能力还是可以的呀
 
 2017年07月28日如果有机会，好想天天写代码
+
+2017年12月08日突然得知转测试工作，编制出了问题，谈好的事情崩裂了，心疼自己100秒。
 
 ## 长日记
 ## 2016年7月4日　编程同写作，写代码只是在码字

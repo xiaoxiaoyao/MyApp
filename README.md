@@ -1,6 +1,6 @@
 # 对了，我是个财务
 
-输入一次 git status 如果看见文件都变绿了 ，那么就代表 它们已经准备好了被提交（git commit）。
+毕业这几年没停过，一直在学习新东西
 
 [我的知乎，欢迎围观，快点赞](https://www.zhihu.com/question/59524525/answer/213532626)
 [![Travis CI项目页面](https://www.travis-ci.org/xiaoxiaoyao/MyApp.svg?branch=master)](https://www.travis-ci.org/xiaoxiaoyao/MyApp)

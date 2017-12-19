@@ -4,5 +4,8 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <div>
+        <App name="yao" num={0} />
+    </div>, document.getElementById('root'));
 registerServiceWorker();

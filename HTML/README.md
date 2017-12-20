@@ -2,6 +2,9 @@
 
 ## 目录中react-\*内容还**没完全掌握**，要加油学习
 
+随着React, Ember, Angular 2等的出现以及W3C本身也提出的web component技术，我们已经进入了组件化的开发时代，思路、工具以及开发方式等都要有重大转变，才能适应目前日益复杂和快速多变的web开发工作。
+
+
 如图所示
 ![<http://www.ruanyifeng.com/blogimg/asset/2016/bg2016092301.png>](http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html)
 

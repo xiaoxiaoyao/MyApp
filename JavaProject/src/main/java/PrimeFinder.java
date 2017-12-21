@@ -7,7 +7,10 @@
  *  
 */  
   
-package main.java;  
+package main.java;
+
+import java.util.Scanner;
+
 /**  
  * ClassName:PrimeFinder <br/>  
  * Function: TODO ADD FUNCTION. <br/>  
@@ -19,24 +22,57 @@ package main.java;
  * @see        
  */
 public class PrimeFinder implements Runnable {
-
-	public PrimeFinder() {
-
-		// TODO Auto-generated constructor stub  
-
+	private static boolean isPrime(final int checkNumber) {
+		double root = Math.sqrt(checkNumber);
+		for (int i = 2 ; i <= root;i++) {
+			if(checkNumber % i ==0) {
+				return false;
+			}
+		}
+		return true;
 	}
-
+	Thread go;
+	private int numPrime;
+	PrimeFinder(int numPrimes){
+		super();
+		this.setNumPrime(numPrimes);
+        go = new Thread(this);
+        //如果创建线程后立即运行，就直接go.run()
+        //go.run();
+	}
+	public static Scanner sc = new Scanner(System.in); 
 	public static void main(String[] args) {
-
-		// TODO Auto-generated method stub  
+        System.out.println("请输入一个数值（寻找1到输入数值范围内所有质数）："); 
+        int maxNum ;
+        maxNum = sc.nextInt(); 
+        System.out.println("寻找1到"+ maxNum + "范围内所有质数"); 
+        int numPrimes = 1;
+		while(numPrimes<maxNum) {
+	        PrimeFinder pf =new PrimeFinder(numPrimes);
+	        //运行线程：go.start
+	        pf.go.start();
+			numPrimes++;
+		}
 
 	}
 
 	@Override
 	public void run() {
-		  
-		// TODO Auto-generated method stub  
-		
+		int numPrime = this.getNumPrime();
+		System.out.println("now num is " + numPrime);
+		if(isPrime(numPrime)) {
+			System.out.println(numPrime);
+		}
+	}
+
+	/*Eclipse说了，要有Getter*/
+	public int getNumPrime() {
+		return numPrime;
+	}
+
+	/*Eclipse说了，要有Setter*/
+	public void setNumPrime(int numPrime) {
+		this.numPrime = numPrime;
 	}
 
 }

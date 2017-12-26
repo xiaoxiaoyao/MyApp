@@ -13,8 +13,8 @@ import java.util.Scanner;
 
 /**  
  * ClassName:PrimeFinder <br/>  
- * Function: TODO ADD FUNCTION. <br/>  
- * Reason:   TODO ADD REASON. <br/>  
+ * Function: 多线程练习 <br/>  
+ * Reason:   学习多线程 <br/>  
  * Date:     2017年12月17日 下午8:27:08 <br/>  
  * @author   yao  
  * @version    

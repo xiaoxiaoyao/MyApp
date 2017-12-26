@@ -112,14 +112,14 @@ log3(4)   // 什么都没有log
 想一想，你会怎么实现这个`before`函数。
 
 ```js
-  // Returns a function that will only be executed up to (but not including) the Nth call.
+  // Returns a function that will only be executed up to (including) the Nth call.
   _.before = function(times, func) {
     var memo;
     return function() {
-      if (--times > 0) {
+      if (--times >= 0) {
         memo = func.apply(this, arguments);
       }
-      if (times <= 1) func = null;
+      if (times < 0) func = null;
       return memo;
     };
   };

@@ -28,7 +28,10 @@ package main.java;
  * @version    
  * @since    JDK 1.6  
  * @see        PeopleChinese
+ * @FunctionalInterface 注解只是起文档的作用，说明这个接口是函数式接口，编译器并不会使用这个注解来决定一个接口是不是函数式接口。
  */
+
+@FunctionalInterface
 public interface PeopleInterface {
 	/** 接口没有方法体。只能通过一个具体的类去实现其中的方法体 */
 	public abstract void say();

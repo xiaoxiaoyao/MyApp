@@ -31,6 +31,9 @@ public class PeopleChinese implements PeopleInterface{
 		/**接口的调用：*/
 		PeopleInterface chinese = new PeopleChinese() ;
 		chinese.say();
-	}
-}
+		
+		/** 接口的实现+调用,换成lambda表达式*/
+		PeopleInterface english = () -> {System.out.println(" Hello!");};
+		english.say();
+}}
   

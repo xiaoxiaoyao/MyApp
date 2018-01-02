@@ -7,12 +7,15 @@ public class Instanceof {
 	public static void main(String[] args) {
         // 引用 People 类的实例
         People superObj = new People();
+        System.out.println("// 引用 People 类的实例：WhatInstanceOf(superObj);");
         WhatInstanceOf(superObj);
-        // 引用 Teacher 类的实例
+        // 引用 President 类的实例
         President sonObj = new President();
+        System.out.println("// 引用 President 类的实例： WhatInstanceOf(sonObj);");
         WhatInstanceOf(sonObj);
         // 其他Object 类的示例
-        Integer i = null;
+        final Object  i = null;
+        System.out.println("// 其他Object 类的示例：Object i = null;");
         WhatInstanceOf(i);
         
         //下面的代码运行时会抛出异常，不能将父类对象直接转换为子类类型

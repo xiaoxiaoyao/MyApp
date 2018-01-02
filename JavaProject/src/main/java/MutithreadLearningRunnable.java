@@ -1,12 +1,37 @@
 package main.java;
 /**
  * 参考http://blog.csdn.net/evankaka/article/details/44153709#t1
+ * 2018-01-02 update 使用匿名内部类改写一部分程序
  *@functon 多线程学习 extends Runnable
  *@author 小尧
  *@time 2016-10-18
  */
 public class MutithreadLearningRunnable {
 	public static void main(String args[]){
+		// 这里用内部类修改啦一下
+		Thread a =  new Thread(new Runnable(){
+			private int n=0;
+			public void run(){
+				do{
+					System.out.println("Thread a (Runnable)运行  :  " + n + " System.currentTimeMillis()=" + System.currentTimeMillis());
+					try {
+						Thread.sleep((int) Math.random() * 1000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+						break;
+					} 
+					n++;
+				}while(n<3);
+			}
+		}
+		);
+		
+		// 这里用匿名函数修改啦一下 注意这里用到啦箭头函数。在lambda表达式中，箭头操作符（->）右边语句为实现接口的方法
+		Runnable runner = () -> { System.out.println("匿名函数 Thread b Runnable runner 运行啦" );};
+		Thread b =new Thread(runner);
+		
+		a.start();
+		b.start();
         new Thread(new MutiThreadsClassA('a')).start();  
         new Thread(new MutiThreadsClassA('b')).start(); 
 	}
@@ -27,7 +52,7 @@ class MutiThreadsClassA implements Runnable{
 	@Override
 	public void run(){
 		do{
-			System.out.println(name + "(Runnable)运行  :  " + n);
+			System.out.println(name + "(Runnable)运行  :  " + n + " System.currentTimeMillis()=" + System.currentTimeMillis());
 			try {
 				Thread.sleep((int) Math.random() * 1000);
 			} catch (InterruptedException e) {
@@ -35,6 +60,6 @@ class MutiThreadsClassA implements Runnable{
 				break;
 			} 
 			n++;
-		}while(n<10);
+		}while(n<3);
 	}
 }

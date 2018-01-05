@@ -5,6 +5,8 @@
 https://docs.python.org/3/library/unittest.html
 '''
 
+import unittest
+
 class ZeroMultiError(Exception):
     '''
     测试注释一自定义一个错误类型，乘以0为错误

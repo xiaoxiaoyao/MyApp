@@ -5,7 +5,7 @@
 [我的知乎，欢迎围观，快点赞](https://www.zhihu.com/question/59524525/answer/213532626)
 [![Travis CI项目页面](https://www.travis-ci.org/xiaoxiaoyao/MyApp.svg?branch=master)](https://www.travis-ci.org/xiaoxiaoyao/MyApp)
 
-#.next
+# .next
 
 接下来有时间的要学一下 es6，npm，webpack
 

@@ -11,6 +11,7 @@ package main.java.test;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+
 import main.java.Structure;
 
 class StructureTest {

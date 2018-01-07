@@ -216,3 +216,8 @@ pip-log.txt
 .mr.developer.cfg
 PythonApplication1/deeplearning/JDdata/data/JData_*.csv
 #PythonApplication1/deeplearning/JDdata/data/*.accdb
+
+#############
+## 我个人的电子书，别传啦，太大
+#############
+*.pdf

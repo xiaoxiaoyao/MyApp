@@ -1,5 +1,5 @@
 package main.java;
-import java.util.*;
+import java.util.Scanner;
 /**
  * 循环基础知识
  */

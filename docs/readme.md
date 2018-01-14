@@ -23,3 +23,9 @@
 ## Algorithm，算法练习[(来自freeCodeCamp)](https://www.freecodecamp.cn)
 
 - [Validate US Telephone Numbers 验证传入字符串是有效的美国电话号码](./Algorithm/ValidateUSTelephoneNumbers.md)
+
+# 找工作技巧
+
+## 职位发布，面试技巧相关
+
+- [link1](./jobs.md)

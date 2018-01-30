@@ -2,7 +2,7 @@
 
 ## *关于职位*
 
-[上海&北京&海外职位-更新至1/12](https://github.com/lietoumai/Hunter/issues/3)
+[上海&北京&海外职位-更新至1/22](https://github.com/lietoumai/Hunter/issues/3)
 ***
 
 ## *求职相关的文章*
@@ -76,6 +76,8 @@
 [Node.Js面试](https://github.com/lietoumai/node-interview-questions)
 
 [后端开发面试题](https://github.com/monklof/Back-End-Developer-Interview-Questions)
+
+[一些Java面试题](http://jasonlife.top/2017/11/16/26Java%E9%9D%A2%E8%AF%95%E9%A2%98/)
 
 ### 关于薪酬
 
@@ -204,6 +206,8 @@
 
 [为什么人们真正要离开他们的工作](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/chang-gui-sheng-ya/wei-shi-yao-ren-men-zhen-de-yao-li-kai-ta-men-de-gong-zuo-ff1f.html)
 
+[改善决策的三条建议](https://github.com/lietoumai/Tech-article/issues/18)
+
 ### 软件行业
 
 [程序员影响力指南](https://github.com/lietoumai/Tech-article/issues/1)
@@ -276,6 +280,8 @@
 
 [编码过程中需尽量避免的 7 条捷径](https://www.oschina.net/translate/7-coding-shortcuts-that-dont-work)
 
+[远程工作这5年](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/yuan-cheng-ban-gong-zhe-5-nian.html)
+
 ## *会有一些程序员感悟*
 
 [40岁程序员的感悟](https://github.com/lietoumai/Hunter/issues/7)
@@ -291,6 +297,8 @@
 [作为程序员，这些话你肯定说过](https://github.com/lietoumai/Hunter/issues/32)
 
 [一个老运维的20年奋斗史](https://mp.weixin.qq.com/s/Xv1e1WPhtqdr16ncb4EsMw)
+
+[如何与技术人员对话](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/ru-he-yu-ji-zhu-ren-yuan-dui-hua.html)
 
 ## *会有一些技术文章*
 
@@ -370,6 +378,8 @@
 
 [王尔德的毒鸡汤](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/77-wang-er-de-de-du-ji-tang.html)
 
+[聪明人不会做的十件事](https://github.com/lietoumai/Chicken-Soup/issues/4)
+
 ## *会有一些猎头的心得*
 
 [猎头行业基础问答](https://github.com/lietoumai/Hunter/issues/39)
@@ -388,16 +398,24 @@
 ***
 
 ## *会有好书推荐*
+
 [中文&英文](https://github.com/lietoumai/Book/projects)
 
 ## *会有法律相关*
+
 [关于劳动仲裁](http://www.360doc.com/content/16/0125/22/21180418_530550331.shtml)
 
 ## *一言以蔽之*
+
 [如何给很忙的人写邮件](https://github.com/lietoumai/In-a-word/issues/1)
+
+## *奇文共赏*
+
+[五四运动造就的识字农民才是这么多热点事件的根源](https://github.com/lietoumai/Spectacular-article/issues/1)
 ***
 
 ## *精品博客推荐*
+
 [Yin神](http://www.yinwang.org/)
 
 [鸟哥](http://www.laruence.com/)
@@ -438,6 +456,6 @@
 
 [Hollis](http://www.hollischuang.com/)
 
-# FORM
+### FORM
 
 [from](https://github.com/lietoumai/Hunter/blob/master/README.md)

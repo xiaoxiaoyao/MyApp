@@ -18,14 +18,13 @@
 
 程序给你带来的，是让你即刻体会到成就感的快感。抛开编程水平不谈，你写一行程序，就会有一行的效果，马上见效。__编程，应该是唯一一个普通人可以使用的魔法了。__
 
-# Blog
+## Blog
 
-## Algorithm，算法练习[(来自freeCodeCamp)](https://www.freecodecamp.cn)
+### Algorithm，算法练习[(来自freeCodeCamp)](https://www.freecodecamp.cn)
 
 - [Validate US Telephone Numbers 验证传入字符串是有效的美国电话号码](./Algorithm/ValidateUSTelephoneNumbers.md)
 
-# 找工作技巧
+## 找工作技巧
 
-## 职位发布，面试技巧相关
-
-- [link1](./jobs.md)
+- [如何转成IT：link1](./jobs.md)
+- [我的简历](./resumeSecure.md)

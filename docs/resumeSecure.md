@@ -25,7 +25,7 @@
 
 「挖掘」流程中心返回数据包泄漏员工信息
 
-[「渗透」整合某知乎网友隐私信息（事后已和该网友沟通）](https://www.zhihu.com/question/68302462/answer/269915780)
+[「渗透」整合某知乎网友隐私信息（事前已和该网友沟通）](https://www.zhihu.com/question/68302462/answer/269915780)
 
 [演示简单的SQL注入攻击（英文版翻译加补充）](https://github.com/xiaoxiaoyao/MyApp/blob/master/jupyter_notebook/SQL-Injection-Attack.ipynb)
 
@@ -88,15 +88,18 @@
 
 6、管理公司税务证照。
 
-成功案例1：曾经帮助某企业在税务局税率判断错误的情况下协助正确执行税法，参考该链接（国税总局网站，关于工业水蒸汽使用后被设备回收的水是否应征17%）：http://hd.chinatax.gov.cn/jzxx/login/showQuestion.jsp?MZ=nTZliX%2bFO62MD8aiAHrdAA%3d%3d
+[成功案例1](http://hd.chinatax.gov.cn/jzxx/login/showQuestion.jsp?MZ=nTZliX%2bFO62MD8aiAHrdAA%3d%3d)：曾经帮助某企业在税务局税率判断错误的情况下协助正确执行税法（国税总局网站，关于工业水蒸汽使用后被设备回收的水是否应征17%）
 
-成功案例2：稽查人员对直销人员(非员工,按直销法管理)取得的销售佣金在地税完营业税和个人所得税后未在地税主管机关取得发票部分，要求补交所得税，国税稽查人员不认可地税出具的证明。我们提出异议，并且最终解决：http://hd.chinatax.gov.cn/jzxx/login/showQuestion.jsp?MZ=QCOvNS%2bemVQ0zOhdsngbqA%3d%3d
+[成功案例2](http://hd.chinatax.gov.cn/jzxx/login/showQuestion.jsp?MZ=QCOvNS%2bemVQ0zOhdsngbqA%3d%3d)：稽查人员对直销人员(非员工,按直销法管理)取得的销售佣金在地税完营业税和个人所得税后未在地税主管机关取得发票部分，要求补交所得税，国税稽查人员不认可地税出具的证明。我们提出异议，并且最终解决。
 
 ## 教育经历：
 
-**上海立信会计学院（2010/09–2014/07）税务专业**
+教育经历不重要。
+> 上海立信会计学院（2010/09–2014/07）税务专业
 
 ## 获得证书：
 
-会计从业资格证，2014年2月取得
+财务证书也不重要。
+
+会计从业资格证，2014年2月取得。
 初级财务会计（2016年取得）， 中级财务会计（已通过2门，共3门），注册会计师（已通过税法、经济法，共6门）

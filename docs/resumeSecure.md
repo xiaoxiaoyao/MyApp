@@ -22,10 +22,6 @@
 
 ### 前期做过和安全相关的事：
 
-「挖掘」京东erp.jd.com搜索框XSS
-
-「挖掘」流程中心返回数据包泄漏员工信息
-
 [「渗透」整合某知乎网友隐私信息（事前已和该网友沟通）](https://www.zhihu.com/question/68302462/answer/269915780)
 
 [演示简单的SQL注入攻击（英文版翻译加补充）](https://github.com/xiaoxiaoyao/MyApp/blob/master/jupyter_notebook/SQL-Injection-Attack.ipynb)

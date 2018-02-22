@@ -2,6 +2,9 @@
 
 ## *关于职位*
 
+[想开启新的旅程？点我就是了](http://lietoumai.sxl.cn/)
+***
+
 [上海&北京&海外职位-更新至1/22](https://github.com/lietoumai/Hunter/issues/3)
 ***
 

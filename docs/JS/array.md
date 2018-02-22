@@ -40,18 +40,18 @@ Array的push()与unshift()方法都能给当前数组添加元素，不同的是
 */
 var arr = [ ];
 var startTime = +new Date(); //+new Date()相当于new Date().valueOf()，返回当前时间的毫秒数
-// push性能测试 
+// push性能测试
 for (var i = 0; i < 100000; i++) { 
-　　arr.push(i); 
+　　arr.push(i);
 }
 var endTime = +new Date();
 console.log("调用push方法往数组中添加100000个元素耗时"+(endTime-startTime)+"毫秒"); 
 
-startTime = +new Date(); 
-arr = [ ]; 
-// unshift性能测试 
+startTime = +new Date();
+arr = [ ];
+// unshift性能测试
 for (var i = 0; i < 100000; i++) { 
-　　arr.unshift(i); 
+　　arr.unshift(i);
 }
 endTime = +new Date();
 console.log("调用unshift法往数组中添加100000个元素耗时"+(endTime-startTime)+"毫秒"); 

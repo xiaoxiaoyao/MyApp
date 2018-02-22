@@ -34,5 +34,7 @@
 
 ## 找工作技巧
 
-- [如何转成IT：link1](./jobs.md)
-- [我的简历](./resumeSecure.md)
+- [如何转成行/各种找工作相关信息](./jobs.md)
+- [我的简历-安全](./resumeSecure.md)
+- [我的简历-数据分析](./resumeDA.md)
+- [我的简历-税务](./resumeTax.md)

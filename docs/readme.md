@@ -3,7 +3,7 @@
 编程重要的是思想，不是语言，语言只是工具。正在学（后端）JAVA和（前端入门）JS，接下来有时间的要学一下 es6，npm，webpack,还有各种奇奇怪怪的东西
 
 - [本网页地址](http://xiaoxiaoyao.github.io/MyApp/)
-- [前端想学的想看的](/book/front-end.md##JavaScript)
+- [前端学习笔记](/book/front-end.md##JavaScript)
 - [我的知乎](https://www.zhihu.com/people/xiaoyaowoaini#answers)
 
 ## 我为什么喜欢编程？

@@ -48,11 +48,11 @@
 ```java
     @FunctionalInterface
     public interface Runnable { void run(); }
-    
+
     public interface Callable<V> { V call() throws Exception; }
-    
+
     public interface ActionListener { void actionPerformed(ActionEvent e); }
-    
+
     public interface Comparator<T> { int compare(T o1, T o2); boolean equals(Object obj); }
 ```
 
@@ -115,12 +115,12 @@ JDK预定义了很多函数接口以避免用户重复定义。最典型的是Fu
 
 ```java
     @FunctionalInterface
-    public interface Function<T, R> {  
+    public interface Function<T, R> {
         R apply(T t);
     }
 ```
 
-这个接口代表一个函数，接受一个T类型的参数，并返回一个R类型的返回值。   
+这个接口代表一个函数，接受一个T类型的参数，并返回一个R类型的返回值。
 另一个预定义函数接口叫做Consumer，跟Function的唯一不同是它没有返回值。
 
 ```java

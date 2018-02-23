@@ -54,7 +54,7 @@ for (var i = 0; i < 100000; i++) {
 　　arr.unshift(i);
 }
 endTime = +new Date();
-console.log("调用unshift法往数组中添加100000个元素耗时"+(endTime-startTime)+"毫秒"); 
+console.log("调用unshift法添加100000个元素耗时"+(endTime-startTime)+"毫秒"); 
 ```
 
 这段代码分别执行了100000次push()和unshift()操作，在chrome浏览器运行一次，得到的结果如下图所示：

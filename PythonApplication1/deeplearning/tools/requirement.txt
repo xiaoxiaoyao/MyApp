@@ -1,5 +1,5 @@
-.\python.exe -m pip install keras,numpy, scipy,pyyaml,Theano --upgrade
-.\python.exe -m pip install tensorflow --upgrade
-.\python.exe -m pip install sklearn --upgrade
-.\python.exe -m pip install pycharm --upgrade
-.\python.exe -m pip install tensor,tensor-gpu --upgrade TF_PYTHON_URL
+python3 -m pip install keras,numpy, scipy,pyyaml,Theano --upgrade
+python3 -m pip install tensorflow --upgrade
+python3 -m pip install sklearn --upgrade
+python3 -m pip install pycharm --upgrade
+python3 -m pip install tensor,tensor-gpu --upgrade TF_PYTHON_URL

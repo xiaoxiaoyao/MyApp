@@ -46,7 +46,7 @@ def readFile(type,filepath):
             'txt': lambda x: pd.read_csv(x,encoding='gb2312',sep="\t"),
             'xls': lambda x: pd.read_excel(x), 
             'lsx': lambda x: pd.read_excel(x), # lsx = xlsx
-    }[type](filepath)
+    }.get(type)(filepath)
 
 
 

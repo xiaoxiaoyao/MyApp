@@ -24,6 +24,8 @@
 
 [大公司Vs小公司](https://github.com/lietoumai/Hunter/issues/40)
 
+[一个创业公司是如何倒闭的](https://github.com/lietoumai/Hunter/issues/43)
+     
 ### 关于招聘
 
 [关于招聘老程序员的招聘建议](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/zhi-wei-fa-bu/zhao-pin-xiang-guan/guan-yu-lao-cheng-xu-yuan-zhao-pin-he-ying-pin-de-na-dian-shi.html)
@@ -31,6 +33,8 @@
 [减少招聘偏见七大法](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/zhi-wei-fa-bu/zhao-pin-xiang-guan/jian-shao-zhao-pin-pian-jian-qi-da-fa.html)
 
 [招聘黑话大全](https://github.com/lietoumai/Hunter/issues/35)
+
+[如何招聘程序员](https://github.com/lietoumai/Hunter/issues/46)
 
 ### 关于简历
 
@@ -64,9 +68,15 @@
 
 [你为什么需要在下一次技术公司的面试中问问题？](https://github.com/lietoumai/Hunter/issues/21)
 
+[技术面试之前你需要准备的](https://github.com/lietoumai/awesome-offer/issues/51)
+
 [我最喜欢问应聘者的问题 & 回答思路](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/chang-gui-sheng-ya/wo-zui-xi-huan-wen-ying-pin-zhe-de-wen-ti-and-hui-da-si-lu.html)
 
 [没有技术深度的苦恼](https://github.com/lietoumai/Hunter/issues/6)
+
+[十个有用的面试技巧](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/zhi-wei-fa-bu/mian-shi-zhi-nan/ji-zhu-mian-shi/10ge-you-yong-de-mian-shi-ji-qiao.html)
+
+[让BAT的offer不再难拿](https://bestswifter.com/bat-interview/)
 
 [十个有用的面试技巧](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/zhi-wei-fa-bu/mian-shi-zhi-nan/ji-zhu-mian-shi/10ge-you-yong-de-mian-shi-ji-qiao.html)
 
@@ -100,19 +110,38 @@
 
 [你真正想要在工作中得到什么](https://github.com/lietoumai/Hunter/issues/17)
 
-### 关于离职
+[为什么有了offer再去谈offer会更好？](https://github.com/lietoumai/awesome-offer/issues/52)
 
+### 关于离职
 [离职申请范文](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/li-zhi-xiang-guan/li-zhi-shen-qing-fan-wen.html)
+
+[程序员离职申请范文](https://github.com/lietoumai/Hunter/issues/48)
 
 [如何优雅的离职](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/li-zhi-xiang-guan/ru-he-you-ya-de-ti-li-zhi.html)
 
-[提了离职就要走](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/li-zhi-xiang-guan/53ti-le-li-zhi-jiu-yao-zou.html)
+[如何得体的离职](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/zhi-wei-fa-bu/ru-he-zhuang-bing.html)
+
+[提了离职就走吧](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/li-zhi-xiang-guan/53ti-le-li-zhi-jiu-yao-zou.html)
 
 ### 关于入职
 
 [简单三招让你融入新团队](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-zhi-xiang-guan/jian-dan-san-zhao-rang-ni-li-ma-rong-ru-xin-tuan-dui.html)
 
 [入职新岗位的十条建议](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-zhi-xiang-guan/ru-zhi-xin-gang-wei-de-shi-tiao-you-yong-jian-yi.html)
+
+[程序员如何尽快融入新团队](https://github.com/lietoumai/Hunter/issues/50)
+
+***
+
+### 关于跳槽
+[不断跳槽也能成功](http://www.hbrchina.org/2015-09-06/3292.html)
+
+[人们真正要离开他们的工作的原因是什么](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/chang-gui-sheng-ya/wei-shi-yao-ren-men-zhen-de-yao-li-kai-ta-men-de-gong-zuo-ff1f.html)
+
+[跳槽真的可以保证成功的职业生涯？](https://github.com/lietoumai/Hunter/issues/44)
+
+[我们为何要跳槽？](http://www.cnblogs.com/forerunner/p/why-we-quit.html)
+
 ***
 
 ## *会有一些职场指南*
@@ -179,8 +208,6 @@
 
 [信誉比经验更重要](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/chang-gui-sheng-ya/xin-yu-bi-jing-yan-geng-zhong-yao.html)
 
-[不断跳槽也能成功](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/chang-gui-sheng-ya/bu-duan-tiao-cao-ye-neng-cheng-gong.html)
-
 [比起识破谎言，让别人说真话才是真本事](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/chang-gui-sheng-ya/bi-qi-shi-po-huang-yan-ff0c-rang-bie-ren-shuo-zhen-hua-cai-shi-zhen-ben-shi.html)
 
 [好的管理就是别妨碍员工做事情](https://github.com/lietoumai/Hunter/issues/33)
@@ -207,15 +234,27 @@
 
 [为什么弱连接很重要](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/chang-gui-sheng-ya/wei-shi-yao-ruo-lian-jie-hen-zhong-yao.html)
 
-[为什么人们真正要离开他们的工作](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/chang-gui-sheng-ya/wei-shi-yao-ren-men-zhen-de-yao-li-kai-ta-men-de-gong-zuo-ff1f.html)
-
 [改善决策的三条建议](https://github.com/lietoumai/Tech-article/issues/18)
+
+[情绪控制七步走](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/chang-gui-sheng-ya/qing-xu-kong-zhi-qi-bu-zou.html)
+
+[学习才是你能成为人生赢家的资本](https://github.com/lietoumai/Career/issues/23)
+
+[照这样规划职业生涯，真的可能会赚翻](https://github.com/lietoumai/Career/issues/24)
+
+[一旦走进误区，所谓时间管理就是在浪费时间](https://github.com/lietoumai/Career/issues/25)
+
+[掌握这6个原则，你的说服力就可以提升30%](https://github.com/lietoumai/Career/issues/26)
+
+[自动化将使终生学习成为工作的必要部分](https://github.com/lietoumai/Career/issues/27)
 
 ### 软件行业
 
 [程序员影响力指南](https://github.com/lietoumai/Tech-article/issues/1)
 
 [无我编程的十条戒律](https://github.com/lietoumai/Tech-article/issues/2)
+
+[最牛逼的编码套路](https://blog.csdn.net/happydeer/article/details/17023229)
 
 [程序员职业倦怠](https://github.com/lietoumai/Tech-article/issues/3)
 
@@ -267,9 +306,9 @@
 
 [学习如何理解代码以成为更优秀的程序员](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/xue-xi-ru-he-li-jie-dai-ma-yi-cheng-wei-geng-you-xiu-de-cheng-xu-yuan.html)
 
-[给迷茫的开发者的 18 个建议](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/gei-mi-mang-de-kai-fa-zhe-de-18-ge-jian-yi.html?from=singlemessage)
+[给迷茫的开发者的 18 个建议 ](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/gei-mi-mang-de-kai-fa-zhe-de-18-ge-jian-yi.html?from=singlemessage)
 
-[软件开发有多贵](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/ruan-jian-kai-fa-you-duo-gui.html)
+[软件开发有多贵 ](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/ruan-jian-kai-fa-you-duo-gui.html)
 
 [Github 对程序员职业生涯的影响](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/githubdui-cheng-xu-yuan-zhi-ye-sheng-ya-de-ying-xiang.html)
 
@@ -285,6 +324,8 @@
 
 [远程工作这5年](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/yuan-cheng-ban-gong-zhe-5-nian.html)
 
+[如何做技术分享](https://github.com/lietoumai/Hunter/issues/45)
+
 ## *会有一些程序员感悟*
 
 [40岁程序员的感悟](https://github.com/lietoumai/Hunter/issues/7)
@@ -295,7 +336,7 @@
 
 [在Google工作十年到底能学到啥](https://github.com/lietoumai/DaLu-Manong-Say/issues/1)
 
-[一些来自于老程序员的人生经验](https://github.com/lietoumai/Hunter/issues/24)
+[一些来自于老程序员的人生经验 ](https://github.com/lietoumai/Hunter/issues/24)
 
 [作为程序员，这些话你肯定说过](https://github.com/lietoumai/Hunter/issues/32)
 
@@ -303,7 +344,12 @@
 
 [如何与技术人员对话](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/ru-he-yu-ji-zhu-ren-yuan-dui-hua.html)
 
+[梁胜博士写给程序员的话](https://github.com/lietoumai/Chicken-Soup/issues/5)
+
 ## *会有一些技术文章*
+
+### 算法
+[算法（英文）](https://algs4.cs.princeton.edu/home/)
 
 ### 后端
 
@@ -314,6 +360,10 @@
 [百花齐放的工具是Web的未来](https://github.com/lietoumai/Tech-article/issues/8)
 
 [为什么动态类型语言相对比较慢？](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ru-he-zhang-xin-shui/ji-zhu-sheng-ya/wei-shi-yao-dong-tai-lei-xing-yu-yan-xiang-dui-bi-jiao-man-ff1f.html)
+
+[Memcached vs Redis, 挑选哪一个？](https://github.com/lietoumai/Tech-article/issues/20)
+
+[阿里巴巴Java开发手册](http://techforum-img.cn-hangzhou.oss-pub.aliyun-inc.com/Java_1512024443940.pdf)
 
 ### 前端
 
@@ -330,6 +380,14 @@
 [漫画区块链](http://www.sohu.com/a/162764647_673573)
 
 [区块链学习指南](https://learnblockchain.cn/)
+
+[加密货币和区块链（一）：历史的重演](https://github.com/lietoumai/Tech-article/issues/19)
+
+[一万字了解密码学（上）](https://www.cnblogs.com/ehcoo/p/6305355.html)
+
+[一万字了解密码学（下）](http://www.ehcoo.com/cryptology1.html)
+
+[区块链六大核心算法](https://github.com/lietoumai/Tech-article/issues/21)
 
 ## *会有一些技术论坛*
 
@@ -365,6 +423,8 @@
 
 [Techcrunch](https://techcrunch.com/)
 
+[BookDownload](https://www.allitebooks.com)
+
 ## *会有一些鸡汤和反鸡汤*
 
 [职业教练的分享：你每天需要告诉自己的15件事](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/ni-mei-tian-xu-yao-gao-su-zi-ji-de-15-jian-shi.html)
@@ -392,6 +452,9 @@
 [如何引起猎头的注意](https://lietoumai.gitbooks.io/the-story-of-lietoumai/content/xi-tou-xiang-guan/ru-he-yin-qi-xi-tou-de-zhu-yi.html)
 ***
 
+[2017总结](https://github.com/lietoumai/Hunter/issues/47)
+***
+
 ## *会有一些读后感*
 
 [如何做更好的决策](https://github.com/lietoumai/Hunter/issues/2)
@@ -409,8 +472,11 @@
 [关于劳动仲裁](http://www.360doc.com/content/16/0125/22/21180418_530550331.shtml)
 
 ## *一言以蔽之*
-
 [如何给很忙的人写邮件](https://github.com/lietoumai/In-a-word/issues/1)
+
+[深度学习这本书到底在说啥](https://github.com/lietoumai/In-a-word/issues/2)
+
+[如何掌控人生－掌控你的注意力](https://github.com/lietoumai/In-a-word/issues/3)
 
 ## *奇文共赏*
 

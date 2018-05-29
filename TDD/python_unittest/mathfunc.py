@@ -41,7 +41,7 @@ def multiNotZero(a, b):
 
 def divide(a, b):
     '''
-    测试注释一这是除法，注意除数不能为0
+    测试注释：这是除法，注意除数不能为0
     '''
     if b == 0:
         raise ZeroDivisionError('divide',b)

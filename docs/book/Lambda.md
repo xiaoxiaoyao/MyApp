@@ -1,4 +1,4 @@
-# Java8 Lambda表达式教程
+# Java8 Lambda表达式快速上手教程
 
 ## 1. 什么是λ表达式
 

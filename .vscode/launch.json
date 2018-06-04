@@ -26,12 +26,10 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": true,
-            "pythonPath": "/usr/bin/python3",
+            "pythonPath": "C:\\Users\\shlaiyao\\AppData\\Local\\Programs\\Python\\Python35\\",
             "program": "${file}",
             "cwd": "${workspaceRoot}",
             "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit",
                 "RedirectOutput"
             ]
         },

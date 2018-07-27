@@ -1,5 +1,6 @@
-#-*- coding: UTF-8 -*-   
-debug=False
+#!/usr/bin/env Python
+# coding=utf-8
+debug=0
 ''''' 
 接口开发：从本地读取数据（xls，csv，txt，xlsx）,部分格式有问题的对付掉,计算结果,再写入远程数据库
 1、读取指定目录下的所有文件 
@@ -61,11 +62,12 @@ def eachFile(path):
 def readFile(type,fulldir):
     # 通过匿名函数实现Switch/Case
     logging.info("readFile(type,fulldir)"+str([type,fulldir]))
+    logging.debug("正在读取文件")
     return {
             '.csv': lambda x: pd.read_csv(x,encoding='gb2312',sep=",|\t",engine='python'), # 吐槽一句，不知道为什么csv格式分隔符会有空格和逗号2种格式，坑爹啊。
-            '.txt': lambda x: pd.read_csv(x,encoding='gb2312',sep="\t"),
-            '.xls': lambda x: pd.read_excel(x), 
-            '.xlsx': lambda x: pd.read_excel(x), 
+            '.txt': lambda x: pd.read_csv(x,encoding='gb2312',sep=",|\t",engine='python'),
+            '.xls': lambda x: pd.read_excel(x,encoding='gb2312',index=False),
+            '.xlsx': lambda x: pd.read_excel(x,encoding='utf-8'), 
     }.get(type)(open(fulldir))
 
 if __name__ == '__main__':  
@@ -79,9 +81,10 @@ if __name__ == '__main__':
     fileArray=[]
     for file in fileList:
         # 读取的文件存数组里，以后说不定有用
-        file['df']=readFile(file['fename'],file['fulldir'])        
+        file['df']=readFile(file['fename'],file['fulldir'])
+        logging.debug("正在写数据库")
         # 批量入数据库，使用pandas IO Tools，参考http://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.DataFrame.to_sql.html?chunksize=1000的意思是分块导入，最大块大小1000
-        file['df'].to_sql(file['fname'],engine, if_exists='append', chunksize=1000)
+        file['df'].to_sql(file['fname'],engine, if_exists='append', chunksize=500)
 
 # 单元测试代码
 import unittest

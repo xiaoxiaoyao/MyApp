@@ -104,13 +104,6 @@ def strToDictionary(b=""):
         d[key] = value
     return d
 
-def HARToDictionary(b={}):
-    d ={}#初始化字典变量  
-    for line in b:#分割 
-        #其设置为1就会把字符串拆分成2份 
-        d[line['name']]=line[ 'value']
-    return d
-
 # 给我个URL，还你个JSON
 def getDataByDownloadingJSON(url=url,data="",cookies={},headers={}):
     response = requests.get(url, data=data,cookies=cookies,headers=headers)

@@ -1,3 +1,13 @@
+MySQLdb
+cElementTree
+PyGame
+pefile
+MySQL-python
+Django
+Matplotlib
+web-walker
+redis
+ConfigParser
 asn1crypto>=0.21.1
 attrs>=16.3.0
 Automat>=0.5.0
@@ -32,8 +42,6 @@ w3lib>=1.17.0
 zope.interface>=4.3.3
 djangorestframework
 docopt
-gnureadline
-ipython
 Pygments
 setuptools
 wheel
@@ -46,14 +54,3 @@ Twisted
 SciPy
 NumPy
 WxPython
-BeautifulSoup
-PIL
-MySQLdb
-cElementTree
-PyGame
-pefile
-MySQL-python
-Django
-Matplotlib
-web-walker
-redis

@@ -1,5 +1,5 @@
-#!/usr/bin/env Python
-# coding=utf-8
+#!/usr/bin/python3
+# -*- coding:utf8 -*-
 ''''' 
 接口开发：从本地读取数据（xls，csv，txt，xlsx）,部分格式有问题的对付掉,计算结果,再写入远程数据库
 1、读取指定目录下的所有文件 
@@ -8,10 +8,10 @@
 '''  
 ## 基本配置START ##
 # 配置文件路径
-path='E:\\config.txt' 
+path='D:\\config.txt' 
 
 # TODO：测试时写死文件路径，实际运行时需要改，最好能够自动化
-fileInPath = "E:\\test" 
+fileInPath = "D:\\test" 
 
 #数据库连接基本信息，详见 def conn
 sqlType="mssql"
@@ -103,7 +103,7 @@ def filenameConfig(filename='18年竞争力外单时效_快件环节_延误日�
             return Config[key]
     raise ImportError('文件找不到对应的配置信息，请检查配置文件。注意配置文件写法。文件名：'+filename)
   
-def eachFile(path = "E:\\test" ):  
+def eachFile(path = "D:\\test" ):  
     '''# 遍历指定目录，显示目录下的所有文件名'''
     pathDir =  os.listdir(path)
     pathFile=[]
@@ -117,7 +117,7 @@ def eachFile(path = "E:\\test" ):
         pathFile.append(tmp)
     return pathFile
 
-def readFile(file={'fname': '验收及时率（总记录445）', 'dirname': 'E:\\test', 'filename': '验收及时率（总记录445）.xls', 'fename': '.xls', 'fulldir': 'E:\\test\\验收及时率（总记录445）.xls'}):
+def readFile(file={'fname': '验收及时率（总记录445）', 'dirname': 'D:\\test', 'filename': '验收及时率（总记录445）.xls', 'fename': '.xls', 'fulldir': 'D:\\test\\验收及时率（总记录445）.xls'}):
     '''# 用panda读取文件+改名'''
     type,fulldir=file['fename'],file['fulldir']
     # 导入文件改名需求

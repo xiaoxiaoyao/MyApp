@@ -1,11 +1,11 @@
 Attribute VB_Name = "MOD1"
 Sub SaveSheetAsWorkbook()
-' ½«¹¤×÷²¾ËùÓÐ¹¤×÷±íÁí´æÎªµ¥¶ÀµÄÎÄ¼þ¡£Excel VBA-ÅúÁ¿½«¶à¸ösheet±íÁí´æÎªµ¥¶ÀµÄ¹¤×÷±¡ÎÄ¼þ
+' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Excel VBA-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sheetï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
     Dim theName As String
     On Error GoTo Line1
     For Each sht In ActiveWindow.SelectedSheets
         sht.Copy
-        ' Â·¾¶ÎªÔ­¹¤×÷²¾Â·¾¶£¬ÎÄ¼þÃûÎª¹¤×÷±íÃû
+        ' Â·ï¿½ï¿½ÎªÔ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         theName = ThisWorkbook.Path & "_" & sht.Name & ".xls"
         ActiveWorkbook.SaveAs Filename:=theName, FileFormat:=xlNormal
         ActiveWindow.Close

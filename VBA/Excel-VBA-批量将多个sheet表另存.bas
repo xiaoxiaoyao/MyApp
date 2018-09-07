@@ -1,4 +1,4 @@
-Attribute VB_Name = "MOD1"
+Attribute VB_Name = "MOD_1"
 Sub SaveSheetAsWorkbook()
 ' �����������й��������Ϊ�������ļ���Excel VBA-���������sheet�����Ϊ�����Ĺ������ļ�
     Dim theName As String

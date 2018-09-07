@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*-coding:utf-8 -*-
 '''
-加减乘除4个函数的单元测试
+加减乘除4个函数的单元测试，有空也要常复习
 https://docs.python.org/3/library/unittest.html
 '''
 

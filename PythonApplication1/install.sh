@@ -164,7 +164,7 @@ echo 日期和时间
 echo 处理日期和时间的库
 
 pip3 install -U arrow ;echo Python功能强大的日期和时间库.
-pip3 install -U Chronyk -用于解析人为时间和日期的Python 3库.
+pip3 install -U Chronyk ;echo -用于解析人为时间和日期的Python 3库.
 pip3 install -U dateutil ;echo 扩展到标准的Python datetime模块.
 pip3 install -U delorean ;echo Delorean建立在pytz和dateutil之上，Delorean将为处理时间提供自然语言改进，并提供易于使用的日期时间抽象
 pip3 install -U moment ;echo 处理日期/时间的Python库。灵感来自Moment.js.

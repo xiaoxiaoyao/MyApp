@@ -1,5 +1,9 @@
 Attribute VB_Name = "MOD_1"
 Sub A2_NewSheet()
+'
+' NewSheet() 宏
+' 业务代码,数据透视表去除格式粘贴
+'
     Columns("A:E").Select
     Selection.Copy
 Set sh = Sheets.Add

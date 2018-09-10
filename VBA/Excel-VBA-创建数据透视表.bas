@@ -19,7 +19,7 @@ End With
     End With
     With ActiveSheet.PivotTables("给客户的明细数据透视表").PivotFields("版本")
         .Orientation = xlRowField
-        .Position = 2
+        .Position = 1
     End With
     With ActiveSheet.PivotTables("给客户的明细数据透视表").PivotFields("供应商")
         .Orientation = xlRowField

@@ -27,7 +27,7 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": true,
-            "pythonPath": "C:\\Users\\shlaiyao\\AppData\\Local\\Programs\\Python\\Python35\\",
+            "pythonPath": "/usr/local/bin/python3",
             "program": "${file}",
             "cwd": "${workspaceRoot}",
             "debugOptions": [

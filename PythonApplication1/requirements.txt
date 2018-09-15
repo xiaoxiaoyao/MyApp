@@ -1,22 +1,25 @@
-MySQLdb
-cElementTree
+# FOR macOS
+# MySQLdb
+# cElementTree
+pandas
+beautifulsoup4
+# json
 PyGame
 pefile
-MySQL-python
+# MySQL-python
 Django
 Matplotlib
-web-walker
+# web-walker
 redis
 ConfigParser
 asn1crypto>=0.21.1
 attrs>=16.3.0
 Automat>=0.5.0
-beautifulsoup4>=4.5.3
 bs4>=0.0.1
 cffi>=1.9.1
 constantly>=15.1.0
 cryptography>=1.8.1
-cssselect>=1.0.1
+# cssselect>=1.0.1
 idna>=2.5
 incremental>=16.10.1
 itchat>=1.2.30

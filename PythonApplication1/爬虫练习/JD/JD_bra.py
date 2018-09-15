@@ -37,13 +37,17 @@ def get_comment_message(product_id='15752689550',pages=11):
         html = requests.get(url).text.replace('fetchJSON_comment98vv53282(', '').replace(');', '')
         data = json.loads(html)
         for comment in data['comments']:
+            # flush_data清洗数据的方法
+            comment['productColor'] = flush_data(comment['productColor'])
+            # size
+            comment['productSize'] = flush_data(comment['productSize'])
             yield comment # 惰性计算，满速返回
 
 #  因为每种商品的颜色、尺寸描述上有差异，为了方面统计，我们进行了简单的数据清洗。
 def flush_data(data='肤'): # 一键替换同义词；
     return {
-        '肤' : '肤色', '黑' : '黑色', '紫' : '紫色', '粉' : '粉色', '蓝' : '蓝色', '白' : '白色', '灰' : '灰色', '槟' : '香槟色', '琥' : '琥珀色', '红' : '红色', 'A' : 'A', 'B' : 'B', 'C' : 'C', 'D' : 'D'
-    }.get(data)
+        '肤' : '肤色', '果绿色':'绿色','黑' : '黑色', '紫' : '紫色', '粉' : '粉色', '蓝' : '蓝色', '白' : '白色', '灰' : '灰色', '槟' : '香槟色', '琥' : '琥珀色', '红' : '红色', 'A' : 'A', 'B' : 'B', 'C' : 'C', 'D' : 'D'
+    }.get(data, data)
 
 def spider_jd(ids):
     while ids:
@@ -57,8 +61,24 @@ def spider_jd(ids):
         lock.release()
         # 获取评论内容
         for i in get_comment_message(id,3):
-            print(i)
-            print('---------')
+            save_data(i)
+
+#决定如何保存数据
+def save_data(data={}):
+    # 保存数据的方法
+    pymongo_save_data(data)
+
+# python的单例模式就是一个类的实例只能自始自终自能创建一次。应用场景比如说数据库的连接池。
+import pymongo
+# mongo服务
+client = pymongo.MongoClient('mongodb://127.0.0.1:27017/?safe=true')# 仅限本机，不留 password
+# jd数据库
+db = client.jd
+def pymongo_save_data(data={}):
+    global client,db
+    # product表,没有自动创建，写数据库
+    print(data)
+    db.product.insert(data)
 
 if __name__=='__main__':
     lock = threading.Lock()

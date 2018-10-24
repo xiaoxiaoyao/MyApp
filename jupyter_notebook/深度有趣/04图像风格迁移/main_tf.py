@@ -34,7 +34,7 @@ def load_vgg_model(path):
 	- 0 is conv1_1 (3, 3, 3, 64)
 	- 1 is relu
 	- 2 is conv1_2 (3, 3, 64, 64)
-	- 3 is relu    
+	- 3 is relu
 	- 4 is maxpool
 	- 5 is conv2_1 (3, 3, 64, 128)
 	- 6 is relu

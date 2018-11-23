@@ -49,4 +49,4 @@ def work(driver=driver):
     for URL,i,j in gressURL():
         print(URL,i,j)
         saveData(data=getTabel(url=URL,driver=driver),filename=i+j)
-# https://a310.zhulang.com/caiwu/gaofei/index/current_month/201808.html
+

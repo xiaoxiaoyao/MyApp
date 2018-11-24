@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func main() {
+func strings_splitjoin() {
 	str := "The quick brown fox jumps over the lazy dog"
 	sl := strings.Fields(str)
 	fmt.Printf("Splitted in slice: %v\n", sl)

@@ -39,6 +39,28 @@ Theta2_grad = zeros(size(Theta2));
 %         cost function computation is correct by verifying the cost
 %         computed in ex4.m
 %
+
+%首先将输出单元y用矩阵表示出来：
+I = eye(num_labels);
+Y = zeros(m, num_labels);
+for i=1:m
+  Y(i, :)= I(y(i), :);
+end
+%然后我们要写出代价函数的代码。那么我们先利用正向传播把目标函数h写出来，再写正则化，最后拼在一起就好了。
+%只有三层神经网络,先按照前向传播的步骤。写出各层激励：
+a1 = [ones(m, 1) X];          %加上偏置单元
+z2 = a1*Theta1';
+a2 = [ones(size(z2, 1), 1) sigmoid(z2)];
+z3 = a2*Theta2';
+a3 = sigmoid(z3);
+h = a3;
+
+%正则化部分：
+p = sum(sum(Theta1(:, 2:end).^2, 2)) + sum(sum(Theta2(:, 2:end).^2, 2));
+
+%代价函数：
+J = sum(sum((-Y) .* log(h) - (1-Y) .* log(1-h), 2))/m + lambda * p/(2 * m);
+
 % Part 2: Implement the backpropagation algorithm to compute the gradients
 %         Theta1_grad and Theta2_grad. You should return the partial derivatives of
 %         the cost function with respect to Theta1 and Theta2 in Theta1_grad and
@@ -54,6 +76,16 @@ Theta2_grad = zeros(size(Theta2));
 %               over the training examples if you are implementing it for the 
 %               first time.
 %
+
+%接着我们要用后向传播去计算每一层激励的误差：
+sigma3 = a3 - Y;
+sigma2 = (sigma3 * Theta2) .* sigmoidGradient([ones(size(z2, 1), 1) z2]);
+sigma2 = sigma2(:, 2:end);
+
+%然后计算梯度：
+delta_1 = (sigma2' * a1);
+delta_2 = (sigma3' * a2);
+
 % Part 3: Implement regularization with the cost function and gradients.
 %
 %         Hint: You can implement this around the code for
@@ -61,16 +93,11 @@ Theta2_grad = zeros(size(Theta2));
 %               the regularization separately and then add them to Theta1_grad
 %               and Theta2_grad from Part 2.
 %
-
-a1 = [ones(m,1) X]; %5000*401
-z2 = a1*Theta1';  %5000*25
-a2 = [ones(size(z2,1),1) sigmoid(z2)]; %5000*(25+1)
-z3 = a2*Theta2'; %5000*10
-a3 = sigmoid(z3);
-h=a3;
-
-% -------------------------------------------------------------
-
+%最后把正则化加上：
+p1 = (lambda/m) * [zeros(size(Theta1, 1), 1) Theta1(:, 2:end)];
+p2 = (lambda/m) * [zeros(size(Theta2, 1), 1) Theta2(:, 2:end)];
+Theta1_grad = delta_1./m + p1;
+Theta2_grad = delta_2./m + p2;
 % =========================================================================
 
 % Unroll gradients

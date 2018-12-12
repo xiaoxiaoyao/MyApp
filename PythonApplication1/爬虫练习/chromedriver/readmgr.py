@@ -6,7 +6,7 @@ __author__ = 'lai yao (lake.lai)'
 
 import os,sys,time
 from selenium import webdriver
-URL =''
+URL ='http://baidu.com/'
 downloadDir='/Users/laiyao/Downloads/download/'
 os.chdir(downloadDir)
 print('当前目录',os.getcwd())
@@ -24,8 +24,28 @@ if True:
     time.sleep(1)
     driver.get(URL)
     time.sleep(20)
+# 数据区，GitHub前需要删掉
+url=[]
+# 数据区，GitHub前需要删掉
 
 for i in url:
     time.sleep(11)
     print(i)
     driver.get(i)
+
+# 合并
+
+#%%
+import glob
+import pandas as pd
+
+df = dict()
+file_names = glob.glob("*.csv")
+for file_name in file_names:
+    df[file_name] = pd.read_csv(file_name,error_bad_lines=False,encoding='gb2312')
+
+
+#%%
+for i in df:
+    df[i].to_csv('save.csv',mode='a', header=False, index=False)
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R学习笔记(1)：R是什么</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">R学习笔记(1)：R是什么</h1>
+        <div class="show-content">
+          <p>R是什么<a href="http://www.jianshu.com/writer#R%E6%98%AF%E4%BB%80%E4%B9%88" target="_blank"><br></a></p><p>先来体验一段代码（忽略那段提示信息）：</p><p>In [4]:</p><blockquote>
+<p>#install.packages('quantmod') # 安装quantmod包，因为我已经安装好了，所以不需要安装</p>
+<p>require(quantmod)#引用quantmod包getSymbols("JD",src="yahoo",from="2017-06-09",to='2017-09-09',"getSymbols.yahoo.warning"=TRUE)#从雅虎财经获取京东JD的股票数据</p>
+<p>chartSeries(JD,up.col='red',dn.col='green')#显示K线图，红涨绿跌</p>
+<p>#addMACD() #增加MACD图#就能够看到下图的效果了：</p>
+</blockquote><p>'JD'</p><div class="image-package">
+<img src="http://upload-images.jianshu.io/upload_images/1897298-ec07d7d4dd554ba7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/1897298-ec07d7d4dd554ba7.png?imageMogr2/auto-orient/strip"><br><div class="image-caption"></div>
+</div><p>那么R到底是什么？或者说，R到底是做什么用的？从不同的角度出发，对R会有不同的描述。</p><p>从使用角度，R是一个有着统计分析功能及强大作图功能的软件，在GNU协议General Public Licence4下免费发行。</p><p>从编程角度，R语言是面向对象的统计编程语言，是由AT&amp;T贝尔实验室所创的S语言发展出的一种方言。</p><p>从计算角度，R 是一种为统计计算和图形显示而设计的语言及环境。</p><p>从开发角度，R 是一组开源的数据操作，计算和图形显示工具的整合包有各种方式可以进行编程调用。</p><p>从架构角度，R 是为统计计算和图形展示而设计的一个系统。它包括一种编程语言，高级别图形展示函数，和其它语言的接口以及调试工具。 如果一定要找到一个与R类似的软件，那就是商业软件Matlab。R和Matlab都是基于编程进行数据分析的工具，Matlab适用的领域更广，而R更擅长统计分析领域。</p><p>当然，现在Python也同样推荐。</p><p>与Matlab相比，R更具备开放性：</p><p>R是自由软件，Matlab是商业软件；</p><p>R可以方便的通过“包”进行扩展，R的核心只有25个包，但是有几千个外部包可以调用，当然你也可以开发自己的；</p><p>R语言比Matlab的要强大；</p><p>R和其他编程语言/数据库之间有很好的接口；其他语言也可以很方便的调用R的API和结果对象。</p><p>R常用于金融和统计领域。大多数人使用R就是因为它的统计功能，R的内部实现了很多经典的or时髦的统计技术。</p><p>1. R的核心概念<a href="http://www.jianshu.com/writer#1.-R%E7%9A%84%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5" target="_blank"></a></p><p>1.1 对象<a href="http://www.jianshu.com/writer#1.1-%E5%AF%B9%E8%B1%A1" target="_blank"></a></p><p>R语言是一种面向对象的语言，所有的对象都有两个内在属性：元素类型和长度。 元素类型是对象内元素的基本类型，包括：数值(numeric),字符型(character),复数型(complex)、逻辑型（logical）、函数（function）等，通过mode()函数可以查看一个对象的类型。 长度是对象中元素的数目，通过函数length()可以查看对象的长度。 除了元素类型外，对象本身也有不同的“类型”，表示不同的数据结构（struct)。R中的对象类型主要包括：</p><p>向量(vector): 由一系列有序元素构成。</p><p>因子(factor）：对同长的其他向量元素进行分类（分组）的向量对象。R 同时提供有序（ordered）和无序（unordered）因子。</p><p>数组(array)：带有多个下标的类型相同的元素的集合</p><p>矩阵(matrix)：矩阵仅仅是一个双下标的数组。R提供了一下函数专门处理二维数组（矩阵）。</p><p>数据框(data frame)：和矩阵类似的一种结构。在数据框中，列可以是不同的对象。</p><p>时间序列(time series)：包含一些额外的属性,如频率和时间.</p><p>列表（list）:是一种泛化（general form）的向量。它没有要求所有元素是同一类型，许多时候就是向量和列表类型。列表为统计计算的结果返回提供了一种便利的方法。 ## 1.2 常量 R中还定义了一些常量，比如：</p><p>NA：表示不可用</p><p>Inf: 无穷</p><p>-Inf: 负无穷</p><p>TRUE：真</p><p>FALSE：假</p><p>2. R的基本使用<a href="http://www.jianshu.com/writer#2.-R%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8" target="_blank"></a></p><p>2.1 命令<a href="http://www.jianshu.com/writer#2.1-%E5%91%BD%E4%BB%A4" target="_blank"></a></p><p>R是一种语法非常简单的表达式语言(expression language)。使用者通过命令（command）与R进行交互。</p><p>基本命令要么是表达式(expressions)要么就是赋值(assignments)。如果一条命令是表达式,那么它将会被解析(evaluate),并将结果显示在屏幕上,同时清空该命令所占内存。赋值同样会解析表达式并且把值传给变量但结果不会自动显示在屏幕上。</p><p>基于命令，可以用交互的方式或者批处理/脚本文件的方式使用R。</p><p>2.2 交互式使用 R<a href="http://www.jianshu.com/writer#2.2-%E4%BA%A4%E4%BA%92%E5%BC%8F%E4%BD%BF%E7%94%A8-R" target="_blank"></a></p><p>交互式shell是一种很方便的环境，可以进行各种尝试，随时调整过程。与Python、Ruby等语言一样，R也提供了shell环境。本文开始的例子就是以交互的方式使用R。当打开R控制台时，R会显示命令提示符"&gt;"，此时可以输入命令。 下面是交互式使用R的几个例子：</p><p>例一：</p><p>In [2]:</p><p># help.start() #启动在线帮助，会打开浏览器。x&lt;-1:20# 相当于x=(1,2,…,20)ls()#查看当前工作空间里面的 R 对象plot.default(x)</p><p>'JD'</p><p>'x'</p><div class="image-package">
+<img src="http://upload-images.jianshu.io/upload_images/1897298-8c0e7cd4feccaebe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/1897298-8c0e7cd4feccaebe.png?imageMogr2/auto-orient/strip"><br><div class="image-caption"></div>
+</div><p>In [3]:</p><p>x&lt;-rnorm(50);y&lt;-rnorm(x)#产生两个随机向量x和yplot(x,y)#使用x,y画二维散点图, 会打开一个图形窗口rm(x,y)#清除x,y对象</p><div class="image-package">
+<img src="http://upload-images.jianshu.io/upload_images/1897298-7f6e084a4b8715b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/1897298-7f6e084a4b8715b6.png?imageMogr2/auto-orient/strip"><br><div class="image-caption"></div>
+</div><p>学习资料<a href="http://www.jianshu.com/writer#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99" target="_blank"></a></p><p><a href="http://www.jianshu.com/www.R-project.org" target="_blank">R官方网站</a></p><p><a href="http://www.jianshu.com/cran.r-project.org%E2%80%94manuals.html" target="_blank">官方网站上的一些手册和文档（必看）</a></p><p><a href="http://www.jianshu.com/staff.washington.edu%E2%80%94Rcourse" target="_blank">华盛顿大学的一个R教</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

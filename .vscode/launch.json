@@ -1,14 +1,27 @@
 {
     "version": "0.2.0",
     "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch)",
+            "request": "launch",
+            "mainClass": ""
+        },
 
-      {
-          "type": "octave",
-          "request": "launch",
-          "name": "Octave Debug Adapter(preview)",
-          "exec": "octave-cli",
-          "program": "${command:AskForProgramName}"
-      },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "com.mycompany.helloworld.App",
+            "projectName": "helloworld"
+        },
+        {
+            "type": "octave",
+            "request": "launch",
+            "name": "Octave Debug Adapter(preview)",
+            "exec": "octave-cli",
+            "program": "${command:AskForProgramName}"
+        },
         {
             "name": "启动node",
             "type": "node",
@@ -64,7 +77,7 @@
             ]
         },
         {
-            "name": "谷歌浏览器", //运行html文件，用谷歌浏览器打开
+            "name": "谷歌浏览器",
             "type": "chrome",
             "request": "launch",
             "url": "${file}",
@@ -72,10 +85,10 @@
             "webRoot": "${workspaceRoot}"
         },
         {
-            "name": "nodeLauch", //单独调试js，即可以直接运行js
+            "name": "nodeLauch",
             "type": "node",
             "request": "launch",
-            "program": "${file}", //这个配置成你要调试的文件、${file}当前打开的文件
+            "program": "${file}",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",

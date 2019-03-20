@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.yao.spring_hello_world_demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,7 +1,6 @@
 package com.yao.spring_hello_world_demo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import reactor.core.publisher.Mono;

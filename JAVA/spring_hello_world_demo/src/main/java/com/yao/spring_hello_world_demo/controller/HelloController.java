@@ -11,6 +11,7 @@ import reactor.core.publisher.Mono;
  */
 @RestController
 public class HelloController {
+    @GetMapping("/")
     public String sayHello() {
         return "Hello SpringBoot！";
     }

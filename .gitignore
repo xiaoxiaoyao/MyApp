@@ -223,3 +223,6 @@ PythonApplication1/自己的小练习/JD小组开发/realtimeDistribution.py
 #特大文件，不适合上传
 *.mat
 PythonApplication1/爬虫练习/chromedriver/chromedriver-2
+
+# 截图别传
+*.png

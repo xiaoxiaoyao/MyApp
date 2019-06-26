@@ -1,13 +1,32 @@
 ﻿# -*- coding: utf-8 -*-
-
-from flask import Flask
-from flask import request
+#  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+from flask import Flask, render_template,request
+import time,os,sched,threading
+import 基础配置
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
-def home():
-    return '<h1>Home</h1>'
+员工1=基础配置.员工()
+员工2=基础配置.员工()
+门店=基础配置.门店(门店名字="123初始门店店",初始资金=0,员工=[员工1,员工2],客户=[],环境="这一项还在开发中")
+
+
+@app.route('/', methods=['GET','POST'])
+def home(info=""):
+    return render_template('fin.html',门店=门店,info=info)
+
+
+@app.route('/addHamburg', methods=['POST'])
+def a():
+    return home(info=基础配置.加汉堡(门店=门店))
+
+@app.route('/addShopper', methods=['POST'])
+def b():
+    return home(info=基础配置.加顾客(门店=门店,消费金额=25))
+
+@app.route('/addPersonnel', methods=['POST'])
+def c():
+    return home(info=基础配置.加员工(门店=门店,员工名字="门店员工") )
 
 @app.route('/signin', methods=['GET'])
 def signin_form():

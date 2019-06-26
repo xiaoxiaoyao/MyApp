@@ -33,9 +33,10 @@ async def wshandler(request):
 
     return ws
 
-app = web.Application(debug=True)
-app.router.add_route('GET', '/', hellow_world)
-app.router.add_route('GET', '/echo', wshandler)
-app.router.add_route('GET', '/{echo1}/{echo2}', echo)###app.router.add_route妥妥的会被注入啊
-logging.info('server started at http://127.0.0.1:9000...')
-web.run_app(app,host='127.0.0.1',port=9000)
+if __name__ == '__main__':
+    app = web.Application(debug=True)
+    app.router.add_route('GET', '/', hellow_world)
+    app.router.add_route('GET', '/echo', wshandler)
+    app.router.add_route('GET', '/{echo1}/{echo2}', echo)###app.router.add_route妥妥的会被注入啊
+    logging.info('server started at http://127.0.0.1:9000...')
+    web.run_app(app,host='127.0.0.1',port=9000)

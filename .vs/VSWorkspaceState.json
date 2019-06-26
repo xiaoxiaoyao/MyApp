@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PythonApplication1",
+    "\\PythonApplication1\\my_first_web_app",
+    "\\PythonApplication1\\my_first_web_app\\test",
+    "\\PythonApplication1\\my_first_web_app\\test\\templates",
+    "\\PythonApplication1\\my_first_web_app\\www",
+    "\\PythonApplication1\\my_first_web_app\\www\\templates",
+    "\\PythonApplication1\\自己的小练习"
   ],
-  "SelectedNode": "\\MyApp.sln",
+  "SelectedNode": "\\PythonApplication1\\my_first_web_app\\test\\my_first_web_python.py",
   "PreviewInSolutionExplorer": false
 }

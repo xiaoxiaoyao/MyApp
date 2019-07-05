@@ -3,4 +3,17 @@
     "java.configuration.updateBuildConfiguration": "automatic",
     "python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\python.exe",
     "maven.view": "hierarchical",
+    
+
+    "java.home": "C:\\Program Files\\Java\\jdk-12.0.1",          //配置该项就可以进行java开发了，下面的配置都是支持maven使用的
+    "maven.executable.path": "C:\\Program Files\\apache\\apache-maven-3.6.1\\bin\\mvn",
+    "java.configuration.maven.userSettings": "C:\\Program Files\\apache\\apache-maven-3.6.1\\conf\\settings.xml",
+    "maven.terminal.customEnv": [
+        {
+            "environmentVariable": "JAVA_HOME",      
+            "value": "C:\\Program Files\\Java\\jdk-12.0.1"
+        }
+    ]
+
+
 }

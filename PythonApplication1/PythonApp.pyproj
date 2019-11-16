@@ -15,6 +15,8 @@
     <RootNamespace>PythonApplication1</RootNamespace>
     <InterpreterId>Global|PythonCore|3.5</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <TestFramework>Pytest</TestFramework>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,6 +27,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="deeplearning\examples\gan_pytorch.py" />
     <Compile Include="deeplearning\examples\mnist.py" />
     <Compile Include="deeplearning\examples\recurrent.py" />
     <Compile Include="deeplearning\JDdata\class1.py" />
@@ -54,6 +57,7 @@
     <Compile Include="爬虫练习\chromedriver\zhaopin.py" />
     <Compile Include="爬虫练习\chromedriver\__init__.py" />
     <Compile Include="爬虫练习\FIREFOX\StartFirefox.py" />
+    <Compile Include="爬虫练习\JD\JD_bra.py" />
     <Compile Include="自己的小练习\All_In_One.BIN" />
     <Compile Include="自己的小练习\class1.py" />
     <Compile Include="自己的小练习\asynciotest.py" />
@@ -89,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="debug.log" />
+    <Content Include="deeplearning\examples\.ipynb_checkpoints\gan_pytorch-checkpoint.ipynb" />
+    <Content Include="deeplearning\examples\gan_pytorch.ipynb" />
     <Content Include="deeplearning\examples\t10k-images-idx3-ubyte.gz" />
     <Content Include="deeplearning\examples\t10k-labels-idx1-ubyte.gz" />
     <Content Include="deeplearning\examples\train-images-idx3-ubyte.gz" />
@@ -142,11 +148,13 @@
     <Content Include="爬虫练习\chromedriver\test.txt" />
     <Content Include="爬虫练习\output.txt" />
     <Content Include="爬虫练习\test.txt" />
+    <Content Include="爬虫练习\toutiao\toutiao_houtai.ipynb" />
     <Content Include="自己的小练习\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="deeplearning\" />
     <Folder Include="deeplearning\examples\" />
+    <Folder Include="deeplearning\examples\.ipynb_checkpoints\" />
     <Folder Include="deeplearning\JDdata\" />
     <Folder Include="deeplearning\JDdata\data\" />
     <Folder Include="deeplearning\tools\" />
@@ -168,6 +176,8 @@
     <Folder Include="爬虫练习\" />
     <Folder Include="爬虫练习\chromedriver\" />
     <Folder Include="爬虫练习\FIREFOX\" />
+    <Folder Include="爬虫练习\JD\" />
+    <Folder Include="爬虫练习\toutiao\" />
     <Folder Include="自己的小练习\" />
   </ItemGroup>
   <PropertyGroup>

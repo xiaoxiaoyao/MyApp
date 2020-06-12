@@ -1,6 +1,6 @@
 # coding:utf-8
 import turtle as t
-t.pensize(4) # 设置画笔的大小
+t.pensize(6) # 设置画笔的大小
 t.colormode(255) # 设置GBK颜色范围为0-255
 t.color((255,155,192),"pink") # 设置画笔颜色和填充颜色(pink)
 t.setup(840,500) # 设置主窗口的大小为840*500

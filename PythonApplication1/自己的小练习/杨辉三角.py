@@ -1,7 +1,8 @@
 ﻿# -*- coding: utf-8 -*-
 
-#杨辉三角
+
 def triangles(l=1):
+    '#杨辉三角'
     Ltriangles=[1]
     while len(Ltriangles) <= l:
         yield([a for a in Ltriangles])

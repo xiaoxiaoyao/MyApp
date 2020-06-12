@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 class Person(object):
+    '类变量的访问规则'
     def __init__(self,name):
         self.__name = name # 双下划线，表示private，机制上阻止访问，调用p.__name错误
     @property
     def age(self):
-        return self._age  # 单下划线，表示protected，原则上不允许访问，但调用p._name可以访问到
+        return self._age  # 单下划线，表示protected，原则上不允许访问，但调用p._age可以访问到
     @age.setter
     def age(self,value):
         if type(value) != int:
-            raise ValueError('need a interger')
+            raise ValueError('need a interger请输入一个数字')
         if not (0< value <150):
-            raise ValueError('need a reasonable number')
+            raise ValueError('need a reasonable number请输入一个正常的年龄')
         self._age = value
          # 以上写成self.age = value会报错，因为当设置了getter/setter后，
          # 对属性的直接访问会调用该属性对应的getter/setter
          # 这里写成self.age相当于又调用了一次age的getter方法，最终会导致递归调用栈溢出
 
-p = Person('xx')
+p = Person('小尧')
 p.age = 10 ; # 当设置了getter/setter后，对属性的直接访问会调用该属性对应的getter/setter
 print(hasattr(p,'age'))
 print(hasattr(p,'_age')) # true

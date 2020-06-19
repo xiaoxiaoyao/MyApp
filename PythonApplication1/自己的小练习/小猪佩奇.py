@@ -1,8 +1,6 @@
 # coding:utf-8
-def 小猪佩奇():
-    pass
-    import turtle as t
-    t.reset()
+import turtle as t #导入turtle
+def 小猪佩奇(t=t):    
     t.pensize(6) # 设置画笔的大小
     t.colormode(255) # 设置GBK颜色范围为0-255
     t.color((255,155,192),"pink") # 设置画笔颜色和填充颜色(pink)
@@ -267,8 +265,61 @@ def 小猪佩奇():
     t.circle(10,330)
     t.circle(70,30)
 
+def 太阳花(t=t):
+    t.color("red", "yellow")
+    t.speed(10)
+    t.begin_fill()
+    for _ in range(50):
+        t.forward(200)
+        t.left(170)
+    t.end_fill()
+
+def 小蟒蛇惨不忍睹(t=t,rad=1500, angle=1400, len=0, neckrad=0):
+    for _ in range(len):
+        t.circle(rad, angle)
+        t.circle(-rad, angle)
+    t.circle(rad, angle/2)
+    t.forward(rad/2)  # 直线前进
+    t.circle(neckrad, 180)
+    t.forward(rad/4)
+
+def 五角星(t=t):
+    t.pensize(5)
+    t.pencolor("yellow")
+    t.fillcolor("red")    
+    t.begin_fill()
+    for _ in range(5):
+        t.forward(200)
+        t.right(144)
+    t.end_fill()
+    t.penup()
+    t.goto(-150,-120)
+    t.color("violet")
+    t.write("Done", font=('Arial', 40, 'normal'))
+
+def 简单的五角星(t=t):
+    for i in range(5):
+        t.fd(40)
+        t.rt(144)
+
+def 简单的长方形(t=t):
+    t.width(4) # 设置笔刷宽度
+    t.forward(200) # 前进
+    t.right(90) # 右转90度
+    t.pencolor('red') # 换个颜色（换成红色）
+    t.forward(100) # 前进
+    t.right(90) # 右转90度
+    t.pencolor('green')# 换个颜色（换成绿色）
+    t.forward(200)
+    t.right(90)
+    t.pencolor('blue')# 换个颜色（换成蓝色）
+    t.forward(100)
+    t.right(90)
+
+
 if __name__=="__main__":
     while True: 
         import time
         time.sleep( 5 )
-        小猪佩奇()
+        t.reset()
+        小猪佩奇(t)

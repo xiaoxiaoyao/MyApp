@@ -298,9 +298,43 @@ def 五角星(t=t):
     t.write("Done", font=('Arial', 40, 'normal'))
 
 def 简单的五角星(t=t):
-    for i in range(5):
+    for _ in range(5):
         t.fd(40)
         t.rt(144)
+
+# 奇数N角星代码：
+def 奇数N角星(t=t,n=5):
+    for _ in range(n): 
+        t.forward(100)# 画直线（长度100）
+        t.right(180-180/n) # 右转
+
+#偶数ｎ角星的画法
+def 偶数N角星(t=t,n=6):
+    import math
+    n1 =int( n / 2 )# n的一半
+    a = (180 * (n - 2) / n) # 正n边形内角
+    b = 180 - a # n角形的内角
+    c = b / 2 # 长方形短边与ｌ围城三角形的短边的对角
+    d = 180 - (c * (n / 2 - 1))
+    d1 = (d / 180) * math.pi
+    c1 = (c / 180) * math.pi
+    e = (math.sin(c1) / math.sin(d1)) * 100
+    for _ in range(n1):
+        t.forward(100)
+        t.left(90)
+        t.penup()
+        t.forward(e)
+        t.pendown()
+        t.left(90)
+        t.forward(100)
+        t.left(180 - 180 / n1)
+
+def N角星(t=t,n=5):
+    if n % 2 == 1: #如果角除以2余数是1（如果是奇数N角星）
+        奇数N角星(t=t,n=n) #那么，用奇数N角星的函数来画
+    else: # 否则的话
+        偶数N角星(t=t,n=n) #用偶数N角星的函数来画
+
 
 def 简单的长方形(t=t):
     t.width(4) # 设置笔刷宽度
@@ -321,5 +355,5 @@ if __name__=="__main__":
     while True: 
         import time
         time.sleep( 5 )
-        t.reset()
+        t.clear()
         小猪佩奇(t)

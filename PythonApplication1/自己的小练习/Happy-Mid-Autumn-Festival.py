@@ -13,14 +13,13 @@ for friend in friendList:
 	try:
 		# 如果是演示目的，把下面的 itchat.send 方法改为 print 即可
 		itchat.send(SEND_WISH, friend['UserName'])
-		print(friend['UserName'],'\n第',i,'个好友已经成功发送，发送内容为',SEND_WISH)
+		print(friend['UserName'],'，第',i,'个好友已经成功发送，发送内容为：',SEND_WISH)
 		# print(friend['DisplayName'] or friend['NickName'])
 		# 为了防止封号，自动延时发送
 		time.sleep(1+random.random()*124)
 	except Exception:# 用于解决异常情况
-		print(Exception,":")
-		print('ERROR!\n第',i,'个好友发送失败，以下是详细信息')
-		friend
+		print('ERROR!\n第',i,'个好友发送失败，以下是详细信息',friend)
+		print(Exception,":")		
 	finally:
 		# 计数
 		i=i+1

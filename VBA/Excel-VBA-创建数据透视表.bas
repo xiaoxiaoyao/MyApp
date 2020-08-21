@@ -4,7 +4,6 @@ Sub A1_NewPivotSets()
 ' NewPivotSets 宏
 ' 业务代码，从原始数据生成数据透视表。
 '
-
 Set sh = Sheets.Add
 With sh
 .Name = "汇总_透视"

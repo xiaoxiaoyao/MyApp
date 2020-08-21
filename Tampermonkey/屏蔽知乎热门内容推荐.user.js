@@ -2,7 +2,7 @@
 // @name         屏蔽知乎热门内容推荐
 // @namespace    http://tampermonkey.net/
 // @version      0.12
-// @description  屏蔽知乎feed流的热门推荐以及来自话题推荐，代码简单一看就懂
+// @description  【已弃用】屏蔽知乎feed流的热门推荐以及来自话题推荐，代码简单一看就懂
 // @author       LaiYao
 // @match        https://www.zhihu.com/
 // @grant        none

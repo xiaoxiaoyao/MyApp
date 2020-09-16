@@ -16,7 +16,7 @@ fl['label'] = '0'
 # 网页服务器部分：
 ###网页模版
 template1='''<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"><html xmlns="http://www.w3.org/1999/xhtml"><body><a href="../chou/30"><button type="button" class="btn btn-warning">点此按钮随机抽30个</button></a><a href="../all"><button type="button" class="btn btn-warning">点此按钮一键全抽</button></a><a href="../all-no-repeat"><button type="button" class="btn btn-warning">不重复全抽城市经理</button></a>
-<a href="../3-suzhou-1-shanghai"><button type="button" class="btn btn-warning">按：苏州3上海1抽取</button></a>
+<a href="../3-suzhou-1-shanghai"><button type="button" class="btn btn-warning">按：苏州30上海10抽取</button></a>
 <br /><div class="container">'''
 template2='''</div><link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" media="screen"><script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script><script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script></body></html>'''
 
@@ -38,9 +38,9 @@ def all_no_repeat_reset():
 @app.route('/all-no-repeat', methods=("GET", "POST")) #一键全抽城市经理
 def 不重复抽城市经理():    return template1 + '<a href="../all-no-repeat/reset"><button type="button" class="btn btn-warning">重置抽取计数器</button></a>'+ "今天是全年的第" + datetime.datetime.now().strftime("%j") + "天，服务器当前时间：" + datetime.datetime.now().strftime("%x %X") + 城市经理不重复抽().to_html(classes='table-striped') + template2
 
-# 临时功能，抽1个上海，3个苏州(不去重)
+# 临时功能，抽10个上海，30个苏州(不去重)
 @app.route('/3-suzhou-1-shanghai', methods=("GET", "POST"))
-def by区域():    return template1 + "当前时间：" +  datetime.datetime.now().strftime("%x %X") + 按区域抽(区域='江苏苏州服务区',n=3).to_html(classes='table-striped')  + 按区域抽(区域='上海',n=1).to_html(classes='table-dark') + template2
+def by区域():    return template1 + "当前时间：" +  datetime.datetime.now().strftime("%x %X") + 按区域抽(区域='江苏苏州服务区',n=30).to_html(classes='table-striped')  + 按区域抽(区域='上海',n=10).to_html(classes='table-dark') + template2
 
 # 首页
 @app.route('/', methods=("GET", "POST"))

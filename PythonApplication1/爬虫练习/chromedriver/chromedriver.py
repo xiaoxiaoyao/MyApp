@@ -126,7 +126,7 @@ chromedriver =path + '\\chromedriver.exe'
 logging.info([chromedriver])
 os.environ["webdriver.chrome.driver"] = chromedriver
 option = webdriver.ChromeOptions()#自定义设置
-#option.add_argument('--user-data-dir=' + os.getenv('APPDATA') + '\\..\\Local\\Google\\Chrome\\User Data') #设置成用户自己的数据目录##注意退出当前的chrome,MAC 为~/Library/Application Support/Google/Chrome/Default
+option.add_argument('--user-data-dir=' + os.getenv('APPDATA') + '\\..\\Local\\Google\\Chrome\\User Data') #设置成用户自己的数据目录##注意退出当前的chrome,MAC 为~/Library/Application Support/Google/Chrome/Default
 option.add_argument('--user-agent=Mozilla/5.0 (Linux; U; Android 2.2.1; zh-cn; HTC_Wildfire_A3333 Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1') #修改浏览器的User-Agent来伪装你的浏览器
 option.add_argument('--process-per-site') #每个站点使用单独进程
 option.add_argument('--lang=zh-CN') #设置语言为简体中文

@@ -1,0 +1,17 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    {% include 'header.html' %}
+</head><body>
+    <div class="container">
+        {% include 'welcome.html' %}
+        {% block loader %}
+        {% include 'loader.html' %}
+        {% endblock loader %}
+    </div>
+</body>
+</html>
+{# note: 
+        ...
+#}

@@ -1,0 +1,52 @@
+﻿<!-- 标题row，标题行 -->
+<div class="row">
+    <div class="col-xs-6 span3">
+        <img href="{{url_for('static', filename='logo.jpg')}}" alt="LOGO" src="{{url_for('static', filename='logo.jpg')}}" height="140" width="140" />
+    </div>
+    <div class="col-xs-6 span9">
+        <h3>
+            这个是我的第一个python小网站，用来练习PYTHON/MYSQL/前端技能
+        </h3>
+    </div>
+</div>
+<!-- END 标题row，标题行 -->
+<!-- 导航条 -->
+<div class="row">
+    <div class="span12">
+        <ul class="nav nav-tabs">
+            <li {% if name %} class="active"{% endif %}>
+                <a href="/blog">我的博客</a>
+            </li>
+            <li>
+                <a href="/weibo">匿名微博</a>
+            </li>
+            <li class="dropdown pull-left{% if data %} active{% endif %}">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/database/<database>">示例数据库{{database}}</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="/database/sakira">sakira</a>
+                    </li>
+                    <li>
+                        <a href="/database/northwind">northwind</a>
+                    </li>
+                    <li>
+                        <a href="#">更多设置</a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li>
+                        <a href="#">阅读源代码</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- END 导航条 -->
+
+    <h1>hello，welcome to {{__name__}}</h1>
+    {% if name %}
+    <p class="important">welcome {{name}}</p>
+    {% else %}
+    <p>welcome!</p>
+    {% endif %}

@@ -1,0 +1,4 @@
+//.babelrc
+{
+"presets":[]// 这一行有问题   ["react", "env"]
+}

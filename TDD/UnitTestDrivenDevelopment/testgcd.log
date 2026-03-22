@@ -1,0 +1,32 @@
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from GcdTest
+[ RUN      ] GcdTest.IntTest
+[       OK ] GcdTest.IntTest (0 ms)
+[ RUN      ] GcdTest.IntTestError
+testgcd.cpp:17: Failure
+      Expected: 9
+To be equal to: Gcd(2, 5)
+      Which is: 1
+testgcd.cpp:18: Failure
+      Expected: 8
+To be equal to: Gcd(2, 5)
+      Which is: 1
+testgcd.cpp:19: Failure
+      Expected: 1
+To be equal to: Gcd(2, 4)
+      Which is: 2
+testgcd.cpp:20: Failure
+      Expected: 0
+To be equal to: Gcd(6, 9)
+      Which is: 3
+[  FAILED  ] GcdTest.IntTestError (1 ms)
+[----------] 2 tests from GcdTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] GcdTest.IntTestError
+
+ 1 FAILED TEST

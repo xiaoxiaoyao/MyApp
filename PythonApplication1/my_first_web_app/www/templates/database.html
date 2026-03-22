@@ -1,0 +1,39 @@
+﻿{% extends "home.html" %}
+{% block loader %}
+
+<div class="row">
+<div class="col-xs-6 span12">
+<!--数据库列表以及按钮-->
+<div class="btn-group">
+<button data-toggle="dropdown" class="btn dropdown-toggle">Tables_in_sakila<span class="caret"></span></button>
+<ul class="dropdown-menu" contenteditable="true">{% for item in tables %}<li><a href="./{{ item[0] }}">{{ item[0] }}</a></li>{% endfor %}
+</ul>
+</div>
+<!--END 数据库列表以及按钮-->
+<h3>Database:{{database}}</h3><h4>Table:{{table}}</h4><h5>Row:{{row}}</h5>
+{% if data.description %}<form action="" name="{{table}}" target="_blank" autocomplete="on" method="post">
+<input type="hidden" name="Database" value="{{database}}" />
+<input type="hidden" name="Table" value="{{table}}" />
+<table class="table table-hover">
+<thead><tr>{% for items in data.description %}<th><a href="?row={{ items[0] }}">{{ items[0] }}</a></th> {% endfor %}<th>操作</th></tr></thead><tbody>
+<tr>
+{% for items in data.description %}<td><input type="text" placeholder="Type {{ items[0] }}" name="Row_{{ items[0] }}" /></td> {% endfor %}
+<td>
+<input class="btn" contenteditable="true" name="submit" type="submit" value="增加" /></td>
+</tr>
+{% for items in data %}
+<tr>
+    {% for item in items %}
+    <td>{{ item }}</td>{% endfor %}<td><fieldset form="{{ items[0] }}" name="{{ items[0] }}"><button name="Row" value="{{ items }}" class="btn" contenteditable="true" type="submit">提交修改</button></fieldset></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</form>
+{% else %}
+<p>welcome!ERROR: SQL ERROR. There is no item in 'conn.Select_language(appconn,'*')'</p>
+{% endif %}
+</div>
+</div>
+<!--调试信息：数据输出：data.description{{data.description}}-->
+{% endblock loader %}

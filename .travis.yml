@@ -1,0 +1,20 @@
+language: java  
+jdk:  
+  - oraclejdk7  
+#  - openjdk7  
+#  - openjdk6  
+before_install:  
+#  - mvn install -Dmaven.javadoc.skip=true  
+   - "echo skipped"  
+install:  
+  - "echo skipped"  
+script:  
+  - "echo skipped"   
+#  - mvn install -Dmaven.javadoc.skip=true  
+#  - mvn deploy  
+notifications:  
+  email:  
+    recipients:  
+      - yao.power@qq.com  
+    #on_success: [always|never|change]  default: change  
+    #on_failure: [always|never|change]  default: always  

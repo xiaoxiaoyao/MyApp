@@ -1,0 +1,5 @@
+encoding: UTF-8
+theme: jekyll-theme-slate
+deploy:
+  type: git
+  branch: master

@@ -1,73 +1,64 @@
-# MyApp
-Python示例项目，演示PEP8代码规范和项目结构。
+# MyApp 项目
 
-## 项目结构
-```
-MyApp/
-├── example.py          # 示例代码文件
-├── test_example.py     # example.py的测试用例
-├── code_review_report.md  # 代码审查报告
-├── README.md           # 项目说明文档
-└── utils/              # 工具模块目录
-    ├── calculator.py   # 计算器工具模块
-    └── README.md       # utils目录说明
-```
+## 📋 项目概述
+这是一个包含多种编程语言示例和工具的综合项目仓库。
 
-## 功能说明
-### example.py
-示例代码文件，包含：
-- `MyClass`类：存储和获取姓名、年龄信息
-- `bad_function()`函数：演示加法运算和异常处理
+## 🗂️ 目录结构
 
-### utils/calculator.py
-计算器工具模块，提供：
-- 四则运算（加、减、乘、除）
-- 幂运算
-- 圆面积计算
-- 数字列表处理
+### 核心目录
+- **PythonApplication1/** - Python 应用程序和练习
+- **HTML/** - 前端开发示例（HTML、CSS、JavaScript、React）
+- **JAVA/** - Java 项目示例
+- **GO/** - Go 语言示例
+- **TDD/** - 测试驱动开发示例
+- **VBA/** - VBA 宏和自动化脚本
+- **cpp/** - C++ 示例代码
+- **DATA/** - 数据文件和分析脚本
+- **docs/** - 项目文档
+- **utils/** - 工具和实用脚本
 
-## 环境要求
+### 项目特点
+1. 多语言示例代码
+2. 实际项目应用
+3. 学习资源和练习
+4. 自动化脚本和工具
+
+## 🚀 快速开始
+
+### 环境要求
 - Python 3.8+
-- 无第三方依赖，仅使用Python标准库
+- Node.js (前端项目)
+- Java (Java 项目)
+- Git
 
-## 安装与使用
-1. 克隆仓库：
-```bash
-git clone https://github.com/xiaoxiaoyao/MyApp.git
-cd MyApp
-```
+### 安装依赖
 
-2. 运行示例：
-```bash
-python example.py
-```
+added 247 packages in 9s
 
-3. 运行测试：
-```bash
-python test_example.py
-```
+82 packages are looking for funding
+  run `npm fund` for details
 
-## 代码规范
-项目严格遵循**PEP8 Python编码规范**：
-- 命名规范：类名使用大驼峰（CamelCase），函数、变量使用蛇形命名（snake_case）
-- 缩进：4个空格，禁止使用Tab
-- 行宽：单行不超过88字符
-- 注释：所有类和函数都添加了文档字符串（docstring），说明功能、参数和返回值
-- 异常处理：禁止裸except，必须指定具体异常类型
-- 导入：标准库→第三方库→本地模块，分组导入
+### 运行示例
 
-## 代码审查
-项目已经过完整的代码审查，审查报告见`code_review_report.md`，主要优化点：
-1. 修复了命名不规范问题
-2. 修复了裸except、除零错误等安全问题
-3. 统一了代码格式，添加了必要的空格
-4. 完善了文档字符串和注释
-5. 移除了未使用的变量和无效代码
 
-## 测试说明
-所有功能都配套了单元测试：
-- `test_example.py`：测试example.py中的所有类和函数
-- 运行测试覆盖率100%
+## 📚 学习资源
+年6月9日9:26 星期三
 
-## 许可证
+## 🔧 开发指南
+1. 遵循 PEP 8 代码规范（Python）
+2. 为函数和类添加文档字符串
+3. 避免硬编码敏感信息
+4. 添加适当的测试用例
+
+## 🤝 贡献指南
+1. Fork 本仓库
+2. 创建功能分支
+3. 提交更改
+4. 创建 Pull Request
+
+## 📄 许可证
 MIT License
+
+---
+
+*最后更新: 2026-03-23*

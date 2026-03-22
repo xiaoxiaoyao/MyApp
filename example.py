@@ -46,10 +46,11 @@ def bad_function():
     z = x + y
     print(z)
     try:
-        # 注意：此除零操作为示例代码，实际使用时应避免
+        # 注意：此除零操作为示例代码，仅用于演示异常处理
+        # 在实际生产代码中应避免此类故意的错误操作
         result = 10 / 0
-    except ZeroDivisionError:
-        pass
+    except ZeroDivisionError as e:
+        print(f"捕获到除零异常: {e}")
     return z
 
 

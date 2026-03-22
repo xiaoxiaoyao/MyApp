@@ -1,17 +1,40 @@
-# 前端学习目标：
+# HTML 目录
 
-## 目录react-\*内容还**没完全掌握**，要加油学习，基本忘得差不多了。
+本目录包含前端开发的学习和实践代码，涵盖 HTML、CSS、JavaScript、React 等技术。
 
-随着React, Ember, Angular 2等的出现以及W3C本身也提出的web component技术，我们已经进入了组件化的开发时代，思路、工具以及开发方式等都要有重大转变，才能适应目前日益复杂和快速多变的web开发工作。
+## 子目录说明
 
-如图所示
-![<http://www.ruanyifeng.com/blogimg/asset/2016/bg2016092301.png>](http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html)
+### JavaScript
+- **用途**：JavaScript 语言学习和实践
+- **内容**：包含基础语法、DOM 操作、异步编程等
+- **子目录**：
+  - webpack-sample-project：Webpack 打包工具示例
+  - myapp-react-app：React 应用示例
+  - 其他 JavaScript 示例代码
 
-推荐阅读：[React 入坑杂谈——写给萌新](https://segmentfault.com/a/1190000007232194)
+### FCC
+- **用途**：FreeCodeCamp 课程相关代码
+- **内容**：包含 FCC 挑战项目和学习资源
 
-推荐买书：
+### 前端
+- **用途**：前端开发综合示例
+- **内容**：包含多个前端项目和框架示例
+- **子目录**：
+  - my-react-app-spring-boot-yao：React + Spring Boot 项目
+  - FZW：FZW 项目代码
+  - COPM：COPM 系统前端代码
+  - react-demos-master：React 示例集合
+  - react-testing-demo-master：React 测试示例
 
-1. JavaScript高级程序设计（第3版）
-    * 泽卡斯 (Zakas. Nicholas C.) (作者),‎ 李松峰 (译者),‎ 曹力 (译者)
-    * 《JavaScript高级程序设计(第3版)》是JavaScript超级畅销书的最新版。ECMAScript 5和HTML5在标准之争中双双胜出，使大量专有实现和客户端扩展正式进入规范，同时也为JavaScript增添了很多适应未来发展的新特性。《JavaScript高级程序设计(第3版)》这一版除增加5章全新内容外，其他章节也有较大幅度的增补和修订，新内容篇幅约占三分之一。全书从JavaScript语言实现的各个组成部分——语言核心、DOM、BOM、事件模型讲起，深入浅出地探讨了面向对象编程、Ajax与Comet服务器端通信，HTML5表单、媒体、Canvas（包括WebGL）及Web Workers、地理定位、跨文档传递消息、客户端存储（包括IndexedDB）等新API，还介绍了离线应用和与维护、性能、部署相关的开发实践。《JavaScript高级程序设计(第3版)》附录展望了未来的API和ECMAScript Harmony规范。
-2. JavaScript DOM编程艺术（第2版）
+## 主要技术栈
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- React.js
+- Webpack
+- Bootstrap
+
+## 学习资源
+- MDN Web 文档：https://developer.mozilla.org/
+- React 官方文档：https://reactjs.org/
+- FreeCodeCamp：https://www.freecodecamp.org/

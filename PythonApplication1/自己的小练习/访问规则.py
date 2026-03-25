@@ -1,36 +1,76 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-class Person(object):
-    '类变量的访问规则'
-    def __init__(self,name):
-        self.__name = name # 双下划线，表示private，机制上阻止访问，调用p.__name错误
+"""
+Python 类变量访问规则示例
+演示 Python 中类的私有变量、受保护变量和属性装饰器的使用
+"""
+
+
+class Person:
+    """人类，演示类变量的访问规则。"""
+
+    def __init__(self, name):
+        """初始化 Person 实例。
+
+        Args:
+            name (str): 人的姓名
+        """
+        self.__name = name
+
     @property
     def age(self):
-        return self._age  # 单下划线，表示protected，原则上不允许访问，但调用p._age可以访问到
+        """获取年龄。
+
+        Returns:
+            int: 人的年龄
+        """
+        return self._age
+
     @age.setter
-    def age(self,value):
+    def age(self, value):
+        """设置年龄。
+
+        Args:
+            value (int): 要设置的年龄
+
+        Raises:
+            ValueError: 当年龄不是整数或不在合理范围内时
+
+        Note:
+            必须使用 self._age 而不是 self.age，否则会导致递归调用栈溢出
+        """
         if type(value) != int:
             raise ValueError('need a interger请输入一个数字')
-        if not (0< value <150):
+        if not (0 < value < 150):
             raise ValueError('need a reasonable number请输入一个正常的年龄')
         self._age = value
-         # 以上写成self.age = value会报错，因为当设置了getter/setter后，
-         # 对属性的直接访问会调用该属性对应的getter/setter
-         # 这里写成self.age相当于又调用了一次age的getter方法，最终会导致递归调用栈溢出
 
-p = Person('小尧')
-p.age = 10 ; # 当设置了getter/setter后，对属性的直接访问会调用该属性对应的getter/setter
-print(hasattr(p,'age'))
-print(hasattr(p,'_age')) # true
-print(hasattr(p,'__name')) # false
 
-# python对象权限机制并不阻止访问,一切皆靠自觉
-try:
-    print(p.__name) # error 没有该属性
-    print(p.name) #error 没有该属性
-except ValueError as e:
-    print(e)
-finally:    
-    print(p._Person__name) # 强行访问私有变量
-    print(p._age)  # 受保护属性，不建议直接访问，应该使用getter，setter访问
-    print(p.age) #ok
+def demo_access_rules():
+    """演示 Python 类的访问规则。"""
+    person = Person('小尧')
+    person.age = 10
+
+    print('hasattr(person, "age"):', hasattr(person, 'age'))
+    print('hasattr(person, "_age"):', hasattr(person, '_age'))
+    print('hasattr(person, "__name"):', hasattr(person, '__name'))
+
+    print('\nPython对象权限机制并不阻止访问，一切皆靠自觉')
+    try:
+        print(person.__name)
+        print(person.name)
+    except AttributeError as e:
+        print(e)
+    finally:
+        print(person._Person__name)
+        print(person._age)
+        print(person.age)
+
+
+def main():
+    """主函数，运行访问规则演示。"""
+    demo_access_rules()
+
+
+if __name__ == "__main__":
+    main()

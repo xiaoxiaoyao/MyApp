@@ -1,16 +1,23 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "noImplicitAny": false,
-        "module": "commonjs",
-        "removeComments": true,
-        "sourceMap": false,
-        "outDir": "js"
-    },
-    "include":[
-        "ts"
-    ],
-    "exclude": [
-        "js"
-    ]
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "js",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "ts"
+  ],
+  "exclude": [
+    "js",
+    "node_modules"
+  ]
 }

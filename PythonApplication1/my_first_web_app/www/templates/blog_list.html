@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    {% include 'header.html' %}
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 span9">
+                <h3>
+                    这个是我的第一个python小网站，用来练习PYTHON/MYSQL/前端技能
+                </h3>
+            </div>
+            <div class="col-xs-6 span3">
+                <span class="badge">这里用来放LOGO</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="{{ url_for('Index') }}">我的博客</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('Weibo', id=0) }}">匿名微博</a>
+                    </li>
+                    <li class="dropdown pull-left">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">示例数据库</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="{{ url_for('DataGet', database='sakila', table='actor') }}">sakila</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('DataGet', database='sakila', table='film') }}">film</a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="#">阅读源代码</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12">
+                {% for post in posts %}
+                <div class="hero-unit well">
+                    <h2>
+                        {{ post.title }}
+                    </h2>
+                    <p>
+                        {{ post.summary }}
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-large" href="{{ url_for('Blog', id=post.id) }}">阅读更多 »</a>
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

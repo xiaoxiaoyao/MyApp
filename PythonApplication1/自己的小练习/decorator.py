@@ -1,15 +1,49 @@
-﻿# -*- coding: utf-8 -*-
-#在面向对象（OOP）的设计模式中，decorator被称为装饰模式。OOP的装饰模式需要通过继承和组合来实现，而Python除了能支持OOP的decorator外，直接从语法层次支持decorator。Python的decorator可以用函数实现，也可以用类实现。
+﻿﻿﻿﻿﻿﻿﻿﻿#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+装饰器示例程序
+演示 Python 中装饰器的使用方法
+
+在面向对象（OOP）的设计模式中，decorator 被称为装饰模式。
+OOP 的装饰模式需要通过继承和组合来实现，而 Python 除了能支持 OOP 的
+decorator 外，直接从语法层次支持 decorator。Python 的 decorator
+可以用函数实现，也可以用类实现。
+"""
 
 import time
-print(time.asctime())
+
 
 def log(func):
-    def wrapper(*args,**kw):
-        print('call 1 %s'%func.__name__)
-        return func(*args,**kw)
-    print('call 0 %s'%func.__name__)
+    """日志装饰器，在函数调用前后打印日志。
+
+    Args:
+        func: 要装饰的函数
+
+    Returns:
+        function: 包装后的函数
+    """
+    def wrapper(*args, **kw):
+        """包装函数，在函数调用前后打印日志。
+
+        Args:
+            *args: 位置参数
+            **kw: 关键字参数
+
+        Returns:
+            原函数的返回值
+        """
+        print('call 1 %s' % func.__name__)
+        return func(*args, **kw)
+    print('call 0 %s' % func.__name__)
     return wrapper
 
-newtime=log(time.asctime)
-print(newtime())
+
+def main():
+    """主函数，演示装饰器的使用。"""
+    print(time.asctime())
+    decorated_time = log(time.asctime)
+    print(decorated_time())
+
+
+if __name__ == "__main__":
+    main()

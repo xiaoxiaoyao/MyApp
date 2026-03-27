@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+﻿﻿﻿﻿﻿﻿﻿﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 闭包函数示例程序

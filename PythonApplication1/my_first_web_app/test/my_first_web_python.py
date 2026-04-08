@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 #  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 from flask import Flask, render_template,request
 import time,os,sched,threading

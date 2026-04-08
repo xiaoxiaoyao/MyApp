@@ -226,3 +226,111 @@ PythonApplication1/爬虫练习/chromedriver/chromedriver-2
 
 # 截图别传
 *.png
+
+# 虚拟环境
+venv/
+env/
+
+# 测试目录
+tests/
+
+# 日志文件
+*.log
+debug.log
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 编辑器相关
+.vscode/
+.idea/
+
+# 临时文件
+*.tmp
+*.temp
+
+# 缓存目录
+__pycache__/
+*.pyc
+
+# 数据文件
+*.csv
+*.xlsx
+*.xls
+*.json
+
+# 二进制文件
+*.exe
+*.dll
+*.so
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 构建文件
+build/
+dist/
+
+# 操作系统文件
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+# 备份文件
+*.bak
+*.old
+*.backup
+
+# Jupyter notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# 大型数据文件
+*.h5
+*.pkl
+*.pickle
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.tar.bz2
+*.7z
+
+# 其他临时文件
+*.swp
+*~
+
+# IDE相关
+.vscode/
+.idea/
+*.swp
+*~
+
+# 系统文件
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+# 构建输出
+bin/
+out/
+
+# 包管理
+node_modules/
+.pnpm-store/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# 测试覆盖率
+coverage/
+.nyc_output/

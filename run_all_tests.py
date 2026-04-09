@@ -27,7 +27,7 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 TDD_DIR = os.path.join(ROOT_DIR, 'TDD')
 
 
-def run_test_file(test_file):
+def run_test_file(test_file: str) -> dict:
     """运行单个测试文件
     
     Args:
@@ -110,7 +110,7 @@ def run_test_file(test_file):
         }
 
 
-def main():
+def main() -> int:
     """主函数"""
     print("\n" + "="*70)
     print("项目自动化测试")
@@ -118,24 +118,24 @@ def main():
     print(f"测试时间: {time.strftime('%Y-%m-%d %H:%M:%S')}")
     
     # 获取 TDD 目录下的所有测试文件
-    test_files = [f for f in os.listdir(TDD_DIR) if f.startswith('test_') and f.endswith('.py')]
+    test_files: list[str] = [f for f in os.listdir(TDD_DIR) if f.startswith('test_') and f.endswith('.py')]
     
     if not test_files:
         print("未找到测试文件")
-        return
+        return 1
     
     print(f"\n发现 {len(test_files)} 个测试文件:")
     for f in test_files:
         print(f"  - {f}")
     
     # 运行所有测试
-    results = []
-    total_success = 0
-    total_failures = 0
-    total_errors = 0
-    total_tests = 0
+    results: list[dict] = []
+    total_success: int = 0
+    total_failures: int = 0
+    total_errors: int = 0
+    total_tests: int = 0
     
-    start_time = time.time()
+    start_time: float = time.time()
     
     for test_file in sorted(test_files):
         result = run_test_file(test_file)
@@ -146,14 +146,14 @@ def main():
         total_errors += result['errors']
         total_tests += result['total']
     
-    end_time = time.time()
-    duration = end_time - start_time
+    end_time: float = time.time()
+    duration: float = end_time - start_time
     
     # 计算总体通过率
     if total_tests > 0:
-        overall_pass_rate = (total_success / total_tests) * 100
+        overall_pass_rate: float = (total_success / total_tests) * 100
     else:
-        overall_pass_rate = 0.0
+        overall_pass_rate: float = 0.0
     
     # 生成测试报告
     print("\n" + "="*70)

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests,time,random,itchat
 
 #自动把各种聊天内容发给微软小冰isXiaobingChat的小程序（附带图灵机器人和小冰聊天isTuling）

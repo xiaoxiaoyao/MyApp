@@ -13,4 +13,10 @@ main.py可以删除
 __author__ = 'lai yao (lake.lai)'
 __date__ ="$2016-03-10 02:40:52$"
 __all__ = ['Log', 'main', 'conn', 'config', 'index']
-from www import *
+
+# 直接从当前包导入模块
+from . import index
+from . import main
+from . import conn
+from . import config
+from . import Log

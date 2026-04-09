@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import itchat, time, random
 # 群发内容（随机选一条）
 SINCERE_WISH = [u'祝中秋快乐',u'中秋快乐呀',u'中秋快乐哟',u'中秋节快乐呀~',u'中秋节快乐!',u'中秋国庆快乐!']

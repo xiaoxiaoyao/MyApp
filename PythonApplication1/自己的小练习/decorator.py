@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 装饰器示例程序
@@ -11,6 +11,38 @@ decorator 外，直接从语法层次支持 decorator。Python 的 decorator
 """
 
 import time
+
+
+def test_decorator(func):
+    """测试装饰器，在函数调用前后打印日志。
+
+    Args:
+        func: 要装饰的函数
+
+    Returns:
+        function: 包装后的函数
+    """
+    def wrapper(*args, **kw):
+        """包装函数，在函数调用前后打印日志。
+
+        Args:
+            *args: 位置参数
+            **kw: 关键字参数
+
+        Returns:
+            原函数的返回值
+        """
+        print('装饰器开始')
+        result = func(*args, **kw)
+        print('装饰器结束')
+        return result
+    return wrapper
+
+
+@test_decorator
+def decorated_function():
+    """被装饰的函数，用于测试装饰器功能。"""
+    print('被装饰函数执行')
 
 
 def log(func):
@@ -47,3 +79,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    decorated_function()

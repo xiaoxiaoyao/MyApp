@@ -15,10 +15,10 @@ class MyClass:
 
     def __init__(self):
         """初始化MyClass实例，设置默认姓名为空字符串，年龄为0。"""
-        self.name = ""
-        self.age = 0
+        self.name: str = ""
+        self.age: int = 0
 
-    def get_info(self):
+    def get_info(self) -> str:
         """获取对象的姓名和年龄信息。
 
         Returns:
@@ -26,7 +26,7 @@ class MyClass:
         """
         return f"Name: {self.name}, Age: {self.age}"
 
-    def set_name(self, name):
+    def set_name(self, name: str) -> None:
         """设置对象的姓名。
 
         Args:
@@ -35,19 +35,19 @@ class MyClass:
         self.name = name
 
 
-def bad_function():
+def bad_function() -> int:
     """示例函数，演示加法运算和异常处理。
 
     Returns:
         int: x + y 的结果
     """
-    x = 1
-    y = 2
-    z = x + y
+    x: int = 1
+    y: int = 2
+    z: int = x + y
     print(z)
     try:
         # 注意：此除零操作为示例代码，实际使用时应避免
-        result = 10 / 0
+        result: float = 10 / 0
     except ZeroDivisionError:
         pass
     return z

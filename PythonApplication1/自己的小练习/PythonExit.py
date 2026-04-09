@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 #代码如下，可以运行一下看效果
 import os,sys
 #%% os._exit(0) 

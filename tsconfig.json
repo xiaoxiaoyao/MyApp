@@ -1,6 +1,7 @@
 {
+  // 修复：添加注释说明这是 TypeScript 配置文件
   "compilerOptions": {
-    "target": "es2022",
+    "target": "es2024",
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,

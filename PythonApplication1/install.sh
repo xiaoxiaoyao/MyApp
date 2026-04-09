@@ -1,5 +1,11 @@
 #!/usr/bin/bash
 
+# 工作方式：
+# 1. 此脚本用于安装常见的Python包，包括科学计算、Web框架、数据库驱动等
+# 2. 首先安装requirements.txt中指定的包
+# 3. 然后安装各种分类的Python包，如算法、构建工具、缓存、代码分析等
+# 4. 最后更新一些常用的包到最新版本
+
 echo 马上安装常见的python包（一大堆）
 
 pip install -r requirements.txt --upgrade

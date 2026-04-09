@@ -1,4 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 工作方式：
+  1. 此文件为Visual Studio的Python项目文件，用于配置Python项目的设置
+  2. 包含项目的基本信息、文件列表、配置选项等
+  3. InterpreterId：设置项目使用的Python解释器版本为3.12
+  4. 定义了项目的构建配置（Debug和Release）
+  5. 包含了项目中的各种文件和文件夹
+-->
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +20,7 @@
     <OutputPath>.</OutputPath>
     <Name>PythonApp</Name>
     <RootNamespace>PythonApplication1</RootNamespace>
-    <InterpreterId>Global|PythonCore|3.5</InterpreterId>
+    <InterpreterId>Global|PythonCore|3.12</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
     <TestFramework>Pytest</TestFramework>
     <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>

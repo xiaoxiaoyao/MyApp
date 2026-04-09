@@ -1,20 +1,22 @@
+# 工作方式：
+# 1. 此文件为Travis CI配置文件，用于设置CI/CD流程
+# 2. language: 设置构建环境的语言为java
+# 3. jdk: 设置使用的JDK版本为openjdk21
+# 4. before_install: 安装前执行的命令
+# 5. install: 安装命令
+# 6. script: 构建脚本命令
+# 7. notifications: 通知配置
+
 language: java  
 jdk:  
-  - oraclejdk7  
-#  - openjdk7  
-#  - openjdk6  
+  - openjdk21  
 before_install:  
-#  - mvn install -Dmaven.javadoc.skip=true  
    - "echo skipped"  
 install:  
   - "echo skipped"  
 script:  
   - "echo skipped"   
-#  - mvn install -Dmaven.javadoc.skip=true  
-#  - mvn deploy  
 notifications:  
   email:  
     recipients:  
       - yao.power@qq.com  
-    #on_success: [always|never|change]  default: change  
-    #on_failure: [always|never|change]  default: always  

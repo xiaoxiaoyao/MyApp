@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from pyecharts.charts import Sankey
 from pyecharts import options as opts
 

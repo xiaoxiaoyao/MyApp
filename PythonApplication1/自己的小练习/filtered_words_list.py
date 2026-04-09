@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #来自https://github.com/Yixiaohan/show-me-the-code
 #敏感词 filtered_words_list，当用户输入敏感词语时，则打印出 Freedom，否则打印出 Human Rights。
 #和前面题一样，当用户输入敏感词语，则用 星号 * 替换，例如当用户输入「sex是个好城市」，则变成「**是个好城市」。

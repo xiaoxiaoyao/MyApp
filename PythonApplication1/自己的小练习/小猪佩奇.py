@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # coding:utf-8
 import turtle as t #导入turtle
 def 小猪佩奇(t=t):    

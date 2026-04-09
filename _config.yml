@@ -1,5 +1,13 @@
+# 工作方式：
+# 1. 此文件为Jekyll主题配置文件，用于设置网站的基本信息和部署配置
+# 2. encoding: 设置网站的编码格式为UTF-8
+# 3. theme: 设置网站使用的主题为jekyll-theme-cayman
+# 4. deploy: 设置网站的部署配置，包括部署类型和分支
+
 encoding: UTF-8
 theme: jekyll-theme-cayman
 deploy:
+  # 部署类型：git
   type: git
+  # 部署分支：master
   branch: master

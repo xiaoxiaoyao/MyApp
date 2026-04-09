@@ -1,4 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 工作方式：
+  1. 此文件包含用户特定的设置，用于存储用户在Visual Studio中的个性化配置
+  2. ProjectView：设置项目视图为ShowAllFiles，显示项目中的所有文件
+-->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>

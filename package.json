@@ -23,7 +23,7 @@
   },
   "homepage": "http://xiaoxiaoyao.github.io/MyApp/#readme",
   "devDependencies": {
-    "eslint": "^9.14.0",
-    "eslint-plugin-react": "^7.37.2"
+    "eslint": ">=9.14.0",
+    "eslint-plugin-react": ">=7.37.2"
   }
 }

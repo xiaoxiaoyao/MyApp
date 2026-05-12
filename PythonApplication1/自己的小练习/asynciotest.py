@@ -28,6 +28,11 @@ async def async_task(task_id, *args, **kw):
     print(datetime.datetime.now(), 'hello four times! , now return ,async_id=', task_id)
 
 
+def test_async():
+    """测试异步模块的函数，仅返回True."""
+    return True
+
+
 def main():
     """主函数，运行多个异步任务。"""
     print(datetime.datetime.now())

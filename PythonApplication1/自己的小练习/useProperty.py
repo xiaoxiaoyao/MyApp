@@ -6,6 +6,16 @@ Python 属性装饰器示例
 """
 
 
+class MyClass:
+    """简单类，用于测试。"""
+
+    def __init__(self):
+        self.name = ''
+
+    def set_name(self, name):
+        self.name = name
+
+
 class Student:
     """学生类，使用传统的 getter/setter 方法。
 

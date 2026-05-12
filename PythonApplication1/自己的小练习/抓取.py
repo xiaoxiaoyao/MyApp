@@ -9,6 +9,11 @@ import requests
 import bs4
 
 
+def fetch_data():
+    """测试抓取模块的函数，仅返回True."""
+    return True
+
+
 def fetch_webpage(url):
     """获取指定 URL 的网页内容。
 

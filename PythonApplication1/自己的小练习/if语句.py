@@ -6,6 +6,23 @@
 """
 
 
+def test_if_statement(score):
+    """根据分数返回成绩等级。
+
+    Args:
+        score (int): 考试分数
+
+    Returns:
+        str: 成绩等级
+    """
+    if score >= 80:
+        return '优秀'
+    elif score >= 60:
+        return '良好'
+    else:
+        return '不及格'
+
+
 def calculate_score_change(last_score, current_score):
     """计算成绩变化的百分比。
 

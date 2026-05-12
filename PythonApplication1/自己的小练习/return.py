@@ -6,6 +6,19 @@
 """
 
 
+def test_return(a, b):
+    """计算两个数的和。
+
+    Args:
+        a (int): 第一个数
+        b (int): 第二个数
+
+    Returns:
+        int: a + b
+    """
+    return a + b
+
+
 def count():
     """创建一个返回函数列表的函数。
 

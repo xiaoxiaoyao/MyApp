@@ -6,6 +6,23 @@
 """
 
 
+def generate_pascals_triangle(num_lines):
+    """生成指定行数的杨辉三角列表。
+
+    Args:
+        num_lines (int): 要生成的行数
+
+    Returns:
+        list: 包含杨辉三角每一行的列表
+    """
+    result = []
+    line = [1]
+    for _ in range(num_lines):
+        result.append(line.copy())
+        line = [1] + [line[i] + line[i + 1] for i in range(len(line) - 1)] + [1]
+    return result
+
+
 def triangles(max_lines=1):
     """生成杨辉三角的每一行。
 

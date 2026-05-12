@@ -6,6 +6,32 @@
 """
 
 
+def perform_set_operations(a=None, b=None):
+    """执行集合运算并返回结果字典。
+
+    Args:
+        a (list, optional): 第一个列表，默认为 [0,1,2,3,4]
+        b (list, optional): 第二个列表，默认为 [0,2,6]
+
+    Returns:
+        dict: 包含并集、交集、差集等结果
+    """
+    if a is None:
+        a = [0, 1, 2, 3, 4]
+    if b is None:
+        b = [0, 2, 6]
+    set_a = set(a)
+    set_b = set(b)
+    return {
+        'union': list(set_a.union(set_b)),
+        'intersection': list(set_a.intersection(set_b)),
+        'difference': list(set_a.difference(set_b)),
+        'difference_a_b': list(set_a.difference(set_b)),
+        'difference_b_a': list(set_b.difference(set_a)),
+        'symmetric_difference': list(set_a.symmetric_difference(set_b))
+    }
+
+
 def demonstrate_set_operators(a, b):
     """使用集合运算符演示集合运算。
 

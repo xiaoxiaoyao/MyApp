@@ -6,6 +6,21 @@
 """
 
 
+def test_for_loop(n):
+    """计算1到n的和。
+
+    Args:
+        n (int): 上限
+
+    Returns:
+        int: 1到n的和
+    """
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+
 def demonstrate_for_loop(counter_list):
     """演示 for 循环的使用。
 

@@ -9,6 +9,23 @@
 move_count = 0
 
 
+def hanoi(n, source, auxiliary, target):
+    """汉诺塔递归函数，仅输出移动步骤。
+
+    Args:
+        n (int): 要移动的圆盘数量
+        source (str): 源塔名称
+        auxiliary (str): 辅助塔名称
+        target (str): 目标塔名称
+    """
+    if n == 1:
+        print(source, '->', target)
+    else:
+        hanoi(n - 1, source, target, auxiliary)
+        print(source, '->', target)
+        hanoi(n - 1, auxiliary, source, target)
+
+
 def is_in_tower(tower, target_disk):
     """检查目标圆盘是否在指定的塔中。
 

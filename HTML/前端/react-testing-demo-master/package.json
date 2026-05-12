@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A tutorial of testing React components",
   "main": "app/main.jsx",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "lint": "eslint 'app/**/*.@(js|jsx)'",
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",

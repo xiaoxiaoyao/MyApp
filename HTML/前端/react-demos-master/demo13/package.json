@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "an example of react.js in server",
   "main": "server.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "build": "babel -d . src/",
     "test": "echo \"Error: no test specified\" && exit 1"

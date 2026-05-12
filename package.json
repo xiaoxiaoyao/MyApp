@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "我随便写的各种代码，平时学编程的时候随便写写的",
   "main": "README.md",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "directories": {
     "doc": "docs"
   },
@@ -23,7 +26,7 @@
   },
   "homepage": "http://xiaoxiaoyao.github.io/MyApp/#readme",
   "devDependencies": {
-    "eslint": "^9.14.0",
-    "eslint-plugin-react": "^7.37.2"
+    "eslint": "^9.15.0",
+    "eslint-plugin-react": "^7.37.3"
   }
 }
